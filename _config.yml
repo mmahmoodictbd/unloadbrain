@@ -5,16 +5,20 @@ description: >-
   Why this site?
   It's hard to remember every technical aspect I thought of. 
   Sometimes, it's just an idea from shower.
+
 baseurl: "" 
 url: "http://unloadbrain.com"
 twitter_username: mmahmood_ict_bd
 github_username:  mmahmoodictbd
+show_excerpts: true
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap
 
 minima:
   timezone: Europe/Amsterdam
@@ -25,4 +29,13 @@ minima:
     keybase: mossaddeque
     rss: rss
 
-
+jekyll-archives:
+  enabled: ['categories', 'tags', 'year']
+  permalinks:
+    year: '/:year/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+  layouts:
+    year: year-archive
+    category: category-archive
+    tag: tag-archive
