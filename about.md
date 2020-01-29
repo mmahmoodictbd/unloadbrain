@@ -11,7 +11,7 @@ Following public key belongs to mmahmood[dot]ict[dot]bd[at]gmail[dot]com e-mail 
 GPG/PGP public key is stored in txt file public-key.txt.
 
 ```text
-curl http://unloadbrain/assets/files/public-key.txt | gpg --import
+curl http://unloadbrain.com/assets/files/public-key.txt | gpg --import
 ```
 
 
