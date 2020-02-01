@@ -10,7 +10,7 @@ Hi! I’m Mahmood. I’m a software engineer. I’m originally from Bangladesh, 
 #### How I spend my spare time?
 - I write code. Because I can or I've no life.
 - Think about the singularity, upload myself to the internet.
-- Read books and watch Netflix.
+- Read [books](https://www.goodreads.com/user/show/43411853-mossaddeque-mahmood) and watch Netflix.
 - I also do mentoring, if you want to be an apprentice, contact. No money involve.
 
 #### Contact

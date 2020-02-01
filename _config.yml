@@ -1,10 +1,7 @@
 title: Unload Brain
 author: Mossaddeque Mahmood
-email: mmahmood.ict.bd@gmail.com
-description: >-
-  Why this site?
-  It's hard to remember every technical aspect I thought of. 
-  Sometimes, it's just an idea from shower.
+email: mmahmood[dot]ict[dot]bd[at]gmail[dot]com
+description: Uploading my brain dump.
 
 baseurl: "" 
 url: "https://unloadbrain.com"
@@ -27,7 +24,7 @@ minima:
     twitter: mmahmood_ict_bd
     github: mmahmoodictbd
     linkedin: mmahmoodictbd
-    keybase: mossaddeque
+    keybase: mmahmoodictbd
     rss: rss
 
 jekyll-archives:
