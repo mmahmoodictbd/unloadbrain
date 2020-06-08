@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Checklist when moving to a new house/apartment
-date: 2020-06-06 19:13:00 +0100
+date: 2020-06-08 19:13:00 +0100
 excerpt: |
     Moving places can be stressful. If you are a newcomer like me, maybe God help you!
 categories: [life-happens]
