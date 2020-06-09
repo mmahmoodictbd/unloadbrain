@@ -4,6 +4,20 @@ title: Projects
 permalink: /projects
 ---
 
+### Workshops
+
+- [technical-workshop](https://github.com/mmahmoodictbd/technical-workshops).
+- [devops-for-developers-workshop](https://github.com/mmahmoodictbd/devops-for-developers-workshop), DevOps to make developer life easier.
+
+
+### Workshop Videos
+
+- [Session on Jenkins, Docker and Docker Compose basics](https://www.youtube.com/watch?v=C7QZ-wfbgfs).
+- [Building Microservices with Spring Cloud basics](https://www.youtube.com/watch?v=fdu7kP2lTh4).
+- [Session on Java Web Application with Spring Boot basics](https://www.youtube.com/watch?v=0vJFC_60ogM).
+- [Session on Git, Java and Maven basics](https://www.youtube.com/watch?v=Lb3yB-wgNvg).
+
+
 ### Projects with Long-term support (LTS)
 
 - [Production-Ready Microservices Starter](https://github.com/mmahmoodictbd/production-ready-microservices-starter), business-ready microservice.
@@ -24,4 +38,3 @@ permalink: /projects
 
 - [dev-setup](https://github.com/mmahmoodictbd/dev-setup), Docker composes used in daily basis.
 - [bash-scripts](https://github.com/mmahmoodictbd/bash-scripts), Frequently used Bash Scripts.
-- [devops-for-developers-workshop](https://github.com/mmahmoodictbd/devops-for-developers-workshop), DevOps to make developer life easier..
