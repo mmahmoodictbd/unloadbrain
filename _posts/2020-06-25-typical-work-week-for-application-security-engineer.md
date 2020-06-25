@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How a typical work week look like for an Application Security Engineer
-date: 2020-06-25 22:00:00 +0100
+date: 2020-06-25 22:43:00 +0100
 excerpt: |
     
 categories: [tech]
@@ -46,7 +46,7 @@ Define threats in the application design phase and help development teams to add
 
 #### Educate Developers
 
-Talks about different ASVS (Web, Mobile, Cloud, Container) and explaining security concepts.
+Talks around different ASVS (Web, Mobile, Cloud, Container) and explaining security concepts.
 
 #### Pentesting
 
@@ -60,5 +60,7 @@ Understanding the security in application platform and present/answer to clients
 
 Apart from above, you gotta keep upto date yourself. Reading write-ups and prepare for certification are also part of daily activity.
 
+Working in security could be handful, but it's exciting. We had around 80 Java microservices, frontend built on Angular, cloud native apps with Docker and
+ Kubernetes, mobile SDKs for both Android and iOS. Keeping your head above the water is a challenge!
 
 Cheers!
