@@ -3,7 +3,8 @@ layout: post
 title: How a typical work week look like for an Application Security Engineer
 date: 2020-06-25 22:43:00 +0100
 excerpt: |
-    
+    Working as an application security engineer can be very exciting and ridiculously boring at the same time. Here are the list of things we did on daily basis.
+    If your are to be an application security engineer, hope you get some ideas.
 categories: [tech]
 tags: [application-security]
 ---
