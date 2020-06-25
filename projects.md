@@ -27,6 +27,7 @@ permalink: /projects
 
 ### Good code example
 
+- [iot-hub](https://github.com/mmahmoodictbd/iot-hub), IoT Hub APIs with Spring Boot + Kafka + Kafka-connect + Eclipse Mosquitto + InfluxDB.
 - [charging-station-sessions](https://github.com/mmahmoodictbd/charging-station-sessions), Design of analytics APIs.
 - [iot-platform-api](https://github.com/mmahmoodictbd/iot-platform-api), IoT Platform APIs with Spring Boot + Kafka + InfluxDB.
 - [stock-api](https://github.com/mmahmoodictbd/stock-api), APIs with Spring Boot + AKKA + Cassandra + Angular.

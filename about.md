@@ -4,12 +4,12 @@ title: About me
 permalink: /about
 ---
 
-Hi! I’m Mahmood, a software engineer, originally from Bangladesh, currently living in Netherlands with my wife. I love working with anything that has something to do with code.
+Hi! I’m Mahmood, a software engineer, originally from Bangladesh, living in Netherlands with my wife. I love working with anything that has something to do with code.
 
 #### How I spend my spare time?
 - I write code. Because I can or I've no life.
-- Think about the singularity, upload myself to the internet.
 - Read books and watch Netflix.
+- Think about the singularity, upload myself to the internet.
 - I also do mentoring, if you want to be an apprentice, contact. No money involve.
 
 #### Contact
