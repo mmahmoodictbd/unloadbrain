@@ -12,15 +12,16 @@ tags: [application-security]
 Working as an application security engineer can be very exciting and ridiculously boring at the same time. Here are the list of things we did on daily basis
 . If your are to be an application security engineer, hope you get some ideas.
 
-#### Tool Integration
+### Tool Integration
 
 Integrating different security tooling in CI/CD pipelines is one of the major task. We used -
 
-###### Veracode:
+#### Veracode:
  - It's source code vulnerability finder.
  - Uploaded jar/wars/js to Vercode server.
  - Fetched reports using APIs and feed it to internal reporting tool.
-###### Blackduck:
+ 
+#### Blackduck:
  - It find vulnerable opensource components (aka jar).
  - Attach with CI and CD pipelines.
  - Successful build triggered Blackduck scan.
@@ -28,36 +29,38 @@ Integrating different security tooling in CI/CD pipelines is one of the major ta
    - Signature scan (useful when you have forked code or copied code from opensource software)
    - Dependency scan (aka pom.xml)
  - Fetched reports using APIs and feed it to internal reporting tool.
-###### Github Code Search:
+
+#### Github Code Search:
  - Home grown tool to find exposed code on Github.
  - Fetched reports and feed it to internal reporting tool.
-###### Docker Image Vulnerability:
+
+#### Docker Image Vulnerability:
  - Trivy with Harbor registry.
  - Fetched reports using APIs and feed it to internal reporting tool.
 
-#### Code Review
+### Code Review
 
 Reviewing all vulnerability finding reports, see if it's false positive or not. If it's not a false positive, define the impact of the issue, suggest and
  guide team to fix it.
  
-#### Threat Modeling
+### Threat Modeling
 
 Define threats in the application design phase and help development teams to add address those threats. Sounds like a nice idea if you are building the
  application from scratch, but tricky if the application is already built. Worst part is - tools around threat modeling is ridiculously boring.
 
-#### Educate Developers
+### Educate Developers
 
 Talks around different ASVS (Web, Mobile, Cloud, Container) and explaining security concepts.
 
-#### Pentesting
+### Pentesting
 
 Learn how to use different tools(Kali toolset, trending tools on Github) and exploit application security.
 
-#### Security Presentation
+### Security Presentation
 
 Understanding the security in application platform and present/answer to clients.
 
-#### Learn Security
+### Learn Security
 
 Apart from above, you gotta keep upto date yourself. Reading write-ups and prepare for certification are also part of daily activity.
 
