@@ -1,12 +1,9 @@
 title: Unload Brain
 author: Mossaddeque Mahmood
-email: mmahmood.ict.bd[at]gmail.com
 description: Uploading my brain dump.
 
 baseurl: "" 
 url: "https://unloadbrain.com"
-twitter_username: mmahmood_ict_bd
-github_username:  mmahmoodictbd
 show_excerpts: true
 google_analytics: UA-121247298-1
 
@@ -17,6 +14,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-sitemap
+  - jemoji
 
 minima:
   timezone: Europe/Amsterdam
