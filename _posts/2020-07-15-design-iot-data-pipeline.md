@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design of an IoT Data pipeline.
+title: Design of an IoT data pipeline
 date: 2020-07-15 18:21:00 +0100
 excerpt: |
     Recently I worked on an assignment project where I tried to design an IoT data pipeline. Checkout the design and code.
