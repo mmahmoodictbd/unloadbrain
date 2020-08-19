@@ -127,3 +127,11 @@ data:
 ```
 
 Cheers!
+
+<br/>
+<br/>
+
+### Related Posts
+- [How to find security vulnerabilities in source code]({% post_url 2020-08-19-how-to-find-security-vulnerabilities-in-source-code %})
+- [How a typical work week look like for an Application Security Engineer]({% post_url 2020-06-25-typical-work-week-for-application-security-engineer %})
+- [Application security homelab setup on docker-compose]({% post_url 2019-12-25-application-security-homelab-setup-on-docker-compose %})

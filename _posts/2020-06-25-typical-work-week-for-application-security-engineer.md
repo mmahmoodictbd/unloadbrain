@@ -68,3 +68,10 @@ Working in security could be handful, but it's exciting. We had around 80 Java m
  Kubernetes, mobile SDKs for both Android and iOS. Keeping your head above the water is a challenge!
 
 Cheers!
+
+<br/>
+<br/>
+
+### Related Posts
+- [How to find security vulnerabilities in source code]({% post_url 2020-08-19-how-to-find-security-vulnerabilities-in-source-code %})
+- [Application security homelab setup on docker-compose]({% post_url 2019-12-25-application-security-homelab-setup-on-docker-compose %})

@@ -20,3 +20,10 @@ These are the vulnerable apps that helped me a lot to learn new concepts:
 Checkout the docker-compose files: [dev-setup-security](https://github.com/mmahmoodictbd/dev-setup/tree/master/security)
 
 To get my basics right, I used [Security Knowledge Framework](https://github.com/mmahmoodictbd/dev-setup/blob/master/security/docker-compose-security-knowledge-framework.yml).
+
+<br/>
+<br/>
+
+### Related Posts
+- [How to find security vulnerabilities in source code]({% post_url 2020-08-19-how-to-find-security-vulnerabilities-in-source-code %})
+- [How a typical work week look like for an Application Security Engineer]({% post_url 2020-06-25-typical-work-week-for-application-security-engineer %})
