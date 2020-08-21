@@ -13,7 +13,7 @@ I have worked in application security, had to deal with big codebase, hence came
 Tools mentioned in this article that are related with Java because most of my programming experience is with Java. However, you can find similar tools in all
   major programming language.
 
-### How to do it
+### How to do it?
 - SAST, DAST, IAST tools.
   - Tools are usually based on rules. They are not perfect, lots of false positives.
   - The idea behind using tools is to find the suspicious code and manually review it.
@@ -23,7 +23,7 @@ Tools mentioned in this article that are related with Java because most of my pr
 - Modern application composed of tons of Open Source libraries. In Java, different build tools like Maven manage dependencies with pom.xml.
 - Since open source libraries is open for all to see the code, people find the vulnerabilities within days/months.
   - Example of vulnerable [Fasterxml Jackson-databind](https://www.cvedetails.com/product/42991/Fasterxml-Jackson-databind.html?vendor_id=15866).
-- There are different open source and commercial tools available that going to help you find these vulnerability libraries.
+- There are different open source and commercial tools available that going to help you find these vulnerable libraries.
   - [OWASP Dependency-Check](https://github.com/jeremylong/DependencyCheck). Dependency-check has a command line interface, a Maven plugin, an Ant task, and
    a Jenkins plugin.
   - Paid services are also available, e.g. Blackduck, Checkmarx and lot others.
@@ -75,7 +75,7 @@ Tools mentioned in this article that are related with Java because most of my pr
   - Sanitize HTML Markup with a library designed for the job.
   - Think encoding/escaping and XSS attach. See [OWASP Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets
   /Cross_Site_Scripting_Prevention_Cheat_Sheet.html).
-- Make use you meet the [Application Security Verification Standard](https://github.com/OWASP/ASVS#latest-released-version) (ASVS).
+- Make sure you meet the [Application Security Verification Standard](https://github.com/OWASP/ASVS#latest-released-version) (ASVS).
   - Latest version (4.0.1, dated 2 March 2019) is 68 pages. Trust me, once you read these 68 pages, you will be bit more wise.
 
 ### What to build security related knowledge?
