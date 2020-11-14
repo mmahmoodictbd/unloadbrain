@@ -13,7 +13,7 @@ exclude: true
 - [প্রোগ্রামিং কন্টেস্ট করবো নাকি সফটওয়্যার ডেভেলপমেন্ট শিখবো? জব এর জন্য কোনটা লাগে?](https://www.youtube.com/watch?v=oWOmJ6kGinw&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
 - [জব কোডিং অ্যাসাইনমেন্ট কিভাবে করা উচিত? + কোডিং টিপস!](https://www.youtube.com/watch?v=pBmho6YC-xg&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
 - [ইউনিভার্সিটির কোন কোন কোর্সগুলো সফটওয়্যার ডেভেলপার হিসেবে বেশি কাজে লাগে?](https://www.youtube.com/watch?v=Jyo1M1-cv30&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
-- [জাভা ডেভেলপার হতে হলে কি কি জানতে হয় /| ডেভেলপার রোডম্যাপ?](https://www.youtube.com/watch?v=DnGP4DoniXU&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
+- [জাভা ডেভেলপার হতে হলে কি কি জানতে হয় / ডেভেলপার রোডম্যাপ?](https://www.youtube.com/watch?v=DnGP4DoniXU&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
 - ওয়েব ডেভেলপার হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
 - .NET ডেভেলপার হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
 - PHP ডেভেলপার হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
