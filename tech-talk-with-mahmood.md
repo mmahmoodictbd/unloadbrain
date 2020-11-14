@@ -57,7 +57,7 @@ permalink: /tech-talk-with-mahmood
 
 ### [সফটওয়্যার ইঞ্জিনিয়ারিং সিরিজ ( Software Engineering Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn)
 - ক্লিন কোড কি?  উদাহারনসহ ভাল কোড vs মন্দ কোড
-- [SOLID প্রিন্সিপল কি? | SOLID Principle](https://www.youtube.com/watch?v=JiHiYx5qupg&list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn)
+- [SOLID প্রিন্সিপল কি? \| SOLID Principle](https://www.youtube.com/watch?v=JiHiYx5qupg&list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn)
 - সিঙ্গেল রেস্পন্সিবিলিটি প্রিন্সিপল \| কোডিং উদাহারনসহ \| Single Responsibility Principle - SOLID Principle
 - ওপেন ক্লোজ প্রিন্সিপল \| কোডিং উদাহারনসহ \| Open / Closed Principle - SOLID Principle
 - লিসকভ সাবস্টিটুউশন প্রিন্সিপল \| কোডিং উদাহারনসহ \| Liskov Substitution Principle - SOLID Principle
