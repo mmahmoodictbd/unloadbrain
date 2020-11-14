@@ -2,6 +2,7 @@
 layout: page
 title: Tech talk with Mahmood ভিডিও TODO লিস্ট
 permalink: /tech-talk-with-mahmood
+exclude: true
 ---
 
 ** যেগুলোতে লিঙ্ক নেই তা আমি ধীরে ধীরে বানাচ্ছি, চ্যানেলটি সাবস্ক্রাইব করে নোটিফিকেশন বেল আইকনে ক্লিক করলে জানতে পারবেন কখন নতুন ভিডিও আসছে **
