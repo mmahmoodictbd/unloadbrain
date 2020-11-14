@@ -13,8 +13,8 @@ exclude: true
 - [প্রোগ্রামিং কন্টেস্ট করবো নাকি সফটওয়্যার ডেভেলপমেন্ট শিখবো? জব এর জন্য কোনটা লাগে?](https://www.youtube.com/watch?v=oWOmJ6kGinw&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
 - [জব কোডিং অ্যাসাইনমেন্ট কিভাবে করা উচিত? + কোডিং টিপস!](https://www.youtube.com/watch?v=pBmho6YC-xg&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
 - [ইউনিভার্সিটির কোন কোন কোর্সগুলো সফটওয়্যার ডেভেলপার হিসেবে বেশি কাজে লাগে?](https://www.youtube.com/watch?v=Jyo1M1-cv30&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
-- [জাভা ডেভেলপার হতে হলে কি কি জানতে হয় / ডেভেলপার রোডম্যাপ?](https://www.youtube.com/watch?v=DnGP4DoniXU&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
-- ওয়েব ডেভেলপার হতে হলে কি কি জানতে হয়? \ ডেভেলপার রোডম্যাপ
+- [জাভা ডেভেলপার হতে হলে কি কি জানতে হয় /| ডেভেলপার রোডম্যাপ?](https://www.youtube.com/watch?v=DnGP4DoniXU&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
+- ওয়েব ডেভেলপার হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
 - .NET ডেভেলপার হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
 - PHP ডেভেলপার হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
 - QA হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
@@ -69,13 +69,14 @@ exclude: true
 
 ### মাইক্রোসার্ভিস সিরিজ ( Microservice Series )
 - মাইক্রোসার্ভিস কি? \| Microservice Basics
-- জাভাতে কিভাবে মাইক্রোসার্ভিস বানায়? \| Build a microservice Java
+- REST API কি? কিভাবে REST API ডিজাইন করা হয়? 
+- জাভাতে কিভাবে মাইক্রোসার্ভিস বানায়? \| Java + Spring Boot + Spring Cloud + MySQL
 
 
 ### ডেভেলপার বেসিক সিরিজ ( Developer Basic Series )
 - Git, Github ও GitBash কি?
-- Jenkins
-- Maven কি? Java বিল্ড আটোমেশন ও ডিপেন্ডেন্সি ম্যানেজমেন্ট
+- Jenkins কি?
+- Maven কি? জাভা বিল্ড আটোমেশন ও ডিপেন্ডেন্সি ম্যানেজমেন্ট
 - HTTP প্রোটোকল কি?
 
 
@@ -101,6 +102,8 @@ exclude: true
 - [কোডের সিকিউরিটি ভলনারেবলিটি কিভাবে বের করবেন? ( পার্ট ৩ / ৩ )](https://www.youtube.com/watch?v=og4HiKW2Ro4&list=PLZ1tJSgII-L8f1BT7xi2Zvqi8Wds6E-PH)
 - OWASP API সিকিউরিটি টপ ১০ ভলনারেবলিটি কি?
 - থানা পুলিশের ঝামেলা ছাড়া হ্যাকিং প্রাকটিস করবেন কিভাবে? Hack The Box Intro!
+- Authentication বনাম Authorization
+- SQL Injection কি? + কোডিং উদাহারনসহ
 
 
 ### ডেভঅপস সিরিজ ( DevOps Series )
@@ -112,6 +115,9 @@ exclude: true
 ### [ডকার / কুবারনেটিস সিরিজ ( Docker / Kubernetes Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L-s8Nokie1hYkAIDSOr6v3U)
 - [Docker দিয়ে কি করে? কিভাবে Docker Compose ব্যাবহার করা যায়?](https://www.youtube.com/watch?v=tfxcRrQ10cg&list=PLZ1tJSgII-L-s8Nokie1hYkAIDSOr6v3U)
 - জব জন্য Docker জানা কতটা গুরুত্বপুর্ন? 
+- কিভাবে আপনার জাভা অ্যাপ Dockerize করবেন?
+- কুবারনেটিস কি?
+- কিভাবে আপনার জাভা অ্যাপ কুবারনেটিস এ চালাবেন?
 
 
 ### সফটওয়্যার প্রজেক্ট সিরিজ ( Software Project Series )
