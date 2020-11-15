@@ -54,6 +54,11 @@ exclude: true
 - Immutable অবজেক্ট কেন ব্যাবহার করা হয়?
 - Immutable অবজেক্ট কিভাবে তৈরি করতে হয়?
 - জাভাতে String কেন Immutable?
+- জাভাতে HashMap কিভাবে কাজ করে? \| HashMap internals explained
+- জাভাতে equals() ওভাররাইড করলে কেন hashCode() মেথডও ওভাররাইড করতে হয়?
+- জাভাতে কখন ArrayList ব্যাবহার না করে LinkedList ব্যাবহার করা উচিত?
+- জাভাতে কিভাবে মেমোরি লিক তৈরি করা যায়? \| Create memory leak in Java
+- HTTP রিকোয়েস্ট এর ক্ষেত্রে Idempotent Operation কি?
 
 
 ### [সফটওয়্যার ইঞ্জিনিয়ারিং সিরিজ ( Software Engineering Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn)
@@ -64,7 +69,8 @@ exclude: true
 - লিসকভ সাবস্টিটুউশন প্রিন্সিপল \| কোডিং উদাহারনসহ \| Liskov Substitution Principle - SOLID Principle
 - ইন্টারফেস সেগ্রিগেশন প্রিন্সিপল \| কোডিং উদাহারনসহ \| Interface Segregation Principle - SOLID Principle
 - ডিপেন্ডেন্সি ইনভার্শন প্রিন্সিপল \| কোডিং উদাহারনসহ \| Dependency Inversion Principle - SOLID Principle
-- ডিজাইন প্যাটার্ন কি? \| Design Pattern
+- ডিজাইন প্যাটার্ন কি? \| Design Pattern basics
+- ডিপেন্ডেন্সি ইঞ্জেকশন কি? \| Dependency Injection explained
 
 
 ### মাইক্রোসার্ভিস সিরিজ ( Microservice Series )
@@ -104,6 +110,10 @@ exclude: true
 - থানা পুলিশের ঝামেলা ছাড়া হ্যাকিং প্রাকটিস করবেন কিভাবে? Hack The Box Intro!
 - Authentication বনাম Authorization
 - SQL Injection কি? + কোডিং উদাহারনসহ
+- কিভাবে CSRF / XSRF অ্যাটাক করা যায়? \| Cross-Site Request Forgery explained
+- কিভাবে CSRF / XSRF অ্যাটাক থেকে নিজের আপ্লিকেশন বাঁচাবেন?
+- কিভাবে XSS অ্যাটাক করা যায়? \| Cross-Site Scripting explained
+- কিভাবে XSS অ্যাটাক থেকে নিজের আপ্লিকেশন বাঁচাবেন?
 
 
 ### ডেভঅপস সিরিজ ( DevOps Series )
