@@ -51,21 +51,23 @@ exclude: true
 ### [ইন্টারভিউ কোশ্চেন অ্যানসার সিরিজ ( Interview Question Answer Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L-72dExE8GD2VVR0FvmUI6H)
 - [জাভাতে ম্যাথড প্যারামিটার কি “pass-by-reference” নাকি “pass-by-value”?](https://www.youtube.com/watch?v=irPAFR67jTo&list=PLZ1tJSgII-L-72dExE8GD2VVR0FvmUI6H)
 - [মিউটেবল / ইমিউটেবল অবজেক্ট কি? ( Mutable vs Immutable Object )](https://www.youtube.com/watch?v=_3VBnsYl9RE&list=PLZ1tJSgII-L-72dExE8GD2VVR0FvmUI6H)
-- Immutable অবজেক্ট কেন ব্যাবহার করা হয়?
-- Immutable অবজেক্ট কিভাবে তৈরি করতে হয়?
+- [Immutable অবজেক্ট কেন ব্যাবহার করা হয়?](https://www.youtube.com/watch?v=ENN-8yWRq6w&list=PLZ1tJSgII-L-72dExE8GD2VVR0FvmUI6H)
+- [Immutable অবজেক্ট কিভাবে তৈরি করতে হয়?](https://www.youtube.com/watch?v=hB8-P3irEn8&list=PLZ1tJSgII-L-72dExE8GD2VVR0FvmUI6H)
 - জাভাতে String কেন Immutable?
 - জাভাতে HashMap কিভাবে কাজ করে? \| HashMap internals explained
 - জাভাতে equals() ওভাররাইড করলে কেন hashCode() মেথডও ওভাররাইড করতে হয়?
 - জাভাতে কখন ArrayList ব্যাবহার না করে LinkedList ব্যাবহার করা উচিত?
 - জাভাতে কিভাবে মেমোরি লিক তৈরি করা যায়? \| Create memory leak in Java
+- জাভা এপ্লিকেশনে মেমোরি লিক কিভাবে শনাক্ত করবেন? 
 - HTTP রিকোয়েস্ট এর ক্ষেত্রে Idempotent Operation কি?
+
 
 
 ### [সফটওয়্যার ইঞ্জিনিয়ারিং সিরিজ ( Software Engineering Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn)
 - ক্লিন কোড কি?  উদাহারনসহ ভাল কোড vs মন্দ কোড
 - [SOLID প্রিন্সিপল কি? \| SOLID Principle](https://www.youtube.com/watch?v=JiHiYx5qupg&list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn)
-- সিঙ্গেল রেস্পন্সিবিলিটি প্রিন্সিপল \| কোডিং উদাহারনসহ \| Single Responsibility Principle - SOLID Principle
-- ওপেন ক্লোজ প্রিন্সিপল \| কোডিং উদাহারনসহ \| Open / Closed Principle - SOLID Principle
+- [সিঙ্গেল রেস্পন্সিবিলিটি প্রিন্সিপল \| কোডিং উদাহারনসহ \| Single Responsibility Principle - SOLID Principle](https://www.youtube.com/watch?v=4AaIYvZmwK0&list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn&index=2)
+- [ওপেন ক্লোজড প্রিন্সিপল \| কোডিং উদাহারনসহ \| Open-Closed Principle - SOLID Principle](https://www.youtube.com/watch?v=jH1U9Crx-VA&list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn&index=3)
 - লিসকভ সাবস্টিটুউশন প্রিন্সিপল \| কোডিং উদাহারনসহ \| Liskov Substitution Principle - SOLID Principle
 - ইন্টারফেস সেগ্রিগেশন প্রিন্সিপল \| কোডিং উদাহারনসহ \| Interface Segregation Principle - SOLID Principle
 - ডিপেন্ডেন্সি ইনভার্শন প্রিন্সিপল \| কোডিং উদাহারনসহ \| Dependency Inversion Principle - SOLID Principle
@@ -87,7 +89,7 @@ exclude: true
 
 
 ### লিনাক্স ফর ডেভেলপার সিরিজ ( Linux for Developer Series )
-- সফটওয়্যার ডেভেলপার হিসেবে যে লিনাক্স জানা কি জরুরী?
+- সফটওয়্যার ডেভেলপার হিসেবে যে লিনাক্স জানা কেন জরুরী?
 - কিভাবে রিমোট সার্ভার থেকে ফাইল আনা ও পাঠানো যায়? \| ssh / scp লিনাক্স কমান্ডের ব্যবহার
 - কিভাবে রানিং প্রসেস দেখা ও কিল করা যায়? \|  ps / top / lsof / kill লিনাক্স কমান্ডের ব্যবহার
 - কিভাবে ডিস্ক / ফাইল সিস্টেম দেখার যায়? \| df / du লিনাক্স কমান্ডের ব্যবহার
@@ -120,6 +122,7 @@ exclude: true
 - Configure Apache/Nginx
 - Ansible
 - Terraform
+- কিভাবে রিমোট সার্ভারে অ্যাপ্লিকেশন ডেপ্লয় করা যায়?
 
 
 ### [ডকার / কুবারনেটিস সিরিজ ( Docker / Kubernetes Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L-s8Nokie1hYkAIDSOr6v3U)
