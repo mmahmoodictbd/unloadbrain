@@ -14,6 +14,7 @@ exclude: true
 - [জব কোডিং অ্যাসাইনমেন্ট কিভাবে করা উচিত? + কোডিং টিপস!](https://www.youtube.com/watch?v=pBmho6YC-xg&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
 - [ইউনিভার্সিটির কোন কোন কোর্সগুলো সফটওয়্যার ডেভেলপার হিসেবে বেশি কাজে লাগে?](https://www.youtube.com/watch?v=Jyo1M1-cv30&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
 - [জাভা ডেভেলপার হতে হলে কি কি জানতে হয় / ডেভেলপার রোডম্যাপ?](https://www.youtube.com/watch?v=DnGP4DoniXU&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
+- [সব সফটওয়্যার ডেভেলপার এর দরকার একটি পোর্টফলিও](https://www.youtube.com/watch?v=Nzecqwpzq-Y&list=PLZ1tJSgII-L8vfO4IobKYOXfOxywQt81-)
 - ওয়েব ডেভেলপার হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
 - .NET ডেভেলপার হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
 - PHP ডেভেলপার হতে হলে কি কি জানতে হয়? \| ডেভেলপার রোডম্যাপ
@@ -88,8 +89,8 @@ exclude: true
 - HTTP প্রোটোকল কি?
 
 
-### লিনাক্স ফর ডেভেলপার সিরিজ ( Linux for Developer Series )
-- সফটওয়্যার ডেভেলপার হিসেবে যে লিনাক্স জানা কেন জরুরী?
+### [লিনাক্স ফর ডেভেলপার সিরিজ ( Linux for Developer Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L_EhUdKoYphLIoO0DOrAupT)
+- [সফটওয়্যার ডেভেলপার হিসেবে যে লিনাক্স জানা কেন জরুরী?](https://www.youtube.com/watch?v=Rxyq7UAVlkg&list=PLZ1tJSgII-L_EhUdKoYphLIoO0DOrAupT)
 - কিভাবে রিমোট সার্ভার থেকে ফাইল আনা ও পাঠানো যায়? \| ssh / scp লিনাক্স কমান্ডের ব্যবহার
 - কিভাবে রানিং প্রসেস দেখা ও কিল করা যায়? \|  ps / top / lsof / kill লিনাক্স কমান্ডের ব্যবহার
 - কিভাবে ডিস্ক / ফাইল সিস্টেম দেখার যায়? \| df / du লিনাক্স কমান্ডের ব্যবহার
@@ -133,7 +134,7 @@ exclude: true
 - কিভাবে আপনার জাভা অ্যাপ কুবারনেটিস এ চালাবেন?
 
 
-### সফটওয়্যার প্রজেক্ট সিরিজ ( Software Project Series )
+### [সফটওয়্যার প্রজেক্ট সিরিজ ( Software Project Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L_WCM37iPosdxaC4KN-MvMo)
 - ৪র্থ বর্ষের ছাত্রছাত্রীদের জন্য ২০টি সফটওয়্যার প্রজেন্ট আইডিয়া (২০২০-২১) 
 
 
