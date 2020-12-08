@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Home Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt: Working sample
+title: Home Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt
 date: 2020-12-08 23:30:00 +0100
 excerpt: |
      I can access my HA from internet over HTTPS
