@@ -8,7 +8,11 @@ categories: [tech]
 tags: [home-assistant, docker, traefik2, lets-encrypt, home-automation]
 ---
 
-### My Setup
+### Just adding some image to look beautiful
+![image](/assets/images/2020-12/traefik-dashboard.png)
+
+
+### My setup
 - House type: Three story building
 - Gateway: ConBee II (Zigbee)
 - Sensors:
