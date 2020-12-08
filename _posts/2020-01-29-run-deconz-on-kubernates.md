@@ -5,7 +5,7 @@ date: 2020-01-29 18:00:00 +0100
 excerpt: |
     Running deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.
 categories: [tech]
-tags: [iot, deconz, zigbee-gateway, kubernetes]
+tags: [iot, deconz, zigbee-gateway, kubernetes, home-automation]
 ---
 
 The deCONZ application is a tool to configure, control and monitor Zigbee networks with the ConBee II. I have couple
