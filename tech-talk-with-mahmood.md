@@ -63,7 +63,6 @@ exclude: true
 - HTTP রিকোয়েস্ট এর ক্ষেত্রে Idempotent Operation কি?
 
 
-
 ### [সফটওয়্যার ইঞ্জিনিয়ারিং সিরিজ ( Software Engineering Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn)
 - ক্লিন কোড কি?  উদাহারনসহ ভাল কোড vs মন্দ কোড
 - [SOLID প্রিন্সিপল কি? \| SOLID Principle](https://www.youtube.com/watch?v=JiHiYx5qupg&list=PLZ1tJSgII-L-TqDR1e7mi7Qehl_HVJeGn)
@@ -124,10 +123,7 @@ exclude: true
 - Ansible
 - Terraform
 - কিভাবে রিমোট সার্ভারে অ্যাপ্লিকেশন ডেপ্লয় করা যায়?
-
-
-### [ডকার / কুবারনেটিস সিরিজ ( Docker / Kubernetes Series )](https://www.youtube.com/playlist?list=PLZ1tJSgII-L-s8Nokie1hYkAIDSOr6v3U)
-- [Docker দিয়ে কি করে? কিভাবে Docker Compose ব্যাবহার করা যায়?](https://www.youtube.com/watch?v=tfxcRrQ10cg&list=PLZ1tJSgII-L-s8Nokie1hYkAIDSOr6v3U)
+- [Docker দিয়ে কি করে? কিভাবে Docker Compose ব্যাবহার করা যায়?](https://www.youtube.com/watch?v=tfxcRrQ10cg&list=PLZ1tJSgII-L9wPquOAyBCW8gGluPCnu-i)
 - জব জন্য Docker জানা কতটা গুরুত্বপুর্ন? 
 - কিভাবে আপনার জাভা অ্যাপ Dockerize করবেন?
 - কুবারনেটিস কি?
