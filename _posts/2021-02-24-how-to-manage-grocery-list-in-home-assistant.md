@@ -4,7 +4,7 @@ title: How to manage grocery list in Home Assistant
 date: 2021-03-07 02:50:00 +0100
 excerpt: |
     We all know HA has a shopping list integration, but it's a simple todo list, not well suited for managing groceries. 
-    Some people might suggest *Grocy*, but I didn't need that many functionalities.
+    Some people might suggest Grocy, but I didn't need that many functionalities.
 categories: [tech]
 tags: [home-assistant, shopping-list, home-automation]
 ---
