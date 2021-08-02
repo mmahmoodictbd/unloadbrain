@@ -8,13 +8,12 @@ Hi! I’m Mossaddeque, a software engineer, originally from Bangladesh :banglade
  anything that has something to do with code.
 
 #### How I spend my spare time?
-- I write code. Because I can or I've no life.
-- Read books and watch Netflix.
-- Think about the singularity, upload myself to the internet.
-- Do you want to learn about programming? Ping me, I am always happy to help.
+- [Read books](https://goodreads.com/mmahmood). :point_right: Fund :moneybag: me [to buy more books](https://www.goodreads.com/review/list/43411853-mossaddeque-mahmood?shelf=books-to-buy).
+- I write code. Because I can or I've no life. :octocat: [mmahmoodictbd](https://github.com/mmahmoodictbd)
+- Upload brain dump to the internet.
+
 
 #### Contact
-
 Following public key belongs to mmahmood.ict.bd[at]gmail.com e-mail address. 
 GPG/PGP public key is stored in txt file [public-key.txt](assets/files/public-key.txt).
 
@@ -26,4 +25,3 @@ You can lookup on pgp.mit.edu with the fingerprint ```4BF0 B5B9 CB0C 72F5 8D81 E
 
 #### Social Handles
 :bird: [mmahmood_ict_bd](https://twitter.com/mmahmood_ict_bd)
-:octocat: [mmahmoodictbd](https://github.com/mmahmoodictbd)
