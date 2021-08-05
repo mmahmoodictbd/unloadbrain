@@ -37,16 +37,16 @@ permalink: /taking-care-house-plants
 
 <br/>
 
-### Round-leafed navel-wort / Pig's Ear Succulent – Cotyledon orbiculata
+### Kalanchoe thyrsiflora - Paddle Plant
 
-![image](/assets/images/2021-08/Pig's-ear.jpeg){: width="250" }
+![image](/assets/images/2021-08/Kalanchoe-thyrsiflora.jpeg){: width="250" }
 
 - Plant Type: Succulents, Perennials
-- Plant Family: Cactus
+- Plant Family: Kalanchoe
 - Sun Exposure: Full Sun or Partial Shade
 - Watering need: Minimum demand
 - Soil Type: Potting soil mix for cacti
-- Soil Moisture: Dry
+- Soil Moisture: Dry to medium moisture
 - Fertilizer: Compost instead of chemical fertilizer
 - Propagation: Cuttings
 
