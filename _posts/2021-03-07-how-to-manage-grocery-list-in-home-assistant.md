@@ -114,15 +114,12 @@ Content of `include ShoppingListBreakfast.yaml` -
 I added three items on the `vertical-stack` because on the mobile screen 3 button looks perfect.
 <br/>
 
+Live long and prosper! :vulcan_salute:
+{% include buymeacoffee.html %}
+
+<br/>
+<br/>
 
 ### Related Posts
 - [Home Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt]({% post_url 2020-12-08-home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample %})
 - [Run deCONZ on Kubernetes]({% post_url 2020-01-29-run-deconz-on-kubernates %})
-<br/>
-<br/>
-
-Live long and prosper! :vulcan_salute:
-
-<br/>
-<br/>
-
