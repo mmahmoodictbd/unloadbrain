@@ -86,6 +86,7 @@ tags: [home-assistant, home-automation]
 <br/>
 
 Live long and prosper! :vulcan_salute:
+{% include buymeacoffee.html %}
 
 <br/>
 <br/>
