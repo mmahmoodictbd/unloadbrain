@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Home Assistant control ring volume of your partner's phone
+title: Home Assistant control the ring volume of your partner's phone
 date: 2022-04-24
 excerpt: |
     Wife / husband / partner not picking up phone? Here is the HA way to control ring volume.
@@ -13,14 +13,14 @@ tags: [home-assistant, home-automation]
 
 
 ### What I wanted to do
-When I go to the store to do grocery, I need to ask something to my wife, and she is not picking up the 
+When I go to the store to do the grocery, I need to ask something to my wife, and she is not pick up the 
 phone because she is in the garden and ring sound is not reaching her.
 
 
 ### My Solution
 - My wife and I both use HA Companion App.
-- Create a button the HA dashboard and call the script.
-- Once HA script set ring volume to 100% and make a normal call.
+- Create a button on the HA dashboard and call the script.
+- Once HA script set ring volume to 100%, make a normal call.
 
 ![image](/assets/images/2022-04/Yoda-says-Power-comes-with-responsibility.jpeg)
 
