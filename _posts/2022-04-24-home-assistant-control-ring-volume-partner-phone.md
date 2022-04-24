@@ -20,8 +20,10 @@ with your partner's consent and based on mutual agreement.**
 
 
 ### Example usecase
-- Emergency button
-- Find your phone feature
+- Emergency button.
+- Find your phone feature.
+- Geofencing + automatic silent off/on. Courtesy to _bwyer_ from Reddit.
+
 
 
 ### My Solution
