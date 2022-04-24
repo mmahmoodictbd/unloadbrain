@@ -117,3 +117,16 @@ permalink: /taking-care-house-plants
   - To produce red berries in the winter, you must have both a female and a male plant.
 
 <br/>
+
+### Pachyphytum Oviferum, Moonstones
+
+![image](/assets/images/2022-03/Moonstones.png){: width="250" }
+
+- Plant Type: Succulents
+- Plant Family: Crassulaceae
+- Sun Exposure: Full Sun or Partial Sun
+- Watering need: Average
+- Soil Type: Clay, Loam, Sand
+- Soil Moisture: Moist but well-drained
+
+<br/>
