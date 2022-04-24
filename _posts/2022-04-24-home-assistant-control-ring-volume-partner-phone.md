@@ -15,6 +15,13 @@ tags: [home-assistant, home-automation]
 ### What I wanted to do
 When I go to the store to do the grocery, I need to ask something to my wife, and she is not pick up the 
 phone because she is in the garden and ring sound is not reaching her.
+**This is an example use case. Please understand the gravity of this feature and implement this feature 
+with your partner's consent and based on mutual agreement.**
+
+
+### Example usecase
+- Emergency button
+- Find your phone feature
 
 
 ### My Solution
