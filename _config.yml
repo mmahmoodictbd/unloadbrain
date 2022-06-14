@@ -35,3 +35,9 @@ jekyll-archives:
     year: year-archive
     category: category-archive
     tag: tag-archive
+
+exclude:
+  - generated
+
+collections:
+  datalake_kobita_app:
