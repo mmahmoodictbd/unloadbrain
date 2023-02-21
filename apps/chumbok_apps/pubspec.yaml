@@ -18,6 +18,8 @@ dependencies:
   http:
   logger:
   html:
+  url_launcher: ^6.1.9
+  provider: ^6.0.5
   cupertino_icons: ^1.0.0
   auto_size_text: ^3.0.0
   firebase_core: ^2.6.1
@@ -31,4 +33,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/chumbok_logo.png
+    - assets/images/
