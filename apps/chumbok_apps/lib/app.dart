@@ -16,7 +16,7 @@ class App extends StatelessWidget {
         ],
         child: MaterialApp(
             debugShowCheckedModeBanner: false,
-            title: 'Chumbok Apps',
+            title: context.appContext.getAppConfig().getProperty('appBarTitle'),
             theme: ThemeData(
               primarySwatch: Colors.blue,
             ),
