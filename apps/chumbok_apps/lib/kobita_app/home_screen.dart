@@ -1,3 +1,5 @@
+import 'package:chumbok_apps/common/app_config.dart';
+import 'package:chumbok_apps/common/app_context.dart';
 import 'package:chumbok_apps/common/appbar_widget.dart';
 import 'package:chumbok_apps/common/navdrawer_widget.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
@@ -6,21 +8,27 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
+  final AppContext _appContext = AppContext.instance;
+
+
   @override
   Widget build(BuildContext context) {
     _sendAnalyticsEvent(context);
+    final AppConfig appConfig = AppContext.instance.getAppConfig();
     return new Scaffold(
-        appBar: AppBarWidget("Kobita"),
-        drawer: buildNavDrawerWidget(),
+        appBar: AppBarWidget(appConfig.getProperty("appBarTitle")),
+        drawer: buildNavDrawerWidget(appConfig),
         body: Container(
           decoration: BoxDecoration(color: Colors.blue.shade100),
           child: Padding(padding: const EdgeInsets.all(22.0)),
         ));
   }
 
-  NavDrawerWidget buildNavDrawerWidget() {
+  NavDrawerWidget buildNavDrawerWidget(AppConfig appConfig) {
+    print(appConfig.getProperty("appLogo"));
     return NavDrawerWidget(
-        "assets/images/kobitaAppLogo.png",
+        // _appConfig.getProperty("appLogo"),
+        "assets/kobita_app/images/kobitaAppLogo.png",
         [
           NavDrawerItem(linkText: "Link1", link: "Link1", icon: FontAwesomeIcons.discord),
           NavDrawerItem(linkText: "Link2", link: "Link2", icon: FontAwesomeIcons.airbnb),
