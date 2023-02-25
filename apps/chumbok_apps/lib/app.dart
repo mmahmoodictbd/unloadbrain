@@ -22,7 +22,7 @@ class App extends StatelessWidget {
             ),
             navigatorObservers: <NavigatorObserver>[_observer],
             onGenerateRoute: (RouteSettings settings) {
-              return settings.name == '/' ? AppContext.instance.getAppRouter().generateRoute('/') : null;
+              return settings.name == '/' ? context.appContext.getAppRouter().generateRoute('/') : null;
             }));
   }
 }

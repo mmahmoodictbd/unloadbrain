@@ -1,4 +1,5 @@
 import 'package:chumbok_apps/common/app_config.dart';
+import 'package:flutter/widgets.dart';
 
 import '../app_specific_context_factory.dart';
 import 'app_router.dart';
@@ -47,4 +48,8 @@ class AppContext {
   AppConfig getAppConfig() {
     return _appConfig;
   }
+}
+
+extension AppContextOnBuildContext on BuildContext {
+  AppContext get appContext => AppContext.instance;
 }
