@@ -16,13 +16,12 @@ class App extends StatelessWidget {
         ],
         child: MaterialApp(
             debugShowCheckedModeBanner: false,
-            title: context.appContext.getAppConfig().getProperty('appBarTitle'),
-            theme: ThemeData(
-              primarySwatch: Colors.blue,
-            ),
+            title: context.appContext.appConfig.getProperty('appBarTitle'),
+            theme: context.appContext.appThemeData,
             navigatorObservers: <NavigatorObserver>[_observer],
             onGenerateRoute: (RouteSettings settings) {
-              return settings.name == '/' ? context.appContext.getAppRouter().generateRoute('/') : null;
-            }));
+              return settings.name == '/' ? context.appContext.appRouter.generateRoute('/') : null;
+            },
+        ));
   }
 }

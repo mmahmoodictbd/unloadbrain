@@ -1,5 +1,6 @@
 import 'package:chumbok_apps/common/app_config.dart';
-import 'package:flutter/widgets.dart';
+import 'package:chumbok_apps/common/app_theme.dart';
+import 'package:flutter/material.dart';
 
 import '../app_specific_context_factory.dart';
 import 'app_router.dart';
@@ -10,6 +11,8 @@ class AppContext {
   static late AppSpecificContext _appSpecificContext;
   static late AppRouter _appRouter;
   static late AppConfig _appConfig;
+  static late AppTheme _appTheme;
+  static late ThemeData _appThemeData;
   static late AppContext _instance;
 
   static AppContext get instance {
@@ -21,6 +24,8 @@ class AppContext {
     _loadAppSpecificContext();
     _appRouter = _appSpecificContext.getAppRouter();
     _appConfig = await _appSpecificContext.getAppConfig();
+    _appTheme = await _appSpecificContext.getAppTheme();
+    _appThemeData = _appTheme.themeData;
     _instance = AppContext._internal();
     return _instance;
   }
@@ -36,18 +41,16 @@ class AppContext {
   }
 
   static void _loadAppSpecificContext() {
-    _appSpecificContext = AppSpecificContextFactory.getAppSpecificContext(getAppName());
+    _appSpecificContext = AppSpecificContextFactory.getAppSpecificContext(appName);
   }
 
-  static String getAppName() => _internalVariables["appName"];
+  static String get appName => _internalVariables["appName"];
 
-  AppRouter getAppRouter() {
-    return _appRouter;
-  }
+  AppRouter get appRouter => _appRouter;
 
-  AppConfig getAppConfig() {
-    return _appConfig;
-  }
+  AppConfig get appConfig => _appConfig;
+
+  ThemeData get appThemeData => _appThemeData;
 }
 
 extension AppContextOnBuildContext on BuildContext {

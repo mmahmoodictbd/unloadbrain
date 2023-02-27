@@ -4,8 +4,6 @@ import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NavDrawerWidget extends StatelessWidget {
-  final Color _itemColor = Colors.blueAccent;
-
   const NavDrawerWidget(this.appLogoPath, this.items, this.appInfoItem);
 
   final String appLogoPath;
@@ -14,15 +12,13 @@ class NavDrawerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Drawer(
-        child: Container(
-            color: Colors.white, child: ListView(children: _prepareNavDrawerItems(context, items, appInfoItem))));
+    return new Drawer(child: Container(child: ListView(children: _prepareNavDrawerItems(context, items, appInfoItem))));
   }
 
   List<Widget> _prepareNavDrawerItems(
       BuildContext context, List<NavDrawerItem> items, NavDrawerAppInfoItem appInfoItem) {
     List<Widget> lst = [];
-    lst.add(_navDrawerHeader());
+    lst.add(_navDrawerHeader(context));
     lst.add(SizedBox(height: 15.0));
     items.forEach(
         (drawerItem) => lst.add(_buildNavLinkItem(context, drawerItem.icon, drawerItem.linkText, drawerItem.link)));
@@ -30,11 +26,14 @@ class NavDrawerWidget extends StatelessWidget {
     return lst;
   }
 
-  DrawerHeader _navDrawerHeader() {
-    return new DrawerHeader(
+  DrawerHeader _navDrawerHeader(BuildContext context) {
+    return DrawerHeader(
+      decoration: BoxDecoration(
+        color: Theme.of(context).primaryColor,
+      ),
       child: Container(
         padding: const EdgeInsets.only(top: 0.0, bottom: 0.0),
-        child: new OverflowBox(
+        child: OverflowBox(
           minWidth: 0.0,
           minHeight: 0.0,
           maxWidth: double.infinity,
@@ -46,10 +45,10 @@ class NavDrawerWidget extends StatelessWidget {
 
   ListTile _buildNavLinkItem(BuildContext context, icon, String text, String link) {
     return ListTile(
-        leading: Icon(icon, color: _itemColor, size: 25),
+        leading: Icon(icon),
         title: Text(
           text,
-          style: TextStyle(color: _itemColor, fontWeight: FontWeight.bold, fontSize: 18),
+          style: TextStyle(fontWeight: FontWeight.bold),
         ),
         onTap: () {
           _sendNavLinkClickedAnalyticsEvent(context, text, link);
@@ -59,18 +58,18 @@ class NavDrawerWidget extends StatelessWidget {
   }
 
   AboutListTile _navDrawerAppInfo(NavDrawerAppInfoItem appInfoItem) {
-    return new AboutListTile(
+    return AboutListTile(
       child: Transform.translate(
           offset: Offset(-16, 0),
-          child: new Text(
+          child: Text(
             appInfoItem.text,
-            style: TextStyle(color: _itemColor, fontWeight: FontWeight.bold, fontSize: 18),
+            style: TextStyle(fontWeight: FontWeight.bold),
           )),
       applicationName: appInfoItem.appName,
       applicationVersion: appInfoItem.appVersion,
-      applicationIcon: new Icon(Icons.adb, size: 25),
+      applicationIcon: Icon(Icons.adb),
       dense: true,
-      icon: new Icon(appInfoItem.appIcon, color: _itemColor, size: 25),
+      icon: Icon(appInfoItem.appIcon),
     );
   }
 

@@ -9,14 +9,11 @@ class AppBarWidget extends StatelessWidget with PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
         title: Text(title),
-        backgroundColor: Colors.blue.shade200,
-        elevation: 15,
         leading: Builder(
             builder: (context) => Navigator.canPop(context)
                 ? IconButton(
                     icon: Icon(
                       Icons.arrow_back,
-                      color: Colors.white,
                     ),
                     onPressed: () => Navigator.of(context).pop(),
                   )

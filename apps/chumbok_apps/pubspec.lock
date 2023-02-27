@@ -240,6 +240,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.3.0"
+  intl:
+    dependency: transitive
+    description:
+      name: intl
+      sha256: a3715e3bc90294e971cb7dc063fbf3cd9ee0ebf8604ffeafabd9e6f16abbdbe6
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.18.0"
   js:
     dependency: transitive
     description:
@@ -256,6 +264,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.8.0"
+  json_class:
+    dependency: transitive
+    description:
+      name: json_class
+      sha256: "006d0f349074993bbebe87d827028f8580a6ba7ad1475344f536d8695c9b0523"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.5+2"
+  json_schema2:
+    dependency: transitive
+    description:
+      name: json_schema2
+      sha256: "0b97994d9ce794ff4086ed781745d1616280e851ae1765221c6cb4fc708223f1"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.3+4"
+  json_theme:
+    dependency: "direct main"
+    description:
+      name: json_theme
+      sha256: b80982abebaccbaf922a2b495828b3fced547efd9b6e499419a06c3a56f97e30
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.0.3+5"
   logger:
     dependency: "direct main"
     description:
@@ -264,6 +296,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+  logging:
+    dependency: transitive
+    description:
+      name: logging
+      sha256: "04094f2eb032cbb06c6f6e8d3607edcfcb0455e2bb6cbc010cb01171dcb64e6d"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
   matcher:
     dependency: transitive
     description:
@@ -336,6 +376,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.5"
+  quiver:
+    dependency: transitive
+    description:
+      name: quiver
+      sha256: b1c1ac5ce6688d77f65f3375a9abb9319b3cb32486bdc7a1e0fdf004d7ba4e47
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.2.1"
+  rest_client:
+    dependency: transitive
+    description:
+      name: rest_client
+      sha256: e0aaabcd0dbc10e19e8f21b21da873dc8066e757a876948d9aed8da00460a3f3
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.1+4"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -405,6 +461,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.1"
+  uri:
+    dependency: transitive
+    description:
+      name: uri
+      sha256: "889eea21e953187c6099802b7b4cf5219ba8f3518f604a1033064d45b1b8268a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
   url_launcher:
     dependency: "direct main"
     description:
@@ -469,6 +533,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.3"
+  uuid:
+    dependency: transitive
+    description:
+      name: uuid
+      sha256: "648e103079f7c64a36dc7d39369cabb358d377078a051d6ae2ad3aa539519313"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.7"
   vector_math:
     dependency: transitive
     description:
@@ -493,6 +565,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.1"
+  yaon:
+    dependency: transitive
+    description:
+      name: yaon
+      sha256: "2fd803f305f6afdd9714c28903c93d724006179ce2503704f42498d2f93d235a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2+1"
 sdks:
-  dart: ">=2.18.0 <3.0.0"
+  dart: ">=2.19.0 <3.0.0"
   flutter: ">=3.3.0"
