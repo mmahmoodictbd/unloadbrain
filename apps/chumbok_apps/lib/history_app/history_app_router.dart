@@ -7,9 +7,10 @@ class HistoryAppRouter extends AppDefaultRouter {
 
   @override
   Route generateRoute(String path) {
+    var _settings = RouteSettings(name: path);
     switch (path) {
       default:
-        return MaterialPageRoute(builder: (_) => defaultScreen(path));
+        return MaterialPageRoute(settings: _settings, builder: (_) => defaultScreen(path));
     }
   }
 }

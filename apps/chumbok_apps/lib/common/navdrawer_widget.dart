@@ -1,9 +1,12 @@
-import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:chumbok_apps/common/app_analytics.dart';
+import 'package:chumbok_apps/common/app_context.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class NavDrawerWidget extends StatelessWidget {
+  static bool isNewRouteSameAsCurrent = false;
+
   const NavDrawerWidget(this.appLogoPath, this.items, this.appInfoItem);
 
   final String appLogoPath;
@@ -51,8 +54,11 @@ class NavDrawerWidget extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         onTap: () {
-          _sendNavLinkClickedAnalyticsEvent(context, text, link);
-          _launchUrl(link);
+          if (link.startsWith("http")) {
+            _launchUrl(context, link);
+          } else {
+            Navigator.of(context).pushIfNotCurrent(context.appContext.appRouter.generateRoute(link));
+          }
         },
         horizontalTitleGap: 0);
   }
@@ -68,24 +74,17 @@ class NavDrawerWidget extends StatelessWidget {
       applicationName: appInfoItem.appName,
       applicationVersion: appInfoItem.appVersion,
       applicationIcon: Icon(Icons.adb),
-      dense: true,
+      dense: false,
       icon: Icon(appInfoItem.appIcon),
     );
   }
 
-  Future<void> _sendNavLinkClickedAnalyticsEvent(BuildContext context, String text, String link) async {
-    FirebaseAnalytics analytics = Provider.of<FirebaseAnalytics>(context, listen: false);
-    analytics.setCurrentScreen(screenName: 'NavbarScreen');
-    await analytics.logEvent(
-      name: 'NavLinkClicked',
-      parameters: <String, dynamic>{'text': text, 'link': link},
-    );
-  }
-
-  Future<void> _launchUrl(String url) async {
+  Future<void> _launchUrl(BuildContext context, String url) async {
     if (!await launchUrl(Uri.parse(url))) {
       throw Exception('Could not launch $url');
     }
+    Provider.of<AppAnalytics>(context, listen: false)
+        .logEvent(name: 'NavLinkClicked', parameters: <String, dynamic>{'link': url});
   }
 }
 
@@ -104,4 +103,26 @@ class NavDrawerAppInfoItem {
   final IconData appIcon;
 
   NavDrawerAppInfoItem({required this.text, required this.appName, required this.appVersion, required this.appIcon});
+}
+
+extension AppNavigatorStateExtension on NavigatorState {
+  void pushIfNotCurrent(Route route) {
+    var newRoute = route.settings.name;
+    if (!isCurrent(newRoute!)) {
+      push(route);
+    } else {
+      pop();
+    }
+  }
+
+  bool isCurrent(String routeName) {
+    bool isCurrent = false;
+    popUntil((route) {
+      if (route.settings.name == routeName) {
+        isCurrent = true;
+      }
+      return true;
+    });
+    return isCurrent;
+  }
 }

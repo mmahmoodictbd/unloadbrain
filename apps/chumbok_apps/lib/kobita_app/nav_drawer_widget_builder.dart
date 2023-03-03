@@ -14,13 +14,14 @@ class NavDrawerWidgetBuilder {
     return NavDrawerWidget(
         appConfig.getProperty("appLogo"),
         [
-          NavDrawerItem(linkText: "Link1", link: "Link1", icon: FontAwesomeIcons.discord),
-          NavDrawerItem(linkText: "Link2", link: "Link2", icon: FontAwesomeIcons.airbnb),
+          NavDrawerItem(linkText: "Home", link: "/", icon: FontAwesomeIcons.house),
+          NavDrawerItem(linkText: "Poem of the Day", link: "/poem-of-the-day", icon: FontAwesomeIcons.penNib),
+          NavDrawerItem(linkText: "Settings", link: "/settings", icon: FontAwesomeIcons.gear),
         ],
         NavDrawerAppInfoItem(
-            text: "অ্যাপ ইনফো",
+            text: "App Info",
             appName: appConfig.getProperty('appBarTitle'),
             appVersion: appConfig.getProperty('appVersion'),
-            appIcon: FontAwesomeIcons.info));
+            appIcon: FontAwesomeIcons.circleInfo));
   }
 }
