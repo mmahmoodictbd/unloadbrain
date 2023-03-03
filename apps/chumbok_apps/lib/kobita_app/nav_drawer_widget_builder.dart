@@ -11,17 +11,10 @@ class NavDrawerWidgetBuilder {
 
   NavDrawerWidget build() {
     final appConfig = _buildContext.appContext.appConfig;
-    return NavDrawerWidget(
-        appConfig.getProperty("appLogo"),
-        [
-          NavDrawerItem(linkText: "Home", link: "/", icon: FontAwesomeIcons.house),
-          NavDrawerItem(linkText: "Poem of the Day", link: "/poem-of-the-day", icon: FontAwesomeIcons.penNib),
-          NavDrawerItem(linkText: "Settings", link: "/settings", icon: FontAwesomeIcons.gear),
-        ],
-        NavDrawerAppInfoItem(
-            text: "App Info",
-            appName: appConfig.getProperty('appBarTitle'),
-            appVersion: appConfig.getProperty('appVersion'),
-            appIcon: FontAwesomeIcons.circleInfo));
+    return NavDrawerWidget(appConfig.getProperty("appLogo"), [
+      NavDrawerItem(linkText: "Home", link: "/", icon: FontAwesomeIcons.house),
+      NavDrawerItem(linkText: "Poem of the Day", link: "/poem-of-the-day", icon: FontAwesomeIcons.penNib),
+      NavDrawerItem(linkText: "Settings", link: "/settings", icon: FontAwesomeIcons.gear),
+    ]);
   }
 }

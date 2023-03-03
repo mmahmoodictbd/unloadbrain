@@ -7,25 +7,22 @@ import 'package:url_launcher/url_launcher.dart';
 class NavDrawerWidget extends StatelessWidget {
   static bool isNewRouteSameAsCurrent = false;
 
-  const NavDrawerWidget(this.appLogoPath, this.items, this.appInfoItem);
+  const NavDrawerWidget(this.appLogoPath, this.items);
 
   final String appLogoPath;
   final List<NavDrawerItem> items;
-  final NavDrawerAppInfoItem appInfoItem;
 
   @override
   Widget build(BuildContext context) {
-    return new Drawer(child: Container(child: ListView(children: _prepareNavDrawerItems(context, items, appInfoItem))));
+    return new Drawer(child: Container(child: ListView(children: _prepareNavDrawerItems(context, items))));
   }
 
-  List<Widget> _prepareNavDrawerItems(
-      BuildContext context, List<NavDrawerItem> items, NavDrawerAppInfoItem appInfoItem) {
+  List<Widget> _prepareNavDrawerItems(BuildContext context, List<NavDrawerItem> items) {
     List<Widget> lst = [];
     lst.add(_navDrawerHeader(context));
     lst.add(SizedBox(height: 15.0));
     items.forEach(
         (drawerItem) => lst.add(_buildNavLinkItem(context, drawerItem.icon, drawerItem.linkText, drawerItem.link)));
-    lst.add(_navDrawerAppInfo(appInfoItem));
     return lst;
   }
 
@@ -63,22 +60,6 @@ class NavDrawerWidget extends StatelessWidget {
         horizontalTitleGap: 0);
   }
 
-  AboutListTile _navDrawerAppInfo(NavDrawerAppInfoItem appInfoItem) {
-    return AboutListTile(
-      child: Transform.translate(
-          offset: Offset(-16, 0),
-          child: Text(
-            appInfoItem.text,
-            style: TextStyle(fontWeight: FontWeight.bold),
-          )),
-      applicationName: appInfoItem.appName,
-      applicationVersion: appInfoItem.appVersion,
-      applicationIcon: Icon(Icons.adb),
-      dense: false,
-      icon: Icon(appInfoItem.appIcon),
-    );
-  }
-
   Future<void> _launchUrl(BuildContext context, String url) async {
     if (!await launchUrl(Uri.parse(url))) {
       throw Exception('Could not launch $url');
@@ -94,15 +75,6 @@ class NavDrawerItem {
   final IconData icon;
 
   NavDrawerItem({required this.linkText, required this.link, required this.icon});
-}
-
-class NavDrawerAppInfoItem {
-  final String text;
-  final String appName;
-  final String appVersion;
-  final IconData appIcon;
-
-  NavDrawerAppInfoItem({required this.text, required this.appName, required this.appVersion, required this.appIcon});
 }
 
 extension AppNavigatorStateExtension on NavigatorState {
