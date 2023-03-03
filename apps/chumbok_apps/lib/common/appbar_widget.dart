@@ -9,6 +9,17 @@ class AppBarWidget extends StatelessWidget with PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
         title: Text(title),
+        actions: [
+          Row(
+            children: [
+              const Text('1'),
+              IconButton(
+                icon: const Icon(Icons.notifications),
+                onPressed: () {},
+              ),
+            ],
+          ),
+        ],
         leading: Builder(
             builder: (context) => Navigator.canPop(context)
                 ? IconButton(

@@ -78,6 +78,9 @@
     },
     "textTheme": "normal"
   },
+  "listTileTheme": {
+    "iconColor": "#ffef5350"
+  },
   "canvasColor": "#fffffbff",
   "cardColor": "#fffffbff",
   "colorScheme": {
@@ -120,7 +123,7 @@
   "hintColor": "#99000000",
   "hoverColor": "#0a000000",
   "iconTheme": {
-    "color": "#dd000000"
+    "color": "#ffef5350"
   },
   "indicatorColor": "#ffffffff",
   "inputDecorationTheme": {

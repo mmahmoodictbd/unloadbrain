@@ -1,7 +1,7 @@
+import 'package:chumbok_apps/common/app_analytics.dart';
 import 'package:chumbok_apps/common/app_context.dart';
 import 'package:chumbok_apps/common/appbar_widget.dart';
 import 'package:chumbok_apps/kobita_app/nav_drawer_widget_builder.dart';
-import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -19,12 +19,7 @@ class HomeScreen extends StatelessWidget {
         ));
   }
 
-  Future<void> _sendAnalyticsEvent(BuildContext context) async {
-    FirebaseAnalytics analytics = Provider.of<FirebaseAnalytics>(context, listen: false);
-    analytics.setCurrentScreen(screenName: 'HomeScreen');
-    await analytics.logEvent(
-      name: 'HomeScreen',
-      parameters: {},
-    );
+  void _sendAnalyticsEvent(BuildContext context) async {
+    Provider.of<AppAnalytics>(context, listen: false).logVisitedScreenEvent(screenName: 'HomeScreen');
   }
 }
