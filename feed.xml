@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="https://unloadbrain.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://unloadbrain.com/" rel="alternate" type="text/html" /><updated>2024-01-24T12:47:07+00:00</updated><id>https://unloadbrain.com/feed.xml</id><title type="html">Unload Brain</title><subtitle>Uploading my brain dump.</subtitle><author><name>Mossaddeque Mahmood</name></author><entry><title type="html">Power consumption optimize Proxmox</title><link href="https://unloadbrain.com/tech/2023/10/09/power-consumption-optimize-proxmox.html" rel="alternate" type="text/html" title="Power consumption optimize Proxmox" /><published>2023-10-09T00:00:00+00:00</published><updated>2023-10-09T00:00:00+00:00</updated><id>https://unloadbrain.com/tech/2023/10/09/power-consumption-optimize-proxmox</id><content type="html" xml:base="https://unloadbrain.com/tech/2023/10/09/power-consumption-optimize-proxmox.html">&lt;p&gt;I am new to Proxmox, even new to running servers. I am documenting this for my own, use it in your own risk.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-proxmox-cluster&quot;&gt;My Proxmox Cluster&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2023-10/proxmox-cluster.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;turn-onoff-machine&quot;&gt;Turn on/off machine&lt;/h3&gt;
+&lt;p&gt;If machine is not in use, it’s better to turn it off. Machine can be turned on using Wake-on-LAN&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot /usr/sbin/ethtool -s enp2s0 wol g
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;tune-using-powertop&quot;&gt;Tune using powertop&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot /usr/sbin/powertop --auto-tune
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;cpu-frequency-scaling&quot;&gt;CPU frequency scaling&lt;/h3&gt;
+&lt;p&gt;Check if CPU frequency scaling is available&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;If it does, add a cron entry&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@reboot echo &quot;powersave&quot; | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor &amp;gt;/dev/null 2&amp;gt;&amp;amp;1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Live long and prosper! :vulcan_salute:
+&lt;script data-coffee-color=&quot;#ffffff&quot; data-color=&quot;#FFDD00&quot; data-emoji=&quot;&quot; data-font=&quot;Cookie&quot; data-font-color=&quot;#000000&quot; data-name=&quot;bmc-button&quot; data-outline-color=&quot;#000000&quot; data-slug=&quot;mossaddeque&quot; data-text=&quot;Buy me a coffee&quot; src=&quot;https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;related-posts&quot;&gt;Related Posts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html&quot;&gt;How to manage grocery list in Home Assistant&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html&quot;&gt;Home Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/01/29/run-deconz-on-kubernates.html&quot;&gt;Run deCONZ on Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="proxmox" /><category term="power-consumption-optimize" /><summary type="html">Electricity costs a lot, reduce Proxmox power consumption</summary></entry><entry><title type="html">Home Assistant control the ring volume of your partner’s phone</title><link href="https://unloadbrain.com/tech/2022/04/24/home-assistant-control-ring-volume-partner-phone.html" rel="alternate" type="text/html" title="Home Assistant control the ring volume of your partner's phone" /><published>2022-04-24T00:00:00+00:00</published><updated>2022-04-24T00:00:00+00:00</updated><id>https://unloadbrain.com/tech/2022/04/24/home-assistant-control-ring-volume-partner-phone</id><content type="html" xml:base="https://unloadbrain.com/tech/2022/04/24/home-assistant-control-ring-volume-partner-phone.html">&lt;h3 id=&quot;ha-dashboard-buttons&quot;&gt;HA dashboard buttons&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022-04/HA-ring-volume-control-24042022.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-i-wanted-to-do&quot;&gt;What I wanted to do&lt;/h3&gt;
+&lt;p&gt;When I go to the store to do the grocery, I need to ask something to my wife, and she is not pick up the 
+phone because she is in the garden and ring sound is not reaching her.
+&lt;strong&gt;This is an example use case. Please understand the gravity of this feature and implement this feature 
+with your partner’s consent and based on mutual agreement.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;example-usecase&quot;&gt;Example usecase&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Emergency button.&lt;/li&gt;
+  &lt;li&gt;Find your phone feature.&lt;/li&gt;
+  &lt;li&gt;Geofencing + automatic silent off/on. Courtesy to &lt;em&gt;bwyer&lt;/em&gt; from Reddit.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;my-solution&quot;&gt;My Solution&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;My wife and I both use HA Companion App.&lt;/li&gt;
+  &lt;li&gt;Create a button on the HA dashboard and call the script.&lt;/li&gt;
+  &lt;li&gt;Once HA script set ring volume to 100%, make a normal call.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2022-04/Yoda-says-Power-comes-with-responsibility.jpeg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ha-dashboard-button-to-call-script&quot;&gt;HA dashboard button to call script&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- type: button
+  name: Nishi Phone volume to 100
+  show_state: false
+  icon: hass:volume-high
+  tap_action:
+    action: call-service
+    service: script.nishi_phone_volume_100
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;ha-script&quot;&gt;HA script&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;nishi_phone_volume_100:
+  alias: Set Nishi Phone volume to 100
+  sequence:
+  - service: notify.mobile_app_pixel_4_xl
+    data:
+      message: &quot;command_ringer_mode&quot;
+      title: &quot;normal&quot;
+  - service: notify.mobile_app_pixel_4_xl
+    data:
+      message: &quot;command_volume_level&quot;
+      title: 10
+      data:
+        channel: &quot;ring_stream&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Live long and prosper! :vulcan_salute:
+&lt;script data-coffee-color=&quot;#ffffff&quot; data-color=&quot;#FFDD00&quot; data-emoji=&quot;&quot; data-font=&quot;Cookie&quot; data-font-color=&quot;#000000&quot; data-name=&quot;bmc-button&quot; data-outline-color=&quot;#000000&quot; data-slug=&quot;mossaddeque&quot; data-text=&quot;Buy me a coffee&quot; src=&quot;https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;related-posts&quot;&gt;Related Posts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html&quot;&gt;How to manage grocery list in Home Assistant&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html&quot;&gt;Home Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/01/29/run-deconz-on-kubernates.html&quot;&gt;Run deCONZ on Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="home-assistant" /><category term="home-automation" /><summary type="html">Wife / husband / partner not picking up phone? Here is the HA way to control ring volume.</summary></entry><entry><title type="html">Home Assistant alarm/command to make an Android phone ring</title><link href="https://unloadbrain.com/tech/2021/05/28/home-assistant-alarm-command-make-an-Android-phone-ring.html" rel="alternate" type="text/html" title="Home Assistant alarm/command to make an Android phone ring" /><published>2021-05-28T20:30:00+00:00</published><updated>2021-05-28T20:30:00+00:00</updated><id>https://unloadbrain.com/tech/2021/05/28/home-assistant-alarm-command-make-an-Android-phone-ring</id><content type="html" xml:base="https://unloadbrain.com/tech/2021/05/28/home-assistant-alarm-command-make-an-Android-phone-ring.html">&lt;h3 id=&quot;just-adding-some-image-to-look-beautiful&quot;&gt;Just adding some image to look beautiful&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2021-05/My-HA-random-snapshot-2805.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-i-wanted-to-do&quot;&gt;What I wanted to do&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;I’ve door/window sensors triggers night alarm / home away alarm on my Google Home device.&lt;/li&gt;
+  &lt;li&gt;I wanted to do something that make my Android phone ring.
+    &lt;ul&gt;
+      &lt;li&gt;I don’t have any smart device in my bedroom other than my phone. Don’t want spend money on a smart speaker.&lt;/li&gt;
+      &lt;li&gt;When I am away from home, I need to hear the sound if someone breaks in.&lt;/li&gt;
+      &lt;li&gt;I do get notifications, but notifications are easy to ignore due to outside noises.&lt;/li&gt;
+      &lt;li&gt;I saw people use repeat notification to make audible sound using HA scripts.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;my-solution&quot;&gt;My Solution&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;I use HA Companion App.&lt;/li&gt;
+  &lt;li&gt;HA Companion App does not have such a feature to ring the phone.&lt;/li&gt;
+  &lt;li&gt;I used &lt;strong&gt;command_volume_level&lt;/strong&gt; message (to set the volume to MAX) from notify service.&lt;/li&gt;
+  &lt;li&gt;I used &lt;strong&gt;command_activity&lt;/strong&gt; message (to set Timer to 1 second), after 1 second timer is up and phone start making sound at MAX volume.&lt;/li&gt;
+  &lt;li&gt;Check my HA automations below.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ha-automation-to-turn-on-boolean-when-im-away-from-home-and-doorwindow-opens&quot;&gt;HA automation to turn on boolean when I’m away from home and door/window opens&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- alias: Door Window Opened Alarm
+  description: Door Window Opened Alarm
+  trigger:
+    - type: opened
+      platform: device
+      device_id: ea25b0acfdbf11ea84d325a74f7ddefa
+      entity_id: binary_sensor.main_door_sensor
+      domain: binary_sensor
+    - type: opened
+      platform: device
+      device_id: ea261d67fdbf11ea8e8fcb87b433b84d
+      entity_id: binary_sensor.back_door_sensor
+      domain: binary_sensor
+  condition:
+    condition: state
+    entity_id: input_boolean.home_away
+    state: 'on'
+  action:
+    - service: input_boolean.turn_on
+      target:
+        entity_id: input_boolean.play_alarm
+  mode: single
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;ha-automation-to-set-volume-to-max-and-timer-set-to-1-second-timer-makes-lots-of-sound&quot;&gt;HA automation to set volume to MAX and Timer set to 1 second, timer makes lots of sound&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- alias: Turn On Alarm
+  description: Turn On Alarm
+  trigger:
+    - platform: state
+      entity_id: input_boolean.play_alarm
+      from: 'off'
+      to: 'on'
+  action:
+    - service: notify.mobile_app_moto_g_5s_plus
+      data:
+        message: &quot;command_volume_level&quot;
+        title: 20
+        data:
+          channel: &quot;alarm_stream&quot;
+    - service: notify.mobile_app_moto_g_5s_plus
+      data:
+        message: command_activity
+        data:
+          channel: &quot;com.google.android.deskclock&quot;
+          tag: &quot;android.intent.action.SET_TIMER&quot;
+          group: &quot;android.intent.extra.alarm.SKIP_UI:true,android.intent.extra.alarm.LENGTH:1&quot;
+  mode: single
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Live long and prosper! :vulcan_salute:
+&lt;script data-coffee-color=&quot;#ffffff&quot; data-color=&quot;#FFDD00&quot; data-emoji=&quot;&quot; data-font=&quot;Cookie&quot; data-font-color=&quot;#000000&quot; data-name=&quot;bmc-button&quot; data-outline-color=&quot;#000000&quot; data-slug=&quot;mossaddeque&quot; data-text=&quot;Buy me a coffee&quot; src=&quot;https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;related-posts&quot;&gt;Related Posts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html&quot;&gt;How to manage grocery list in Home Assistant&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html&quot;&gt;Home Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/01/29/run-deconz-on-kubernates.html&quot;&gt;Run deCONZ on Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="home-assistant" /><category term="home-automation" /><summary type="html">Door/window sensors triggers night alarm / home away alarm on my Google Home device. I wanted to do something that make my Android phone ring.</summary></entry><entry><title type="html">How to manage grocery list in Home Assistant</title><link href="https://unloadbrain.com/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html" rel="alternate" type="text/html" title="How to manage grocery list in Home Assistant" /><published>2021-03-07T01:50:00+00:00</published><updated>2021-03-07T01:50:00+00:00</updated><id>https://unloadbrain.com/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant</id><content type="html" xml:base="https://unloadbrain.com/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html">&lt;p&gt;&lt;img src=&quot;/assets/images/2021-03/ha-shopping-list.png&quot; alt=&quot;image&quot; /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;has-shopping-list&quot;&gt;HA’s Shopping List?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;We all know HA has a shopping list integration, but it’s a simple todo list.&lt;/li&gt;
+  &lt;li&gt;You can add item and mark as checked. You can delete the checked items.&lt;/li&gt;
+  &lt;li&gt;If you need to add the same item again, you need to type it.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;what-i-needed&quot;&gt;What I needed?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;My grocery items are pretty much constant, i.e. milk, cooking oil, stuff like that.&lt;/li&gt;
+  &lt;li&gt;Every week it’s same item over and over.&lt;/li&gt;
+  &lt;li&gt;I didn’t wanted to type to add same item to HA’s shopping list again and again.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-did-i-solve&quot;&gt;How did I solve?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I created a Lovelace dashboard on HA.&lt;/li&gt;
+  &lt;li&gt;Added button cards that add the item to the HA’s shopping list on click.
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;technical&quot;&gt;Technical&lt;/h3&gt;
+&lt;p&gt;On &lt;code class=&quot;highlighter-rouge&quot;&gt;configurations.yaml&lt;/code&gt;, added the following to add a dashboard that shows on the sidebar.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;lovelace:
+  mode: storage
+  dashboards:
+    addtoshoppinglist-dashboard-lovelace-yaml:
+      mode: yaml
+      title: Add to ShoppingList Dashboard
+      show_in_sidebar: true
+      filename: dashboards/AddToShoppingListDashboard-lovelace.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Content of &lt;code class=&quot;highlighter-rouge&quot;&gt;dashboards/AddToShoppingListDashboard-lovelace.yaml&lt;/code&gt; -&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;title: Add to ShoppingList Dashboard
+views:
+  - path: addtoshoppinglist_dashboard_view
+    title: Add to ShoppingList Dashboard
+    cards:
+      - type: vertical-stack
+        cards: !include ShoppingListVegetables.yaml
+      - type: vertical-stack
+        cards: !include ShoppingListSpices.yaml
+      - type: vertical-stack
+        cards: !include ShoppingListFruites.yaml
+      - type: vertical-stack
+        cards: !include ShoppingListOthers.yaml
+      - type: vertical-stack
+        cards: !include ShoppingListGrains.yaml
+      - type: vertical-stack
+        cards: !include ShoppingListWashroom.yaml
+      - type: vertical-stack
+        cards: !include ShoppingListSnacks.yaml
+      - type: vertical-stack
+        cards: !include ShoppingListBreakfast.yaml
+      - type: vertical-stack
+        cards: !include ShoppingListProtein.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Content of &lt;code class=&quot;highlighter-rouge&quot;&gt;include ShoppingListBreakfast.yaml&lt;/code&gt; -&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- type: markdown
+  content: &amp;gt;
+    ## Breakfast
+- type: horizontal-stack
+  cards:
+    - type: vertical-stack
+      cards:
+        - type: button
+          name: Half Milk
+          tap_action:
+            action: call-service
+            service: shopping_list.add_item
+            service_data:
+              name: Half Milk
+        - type: button
+          name: Oats/Cereal
+          tap_action:
+            action: call-service
+            service: shopping_list.add_item
+            service_data:
+              name: Oats/Cereal
+        - type: button
+          name: Bread
+          tap_action:
+            action: call-service
+            service: shopping_list.add_item
+            service_data:
+              name: Bread
+    - type: vertical-stack
+      cards:
+        - type: button
+          name: Egg
+          tap_action:
+            action: call-service
+            service: shopping_list.add_item
+            service_data:
+              name: Egg
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;I added three items on the &lt;code class=&quot;highlighter-rouge&quot;&gt;vertical-stack&lt;/code&gt; because on the mobile screen 3 button looks perfect.
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Live long and prosper! :vulcan_salute:
+&lt;script data-coffee-color=&quot;#ffffff&quot; data-color=&quot;#FFDD00&quot; data-emoji=&quot;&quot; data-font=&quot;Cookie&quot; data-font-color=&quot;#000000&quot; data-name=&quot;bmc-button&quot; data-outline-color=&quot;#000000&quot; data-slug=&quot;mossaddeque&quot; data-text=&quot;Buy me a coffee&quot; src=&quot;https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;related-posts&quot;&gt;Related Posts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html&quot;&gt;Home Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/01/29/run-deconz-on-kubernates.html&quot;&gt;Run deCONZ on Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="home-assistant" /><category term="shopping-list" /><category term="home-automation" /><summary type="html">We all know HA has a shopping list integration, but it's a simple todo list, not well suited for managing groceries. Some people might suggest Grocy, but I didn't need that many functionalities.</summary></entry><entry><title type="html">Home Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt</title><link href="https://unloadbrain.com/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html" rel="alternate" type="text/html" title="Home Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt" /><published>2020-12-08T22:30:00+00:00</published><updated>2020-12-08T22:30:00+00:00</updated><id>https://unloadbrain.com/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample</id><content type="html" xml:base="https://unloadbrain.com/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html">&lt;h3 id=&quot;just-adding-some-image-to-look-beautiful&quot;&gt;Just adding some image to look beautiful&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-12/traefik-dashboard.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;my-setup&quot;&gt;My setup&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;House type: Three story building&lt;/li&gt;
+  &lt;li&gt;Gateway: ConBee II (Zigbee)&lt;/li&gt;
+  &lt;li&gt;Sensors:
+    &lt;ul&gt;
+      &lt;li&gt;Aqara door sensors, motion sensors and magic cubes&lt;/li&gt;
+      &lt;li&gt;Ikea plugs and a Zigbee repeater&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Server: Raspberry Pi 4 (Conbee II plugged in USB port)
+    &lt;ul&gt;
+      &lt;li&gt;Location: Ground floor electrical closet&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Software Stack Config
+    &lt;ul&gt;
+      &lt;li&gt;Runtime: Everything on a docker compose file&lt;/li&gt;
+      &lt;li&gt;DuckDNS: Running in Docker, gave me &lt;code class=&quot;highlighter-rouge&quot;&gt;myusername.duckdns.org&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Own subdomain: On Namecheap I created CNAME record for &lt;code class=&quot;highlighter-rouge&quot;&gt;ha.mydomain.com&lt;/code&gt; pointing &lt;code class=&quot;highlighter-rouge&quot;&gt;myusername.duckdns.org.&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Router Settings:
+        &lt;ul&gt;
+          &lt;li&gt;NAT Port Forwarding to my RPi4 (see the image)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Traefik Config:
+        &lt;ul&gt;
+          &lt;li&gt;Running in Docker, port 80 and 443&lt;/li&gt;
+          &lt;li&gt;Proxying the traffic to Home Assistant instance&lt;/li&gt;
+          &lt;li&gt;Checkout config in docker compose for both &lt;code class=&quot;highlighter-rouge&quot;&gt;traefik&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;home-assistant&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;For Let’s Encrypt, I didn’t do anything, used &lt;code class=&quot;highlighter-rouge&quot;&gt;tlschallenge&lt;/code&gt;&lt;/li&gt;
+          &lt;li&gt;Now I can access &lt;code class=&quot;highlighter-rouge&quot;&gt;https://ha.mydomain.com&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-12/router-port-forwarding.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3.3'&lt;/span&gt;
+
+&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+
+  &lt;span class=&quot;na&quot;&gt;traefik&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;container_name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;traefik&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;traefik:latest&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--log.level=DEBUG&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--api.insecure=true&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--providers.docker=true&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--providers.docker.exposedbydefault=false&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--entrypoints.web.address=:80&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--entrypoints.websecure.address=:443&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;--certificatesresolvers.le.acme.tlschallenge=true&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;80:80&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;8080:8080&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;443:443&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/var/run/docker.sock:/var/run/docker.sock:ro&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;network_mode&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;host&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;restart&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;unless-stopped&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;# To save sdcard:&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;#   sudo nano /etc/fstab and add&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;#      tmpfs  /tmp tmpfs  defaults,noatime 0  0&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;#      tmpfs  /var/log tmpfs  defaults,noatime,nosuid,mode=0755,size=100m  0  0&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;home-assistant&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;container_name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;home-assistant&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;homeassistant/home-assistant:latest&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;devices&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/dev/ttyAMA0&lt;/span&gt; 
+    &lt;span class=&quot;na&quot;&gt;healthcheck&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;CMD&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;curl&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;-f&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;http://192.168.1.244:8123&quot;&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 192.168.1.244 is my HA ip&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;interval&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;30s&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;timeout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;10s&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;retries&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;TZ=Europe/Amsterdam&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;8123:8123&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;privileged&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./ha:/config&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;cap_add&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;NET_ADMIN&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;NET_BIND_SERVICE&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;SYS_ADMIN&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;network_mode&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;host&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;traefik.enable=true&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;traefik.http.services.home-assistant.loadbalancer.server.port=8123&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;traefik.http.routers.home-assistant.rule=Host(`ha.mydomain.com`)&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;traefik.http.routers.home-assistant.entrypoints=websecure&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;traefik.http.routers.home-assistant.tls=true&quot;&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;traefik.http.routers.home-assistant.tls.certresolver=le&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;restart&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;unless-stopped&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Live long and prosper! :vulcan_salute:
+&lt;script data-coffee-color=&quot;#ffffff&quot; data-color=&quot;#FFDD00&quot; data-emoji=&quot;&quot; data-font=&quot;Cookie&quot; data-font-color=&quot;#000000&quot; data-name=&quot;bmc-button&quot; data-outline-color=&quot;#000000&quot; data-slug=&quot;mossaddeque&quot; data-text=&quot;Buy me a coffee&quot; src=&quot;https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;related-posts&quot;&gt;Related Posts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/01/29/run-deconz-on-kubernates.html&quot;&gt;Run deCONZ on Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="home-assistant" /><category term="docker" /><category term="traefik2" /><category term="lets-encrypt" /><category term="home-automation" /><summary type="html">I can access my HA from internet over HTTPS</summary></entry><entry><title type="html">How to find security vulnerabilities in source code</title><link href="https://unloadbrain.com/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html" rel="alternate" type="text/html" title="How to find security vulnerabilities in source code" /><published>2020-08-19T04:00:00+00:00</published><updated>2020-08-19T04:00:00+00:00</updated><id>https://unloadbrain.com/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code</id><content type="html" xml:base="https://unloadbrain.com/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html">&lt;p&gt;I have worked in application security, had to deal with big codebase, hence came up with some tips on how to review codebase for security vulnerability.&lt;/p&gt;
+
+&lt;p&gt;Tools mentioned in this article that are related with Java because most of my programming experience is with Java. However, you can find similar tools in all
+  major programming language.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-do-it&quot;&gt;How to do it?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;SAST, DAST, IAST tools.
+    &lt;ul&gt;
+      &lt;li&gt;Tools are usually based on rules. They are not perfect, lots of false positives.&lt;/li&gt;
+      &lt;li&gt;The idea behind using tools is to find the suspicious code and manually review it.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Manual review.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;dependency-management&quot;&gt;Dependency Management&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Modern application composed of tons of Open Source libraries. In Java, different build tools like Maven manage dependencies with pom.xml.&lt;/li&gt;
+  &lt;li&gt;Since open source libraries is open for all to see the code, people find the vulnerabilities within days/months.
+    &lt;ul&gt;
+      &lt;li&gt;Example of vulnerable &lt;a href=&quot;https://www.cvedetails.com/product/42991/Fasterxml-Jackson-databind.html?vendor_id=15866&quot;&gt;Fasterxml Jackson-databind&lt;/a&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;There are different open source and commercial tools available that going to help you find these vulnerable libraries.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/jeremylong/DependencyCheck&quot;&gt;OWASP Dependency-Check&lt;/a&gt;. Dependency-check has a command line interface, a Maven plugin, an Ant task, and
+ a Jenkins plugin.&lt;/li&gt;
+      &lt;li&gt;Paid services are also available, e.g. Blackduck, Checkmarx and lot others.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Once one of your library is marked as vulnerable, you should assess the impact on your application.
+    &lt;ul&gt;
+      &lt;li&gt;If impact is higher, and you don’t have any control (security controls are safeguards or countermeasures) in place, you should fix it immediately.&lt;/li&gt;
+      &lt;li&gt;You could upgrade the library version if newer version does not have that vulnerability.&lt;/li&gt;
+      &lt;li&gt;If version upgrade is too much to do, then find what other control you can put to remediate the risk.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;You should scan as part of
+    &lt;ul&gt;
+      &lt;li&gt;CI pipeline, to prevent the inclusion of vulnerable version of a library.&lt;/li&gt;
+      &lt;li&gt;Nightly, to find new vulnerability on the current version.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;source-code-analyzer-eg-java-files&quot;&gt;Source code analyzer (e.g. .java files)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Start with the static analyzer (SAST) tools. It will help you find some obvious security bugs.&lt;/li&gt;
+  &lt;li&gt;Open source static analyzers:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://find-sec-bugs.github.io/&quot;&gt;OWASP Find Security Bugs&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://rules.sonarsource.com/java/type/Security%20Hotspot&quot;&gt;SonarQube security scan&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;For advanced user, checkout &lt;a href=&quot;https://github.com/github/codeql&quot;&gt;CodeQL&lt;/a&gt;. Watch &lt;a href=&quot;https://www.youtube.com/watch?v=nvCd0Ee4FgE&quot;&gt;this video&lt;/a&gt; to get a head start.&lt;/li&gt;
+  &lt;li&gt;Commercial tools are also available.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;dynamic-analyzer-eg-classjarwarear-files&quot;&gt;Dynamic analyzer (e.g. class/jar/war/ear files)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Goes by IAST/DAST tools too.&lt;/li&gt;
+  &lt;li&gt;Usually attach with the application OS process.
+    &lt;ul&gt;
+      &lt;li&gt;Using JavaAgent is one of most common practice.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;These type tools find anomalies in the program’s call stack.&lt;/li&gt;
+  &lt;li&gt;I’ve only seen commercial tools.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;manually-review-code-in-the-following-areas&quot;&gt;Manually review code in the following areas:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Authentication and Authorization configurations.
+    &lt;ul&gt;
+      &lt;li&gt;Don’t write your own Auth/AuthZ service, use framework/libraries.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Web application CSRF configuration / CORS policy.&lt;/li&gt;
+  &lt;li&gt;Web API request parameters / headers / cookies.
+    &lt;ul&gt;
+      &lt;li&gt;Don’t trust anything that come from client side. Validate every input, prefer whitelist instead of blacklist.&lt;/li&gt;
+      &lt;li&gt;May leads to SQL injection, command injection, path traversal, XSS, etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cookies without the HttpOnly/secure flag.
+    &lt;ul&gt;
+      &lt;li&gt;Successful XSS could steal user session.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Logging, be aware what you log.
+    &lt;ul&gt;
+      &lt;li&gt;May leads to log &lt;a href=&quot;https://owasp.org/www-community/attacks/Log_Injection&quot;&gt;injection&lt;/a&gt;, sensitive data leak, etc.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Reading/writing files from/to the disk.
+    &lt;ul&gt;
+      &lt;li&gt;Whenever you are reading/writing a file from/to a disk, make sure path is not user-provided.&lt;/li&gt;
+      &lt;li&gt;May leads to path traversal.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Dealing with Certificates?
+    &lt;ul&gt;
+      &lt;li&gt;Think of Man-in-the-middle attacks.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hash function, ciphers algorithm and TLS protocols.
+    &lt;ul&gt;
+      &lt;li&gt;Whenever you see a hash function or ciphers algorithm or a protocol, check if it’s still okay to use.&lt;/li&gt;
+      &lt;li&gt;E.g. MD5 / 3DES / TLS 1.0 is not okay to use for many use-cases.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SQL statement / Hibernate HQL / JPQL.
+    &lt;ul&gt;
+      &lt;li&gt;Think parameter binding and SQL injection.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Neutralize Output.
+    &lt;ul&gt;
+      &lt;li&gt;Sanitize HTML Markup with a library designed for the job.&lt;/li&gt;
+      &lt;li&gt;Think encoding/escaping and XSS attach. See &lt;a href=&quot;https://cheatsheetseries.owasp.org/cheatsheets
+/Cross_Site_Scripting_Prevention_Cheat_Sheet.html&quot;&gt;OWASP Cross Site Scripting Prevention Cheat Sheet&lt;/a&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Make sure you meet the &lt;a href=&quot;https://github.com/OWASP/ASVS#latest-released-version&quot;&gt;Application Security Verification Standard&lt;/a&gt; (ASVS).
+    &lt;ul&gt;
+      &lt;li&gt;Latest version (4.0.1, dated 2 March 2019) is 68 pages. Trust me, once you read these 68 pages, you will be bit more wise.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;what-to-build-security-related-knowledge&quot;&gt;What to build security related knowledge?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://owasp.org/www-project-top-ten/&quot;&gt;OWASP Top 10&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://owasp.org/www-project-api-security/&quot;&gt;OWASP API Security Top 10&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cwe.mitre.org/top25/archive/2019/2019_cwe_top25.html&quot;&gt;MITRE Top 25&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.sans.org/top25-software-errors&quot;&gt;SANS TOP 25&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cheatsheetseries.owasp.org/&quot;&gt;OWASP Cheat Sheet Series&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.securityknowledgeframework.org/&quot;&gt;OWASP Security Knowledge Framework&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Live long and prosper! :vulcan_salute:&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;related-posts&quot;&gt;Related Posts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/06/25/typical-work-week-for-application-security-engineer.html&quot;&gt;How a typical work week look like for an Application Security Engineer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2019/12/25/application-security-homelab-setup-on-docker-compose.html&quot;&gt;Application security homelab setup on docker-compose&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/02/27/attach-java-agent-in-java-apps-deployed-on-kubernates.html&quot;&gt;Attach ContrastSecurity (DAST) tool JavaAgent in K8s&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="appsec" /><category term="application-security" /><category term="security-code-review" /><summary type="html">As a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code.</summary></entry><entry><title type="html">Design of an IoT data pipeline</title><link href="https://unloadbrain.com/tech/2020/07/15/design-iot-data-pipeline.html" rel="alternate" type="text/html" title="Design of an IoT data pipeline" /><published>2020-07-15T17:21:00+00:00</published><updated>2020-07-15T17:21:00+00:00</updated><id>https://unloadbrain.com/tech/2020/07/15/design-iot-data-pipeline</id><content type="html" xml:base="https://unloadbrain.com/tech/2020/07/15/design-iot-data-pipeline.html">&lt;h3 id=&quot;dont-tell-me-what-to-do-angry&quot;&gt;Don’t tell me what to do :angry:&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07/dont-tell-me-what-to-do.gif&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-requirements&quot;&gt;The requirements&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Small low-powered IoT devices going to send measurement data.&lt;/li&gt;
+  &lt;li&gt;Scalable data flow and processing, something that handles backpressure.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;design-decisions&quot;&gt;Design Decisions&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Accepting MQTT message from the IoT devices because making HTTP request would lead to higher power consumption for a low-powered IoT device.&lt;/li&gt;
+  &lt;li&gt;I could’ve picked OPC UA or some other protocol. However, the idea is to fire events from Message Broker (mosquitto) to Kafka.&lt;/li&gt;
+  &lt;li&gt;Kafka is the perfect choice because of high throughput, scaling, availability, storage, buffering and reprocessing of events.&lt;/li&gt;
+  &lt;li&gt;Picked InfluxDB because it’s time series database. Could’ve used Prometheus.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;data-flow&quot;&gt;Data Flow&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07/iot-data-pipeline-sequesnce-diagram.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-display-data&quot;&gt;How to display data&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;APIs can be built to fetch data from InfluxDB.&lt;/li&gt;
+  &lt;li&gt;Grafana dashboard can be built on top of InfluxDB data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07/iot-data-pipeline-query-sequesnce-diagram.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;stop-talking-and-show-me-the-code&quot;&gt;Stop talking and show me the code&lt;/h3&gt;
+&lt;p&gt;:octocat: &lt;a href=&quot;https://github.com/mmahmoodictbd/iot-hub&quot;&gt;Checkout the code on Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Live long and prosper! :vulcan_salute:&lt;/p&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="java" /><category term="iot" /><category term="data-pipeline" /><summary type="html">Recently I worked on an assignment project where I tried to design an IoT data pipeline. Checkout the design and code.</summary></entry><entry><title type="html">Pragmatic approach to onboard new hire</title><link href="https://unloadbrain.com/tech/2020/07/02/pragmatic-approach-to-onboarding-new-hire-software-engineer.html" rel="alternate" type="text/html" title="Pragmatic approach to onboard new hire" /><published>2020-07-02T21:30:00+00:00</published><updated>2020-07-02T21:30:00+00:00</updated><id>https://unloadbrain.com/tech/2020/07/02/pragmatic-approach-to-onboarding-new-hire-software-engineer</id><content type="html" xml:base="https://unloadbrain.com/tech/2020/07/02/pragmatic-approach-to-onboarding-new-hire-software-engineer.html">&lt;p&gt;Imagine, you hired a new engineer to help with your software products, or you are an engineer who just got hired. What would be your expectation? Being
+ productive, as soon as possible, right?&lt;/p&gt;
+
+&lt;p&gt;I am an engineer, worked in different software company for last 10 years, conducted tons of interviews, helped company hire and onboard new-hires. Here are
+ some notes on good and bad onboarding ideas.&lt;/p&gt;
+
+&lt;h3 id=&quot;good-ideas&quot;&gt;Good Ideas:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Business Analyst / Product Owner talk about the products.&lt;/li&gt;
+  &lt;li&gt;Architect / Developer talks about architecture, explain how different parts of the product are connected.&lt;/li&gt;
+  &lt;li&gt;Set a ‘buddy’ for the new-hire.
+    &lt;ul&gt;
+      &lt;li&gt;A dedicated person to help the new-hire.&lt;/li&gt;
+      &lt;li&gt;This will prevent bouncing from person-to-person to get simple things done.&lt;/li&gt;
+      &lt;li&gt;A ‘buddy’ is not a mentor.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Duties of a ‘buddy’:
+    &lt;ul&gt;
+      &lt;li&gt;Answer/help with anything new-hire might need.&lt;/li&gt;
+      &lt;li&gt;Help with getting access to Code Repository / Artifact Repository / Build System / AWS etc.&lt;/li&gt;
+      &lt;li&gt;Setup meetings with different people who can explain things to new-hire.&lt;/li&gt;
+      &lt;li&gt;Show the codebase.&lt;/li&gt;
+      &lt;li&gt;Explain how CI/CD process works in the company.&lt;/li&gt;
+      &lt;li&gt;Help to run project on the local machine.&lt;/li&gt;
+      &lt;li&gt;Help to pick up small ticket, help the new-hire as much possible. Merge the code and test! This might seems hand holding, but trust me it works.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Tips for the person who play to the ‘buddy’ role:
+    &lt;ul&gt;
+      &lt;li&gt;Try to write down the overview of different talks. Send the overview as a chat message after the talk.&lt;/li&gt;
+      &lt;li&gt;List all links, e.g. codebase, Sonar, Jenkins, Artifactory.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bad-ideas&quot;&gt;Bad Ideas:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Week long boring training session.&lt;/li&gt;
+  &lt;li&gt;“Just read the code, you’ll figure it out. It’s just code.”&lt;/li&gt;
+  &lt;li&gt;Ask to Read the Fu**ing Manual (RTFM), aka Confluence / Wiki / readme pages.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2020-07/live-long-and-prosper.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Live long and prosper!&lt;/p&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="software-engineer-life" /><category term="tech-hire" /><summary type="html">What works and what doesn't when onboarding developers.</summary></entry><entry><title type="html">How a typical work week look like for an Application Security Engineer</title><link href="https://unloadbrain.com/tech/2020/06/25/typical-work-week-for-application-security-engineer.html" rel="alternate" type="text/html" title="How a typical work week look like for an Application Security Engineer" /><published>2020-06-25T21:43:00+00:00</published><updated>2020-06-25T21:43:00+00:00</updated><id>https://unloadbrain.com/tech/2020/06/25/typical-work-week-for-application-security-engineer</id><content type="html" xml:base="https://unloadbrain.com/tech/2020/06/25/typical-work-week-for-application-security-engineer.html">&lt;p&gt;Working as an application security engineer can be very exciting and ridiculously boring at the same time. Here are the list of things we did on daily basis
+. If your are to be an application security engineer, hope you get some ideas.&lt;/p&gt;
+
+&lt;h3 id=&quot;tool-integration&quot;&gt;Tool Integration&lt;/h3&gt;
+
+&lt;p&gt;Integrating different security tooling in CI/CD pipelines is one of the major task. We used -&lt;/p&gt;
+
+&lt;h4 id=&quot;veracode&quot;&gt;Veracode:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;It’s source code vulnerability finder.&lt;/li&gt;
+  &lt;li&gt;Uploaded jar/wars/js to Vercode server.&lt;/li&gt;
+  &lt;li&gt;Fetched reports using APIs and feed it to internal reporting tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;blackduck&quot;&gt;Blackduck:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;It find vulnerable opensource components (aka jar).&lt;/li&gt;
+  &lt;li&gt;Attach with CI and CD pipelines.&lt;/li&gt;
+  &lt;li&gt;Successful build triggered Blackduck scan.&lt;/li&gt;
+  &lt;li&gt;Blackduck got two types of scans
+    &lt;ul&gt;
+      &lt;li&gt;Signature scan (useful when you have forked code or copied code from opensource software)&lt;/li&gt;
+      &lt;li&gt;Dependency scan (aka pom.xml)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Fetched reports using APIs and feed it to internal reporting tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;github-code-search&quot;&gt;Github Code Search:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Home grown tool to find exposed code on Github.&lt;/li&gt;
+  &lt;li&gt;Fetched reports and feed it to internal reporting tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;docker-image-vulnerability&quot;&gt;Docker Image Vulnerability:&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Trivy with Harbor registry.&lt;/li&gt;
+  &lt;li&gt;Fetched reports using APIs and feed it to internal reporting tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;code-review&quot;&gt;Code Review&lt;/h3&gt;
+
+&lt;p&gt;Reviewing all vulnerability finding reports, see if it’s false positive or not. If it’s not a false positive, define the impact of the issue, suggest and
+ guide team to fix it.&lt;/p&gt;
+
+&lt;h3 id=&quot;threat-modeling&quot;&gt;Threat Modeling&lt;/h3&gt;
+
+&lt;p&gt;Define threats in the application design phase and help development teams to add address those threats. Sounds like a nice idea if you are building the
+ application from scratch, but tricky if the application is already built. Worst part is - tools around threat modeling is ridiculously boring.&lt;/p&gt;
+
+&lt;h3 id=&quot;educate-developers&quot;&gt;Educate Developers&lt;/h3&gt;
+
+&lt;p&gt;Talks around different ASVS (Web, Mobile, Cloud, Container) and explaining security concepts.&lt;/p&gt;
+
+&lt;h3 id=&quot;pentesting&quot;&gt;Pentesting&lt;/h3&gt;
+
+&lt;p&gt;Learn how to use different tools(Kali toolset, trending tools on Github) and exploit application security.&lt;/p&gt;
+
+&lt;h3 id=&quot;security-presentation&quot;&gt;Security Presentation&lt;/h3&gt;
+
+&lt;p&gt;Understanding the security in application platform and present/answer to clients.&lt;/p&gt;
+
+&lt;h3 id=&quot;learn-security&quot;&gt;Learn Security&lt;/h3&gt;
+
+&lt;p&gt;Apart from above, you gotta keep upto date yourself. Reading write-ups and prepare for certification are also part of daily activity.&lt;/p&gt;
+
+&lt;p&gt;Working in security could be handful, but it’s exciting. We had around 80 Java microservices, frontend built on Angular, cloud native apps with Docker and
+ Kubernetes, mobile SDKs for both Android and iOS. Keeping your head above the water is a challenge!&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;related-posts&quot;&gt;Related Posts&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html&quot;&gt;How to find security vulnerabilities in source code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/tech/2019/12/25/application-security-homelab-setup-on-docker-compose.html&quot;&gt;Application security homelab setup on docker-compose&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="application-security" /><summary type="html">Working as an application security engineer can be very exciting and ridiculously boring at the same time. If your are to be an application security engineer, hope you get some ideas.</summary></entry><entry><title type="html">Checklist when moving to a new house/apartment</title><link href="https://unloadbrain.com/life-happens/2020/06/08/checklist-when-moving-to-new-house-apartment.html" rel="alternate" type="text/html" title="Checklist when moving to a new house/apartment" /><published>2020-06-08T18:13:00+00:00</published><updated>2020-06-08T18:13:00+00:00</updated><id>https://unloadbrain.com/life-happens/2020/06/08/checklist-when-moving-to-new-house-apartment</id><content type="html" xml:base="https://unloadbrain.com/life-happens/2020/06/08/checklist-when-moving-to-new-house-apartment.html">&lt;p&gt;Recently I moved from my old place in Amsterdam to Almere. I listed down all the tasks I needed to finish.&lt;/p&gt;
+
+&lt;p&gt;Here is my two cents:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Notify the current owner (2 months ahead of the moving date)
+    &lt;ul&gt;
+      &lt;li&gt;Ask when we can cancel rent.&lt;/li&gt;
+      &lt;li&gt;Cancel house rent.&lt;/li&gt;
+      &lt;li&gt;Ask when we can get our deposit back.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Repair the old place (a month ahead of the moving date)
+    &lt;ul&gt;
+      &lt;li&gt;Fill nail holes with wood filler and drywall filler.&lt;/li&gt;
+      &lt;li&gt;If there is something you cannot fix, find a handyman with a friend’s recommendation.&lt;/li&gt;
+      &lt;li&gt;My experience with handyman are not good. I picked MrFix from online, both handyman did terrible jobs.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Find moving company (a month ahead of the moving date)
+    &lt;ul&gt;
+      &lt;li&gt;They charge hourly. I used &lt;a href=&quot;https://www.facebook.com/bearstormmovingservice&quot;&gt;BearStorm Moving Service&lt;/a&gt;, quite happy with the service.&lt;/li&gt;
+      &lt;li&gt;I did the packing myself.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Packing (a month ahead of the moving date)
+    &lt;ul&gt;
+      &lt;li&gt;Shrink wrap (Krimpfolie in Dutch, can be found in Gamma or Karwei)&lt;/li&gt;
+      &lt;li&gt;Buy boxes and tapes from Action.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cancel electricity, gas and water (a month ahead of the moving date)
+    &lt;ul&gt;
+      &lt;li&gt;Take pictures of the meter reading before leaving the place.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cancel internet (1 or 2 months ahead of the moving date)
+    &lt;ul&gt;
+      &lt;li&gt;If you are gonna use the same vendor, make all appointments to install new router/modem in your new place.&lt;/li&gt;
+      &lt;li&gt;Otherwise, choose a new vendor as soon as possible as make installation appointment.
+        &lt;ul&gt;
+          &lt;li&gt;Appointment date can be the same date as moving date, maybe in the afternoon.&lt;/li&gt;
+          &lt;li&gt;Ask the previous tenant to keep the router/modem for you.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Leave new house address or phone number in old house so that new tenant can forward mails.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When you move in to a new place
+    &lt;ul&gt;
+      &lt;li&gt;Take pictures of the meter reading for electricity, gas and water.&lt;/li&gt;
+      &lt;li&gt;Take pictures of any broken things.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;… and start making another todo list :-)&lt;/p&gt;</content><author><name>Mossaddeque Mahmood</name></author><category term="moving" /><category term="netherlands" /><summary type="html">Moving places can be stressful. If you are a newcomer like me, maybe God help you!</summary></entry></feed>

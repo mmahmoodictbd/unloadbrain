@@ -1,0 +1,6 @@
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/kobita_app/images/kobitaAppLogo.png
+  ios: false
+  web: false
+  android_12:
