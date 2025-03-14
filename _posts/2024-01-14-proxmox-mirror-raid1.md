@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Power consumption optimize Proxmox
-date: 2023-10-09
+title: Proxmox Mirror RAID1
+date: 2024-01-14
 excerpt: |
     Electricity costs a lot, reduce Proxmox power consumption
 categories: [tech]
