@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "566383645767",
+    "project_id": "codebangladeshapp",
+    "storage_bucket": "codebangladeshapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566383645767:android:df8df5481de1b4f6794d62",
+        "android_client_info": {
+          "package_name": "com.unloadbrain.chumbok_apps.kobita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566383645767-kicu50qk71ohobf6mn8r80of2qrv48m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASuAdolJufDYFMtLa_eFSQ4E9q-P-FzdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566383645767-kicu50qk71ohobf6mn8r80of2qrv48m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566383645767:android:df8df5481de1b4f6794d62",
+        "android_client_info": {
+          "package_name": "com.unloadbrain.chumbok_apps.history"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566383645767-kicu50qk71ohobf6mn8r80of2qrv48m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASuAdolJufDYFMtLa_eFSQ4E9q-P-FzdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566383645767-kicu50qk71ohobf6mn8r80of2qrv48m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

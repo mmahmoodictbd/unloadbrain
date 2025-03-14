@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Proxmox Mirror RAID1 | Unload Brain</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Proxmox Mirror RAID1" />
+<meta name="author" content="Mossaddeque Mahmood" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I’ve 2 16TB HDDs and I want to use them in Proxmox. I will create a mirror RAID1 zpool and create datasets for VMs, ISOs, photos, videos, and shared files." />
+<meta property="og:description" content="I’ve 2 16TB HDDs and I want to use them in Proxmox. I will create a mirror RAID1 zpool and create datasets for VMs, ISOs, photos, videos, and shared files." />
+<link rel="canonical" href="https://unloadbrain.com/tech/2024/01/14/proxmox-mirror-raid1.html" />
+<meta property="og:url" content="https://unloadbrain.com/tech/2024/01/14/proxmox-mirror-raid1.html" />
+<meta property="og:site_name" content="Unload Brain" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-01-14T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Proxmox Mirror RAID1" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Mossaddeque Mahmood"},"dateModified":"2024-01-14T00:00:00+00:00","datePublished":"2024-01-14T00:00:00+00:00","description":"I’ve 2 16TB HDDs and I want to use them in Proxmox. I will create a mirror RAID1 zpool and create datasets for VMs, ISOs, photos, videos, and shared files.","headline":"Proxmox Mirror RAID1","mainEntityOfPage":{"@type":"WebPage","@id":"https://unloadbrain.com/tech/2024/01/14/proxmox-mirror-raid1.html"},"url":"https://unloadbrain.com/tech/2024/01/14/proxmox-mirror-raid1.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://unloadbrain.com/feed.xml" title="Unload Brain" /><script>
+if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-121247298-1', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+  
+</head>
+<body><header class="site-header">
+
+    <div class="wrapper">
+<a class="site-title" rel="author" href="/">Unload Brain</a><nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger">
+            <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewbox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+            </label>
+
+            <div class="trigger">
+<a class="page-link" href="/about">About me</a><a class="page-link" href="/artworks-I-love">Artworks I Love</a><a class="page-link" href="/life-happens">Life-happens</a><a class="page-link" href="/privacy">Privacy</a><a class="page-link" href="/projects">Projects</a><a class="page-link" href="/taking-care-house-plants">Taking care of House Plants</a><a class="page-link" href="/tag/appsec/">appsec</a><a class="page-link" href="/tag/security/">security</a><a class="page-link" href="/tag/homelab/">homelab</a><a class="page-link" href="/tag/docker/">docker</a><a class="page-link" href="/tag/event-driven/">event-driven</a><a class="page-link" href="/tag/architecture/">architecture</a><a class="page-link" href="/tag/iot/">iot</a><a class="page-link" href="/tag/deconz/">deconz</a><a class="page-link" href="/tag/zigbee-gateway/">zigbee-gateway</a><a class="page-link" href="/tag/kubernetes/">kubernetes</a><a class="page-link" href="/tag/home-automation/">home-automation</a><a class="page-link" href="/tag/java/">java</a><a class="page-link" href="/tag/java-agent/">java-agent</a><a class="page-link" href="/tag/contrast-security/">contrast-security</a><a class="page-link" href="/tag/moving/">moving</a><a class="page-link" href="/tag/netherlands/">netherlands</a><a class="page-link" href="/tag/application-security/">application-security</a><a class="page-link" href="/tag/software-engineer-life/">software-engineer-life</a><a class="page-link" href="/tag/tech-hire/">tech-hire</a><a class="page-link" href="/tag/data-pipeline/">data-pipeline</a><a class="page-link" href="/tag/security-code-review/">security-code-review</a><a class="page-link" href="/tag/home-assistant/">home-assistant</a><a class="page-link" href="/tag/traefik2/">traefik2</a><a class="page-link" href="/tag/lets-encrypt/">lets-encrypt</a><a class="page-link" href="/tag/shopping-list/">shopping-list</a><a class="page-link" href="/tag/proxmox/">proxmox</a><a class="page-link" href="/tag/power-consumption-optimize/">power-consumption-optimize</a><a class="page-link" href="/category/tech/">tech</a><a class="page-link" href="/category/life-happens/">life-happens</a>
+</div>
+        </nav>
+</div>
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Proxmox Mirror RAID1</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-01-14T00:00:00+00:00" itemprop="datePublished">Jan 14, 2024
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I am new to Proxmox, even new to running servers. I am documenting this for my own, use it in your own risk.</p>
+
+<h3 id="my-proxmox-cluster">My Proxmox Cluster</h3>
+<p><img src="/assets/images/2023-10/proxmox-cluster.png" alt="image"></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -la /dev/disk/by-id
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lrwxrwxrwx 1 root root   9 Jan 14 15:54 wwn-0x5000cca2e1c06dd1 -&gt; ../../sdb
+lrwxrwxrwx 1 root root   9 Jan 14 15:54 wwn-0x5000cca2a6ceb623 -&gt; ../../sdc
+</code></pre></div></div>
+
+<h3 id="create-zpool">Create zpool:</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zpool create rpool mirror /dev/disk/by-id/wwn-0x5000cca2e1c06dd1 /dev/disk/by-id/wwn-0x5000cca2a6ceb623
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@pve:~# zfs list
+NAME    USED  AVAIL  REFER  MOUNTPOINT
+rpool   420K  14.4T    96K  /rpool
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@pve:~# zpool status -v
+  pool: rpool
+ state: ONLINE
+config:
+
+	NAME                        STATE     READ WRITE CKSUM
+	rpool                       ONLINE       0     0     0
+	  mirror-0                  ONLINE       0     0     0
+	    wwn-0x5000cca2e1c06dd1  ONLINE       0     0     0
+	    wwn-0x5000cca2a6ceb623  ONLINE       0     0     0
+
+errors: No known data errors
+</code></pre></div></div>
+
+<h3 id="set-compression-zpool">Set compression zpool:</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@pve:~# zfs get compression -r rpool
+NAME   PROPERTY     VALUE           SOURCE
+rpool  compression  on              default
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>root@pve:~# zfs set compression=lz4 rpool
+root@pve:~# zfs get compression -r rpool
+NAME   PROPERTY     VALUE           SOURCE
+rpool  compression  lz4             local
+</code></pre></div></div>
+
+<h3 id="create-datasets">Create datasets</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zfs create rpool/vm-disks
+zfs create rpool/iso-backup
+zfs create rpool/photos
+zfs create rpool/videos
+zfs create rpool/shared
+</code></pre></div></div>
+
+<pre><code class="language-agsl">pct set 100 -mp0 /rpool/shared,mp=/shared
+</code></pre>
+<p><br></p>
+
+<p>Live long and prosper! <img class="emoji" title=":vulcan_salute:" alt=":vulcan_salute:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f596.png" height="20" width="20">
+<script data-coffee-color="#ffffff" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-font-color="#000000" data-name="bmc-button" data-outline-color="#000000" data-slug="mossaddeque" data-text="Buy me a coffee" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" type="text/javascript"></script></p>
+
+<p><br>
+<br></p>
+
+<h3 id="related-posts">Related Posts</h3>
+<ul>
+  <li><a href="/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html">How to manage grocery list in Home Assistant</a></li>
+  <li><a href="/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html">Home Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt</a></li>
+  <li><a href="/tech/2020/01/29/run-deconz-on-kubernates.html">Run deCONZ on Kubernetes</a></li>
+</ul>
+
+  </div>
+<a class="u-url" href="/tech/2024/01/14/proxmox-mirror-raid1.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Unload Brain</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Mossaddeque Mahmood</li>
+</ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+<ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Uploading my brain dump.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

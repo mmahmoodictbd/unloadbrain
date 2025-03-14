@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>How to find security vulnerabilities in source code | Unload Brain</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="How to find security vulnerabilities in source code" />
+<meta name="author" content="Mossaddeque Mahmood" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code." />
+<meta property="og:description" content="As a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code." />
+<link rel="canonical" href="https://unloadbrain.com/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html" />
+<meta property="og:url" content="https://unloadbrain.com/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html" />
+<meta property="og:site_name" content="Unload Brain" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-19T04:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="How to find security vulnerabilities in source code" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Mossaddeque Mahmood"},"dateModified":"2020-08-19T04:00:00+00:00","datePublished":"2020-08-19T04:00:00+00:00","description":"As a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code.","headline":"How to find security vulnerabilities in source code","mainEntityOfPage":{"@type":"WebPage","@id":"https://unloadbrain.com/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html"},"url":"https://unloadbrain.com/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://unloadbrain.com/feed.xml" title="Unload Brain" /><script>
+if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-121247298-1', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+  
+</head>
+<body><header class="site-header">
+
+    <div class="wrapper">
+<a class="site-title" rel="author" href="/">Unload Brain</a><nav class="site-nav">
+            <input type="checkbox" id="nav-trigger" class="nav-trigger">
+            <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewbox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            </svg>
+          </span>
+            </label>
+
+            <div class="trigger">
+<a class="page-link" href="/about">About me</a><a class="page-link" href="/artworks-I-love">Artworks I Love</a><a class="page-link" href="/life-happens">Life-happens</a><a class="page-link" href="/privacy">Privacy</a><a class="page-link" href="/projects">Projects</a><a class="page-link" href="/taking-care-house-plants">Taking care of House Plants</a><a class="page-link" href="/tag/appsec/">appsec</a><a class="page-link" href="/tag/security/">security</a><a class="page-link" href="/tag/homelab/">homelab</a><a class="page-link" href="/tag/docker/">docker</a><a class="page-link" href="/tag/event-driven/">event-driven</a><a class="page-link" href="/tag/architecture/">architecture</a><a class="page-link" href="/tag/iot/">iot</a><a class="page-link" href="/tag/deconz/">deconz</a><a class="page-link" href="/tag/zigbee-gateway/">zigbee-gateway</a><a class="page-link" href="/tag/kubernetes/">kubernetes</a><a class="page-link" href="/tag/home-automation/">home-automation</a><a class="page-link" href="/tag/java/">java</a><a class="page-link" href="/tag/java-agent/">java-agent</a><a class="page-link" href="/tag/contrast-security/">contrast-security</a><a class="page-link" href="/tag/moving/">moving</a><a class="page-link" href="/tag/netherlands/">netherlands</a><a class="page-link" href="/tag/application-security/">application-security</a><a class="page-link" href="/tag/software-engineer-life/">software-engineer-life</a><a class="page-link" href="/tag/tech-hire/">tech-hire</a><a class="page-link" href="/tag/data-pipeline/">data-pipeline</a><a class="page-link" href="/tag/security-code-review/">security-code-review</a><a class="page-link" href="/tag/home-assistant/">home-assistant</a><a class="page-link" href="/tag/traefik2/">traefik2</a><a class="page-link" href="/tag/lets-encrypt/">lets-encrypt</a><a class="page-link" href="/tag/shopping-list/">shopping-list</a><a class="page-link" href="/tag/proxmox/">proxmox</a><a class="page-link" href="/tag/power-consumption-optimize/">power-consumption-optimize</a><a class="page-link" href="/category/tech/">tech</a><a class="page-link" href="/category/life-happens/">life-happens</a>
+</div>
+        </nav>
+</div>
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">How to find security vulnerabilities in source code</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-08-19T04:00:00+00:00" itemprop="datePublished">Aug 19, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>I have worked in application security, had to deal with big codebase, hence came up with some tips on how to review codebase for security vulnerability.</p>
+
+<p>Tools mentioned in this article that are related with Java because most of my programming experience is with Java. However, you can find similar tools in all
+  major programming language.</p>
+
+<h3 id="how-to-do-it">How to do it?</h3>
+<ul>
+  <li>SAST, DAST, IAST tools.
+    <ul>
+      <li>Tools are usually based on rules. They are not perfect, lots of false positives.</li>
+      <li>The idea behind using tools is to find the suspicious code and manually review it.</li>
+    </ul>
+  </li>
+  <li>Manual review.</li>
+</ul>
+
+<h3 id="dependency-management">Dependency Management</h3>
+<ul>
+  <li>Modern application composed of tons of Open Source libraries. In Java, different build tools like Maven manage dependencies with pom.xml.</li>
+  <li>Since open source libraries is open for all to see the code, people find the vulnerabilities within days/months.
+    <ul>
+      <li>Example of vulnerable <a href="https://www.cvedetails.com/product/42991/Fasterxml-Jackson-databind.html?vendor_id=15866">Fasterxml Jackson-databind</a>.</li>
+    </ul>
+  </li>
+  <li>There are different open source and commercial tools available that going to help you find these vulnerable libraries.
+    <ul>
+      <li>
+<a href="https://github.com/jeremylong/DependencyCheck">OWASP Dependency-Check</a>. Dependency-check has a command line interface, a Maven plugin, an Ant task, and
+ a Jenkins plugin.</li>
+      <li>Paid services are also available, e.g. Blackduck, Checkmarx and lot others.</li>
+    </ul>
+  </li>
+  <li>Once one of your library is marked as vulnerable, you should assess the impact on your application.
+    <ul>
+      <li>If impact is higher, and you don’t have any control (security controls are safeguards or countermeasures) in place, you should fix it immediately.</li>
+      <li>You could upgrade the library version if newer version does not have that vulnerability.</li>
+      <li>If version upgrade is too much to do, then find what other control you can put to remediate the risk.</li>
+    </ul>
+  </li>
+  <li>You should scan as part of
+    <ul>
+      <li>CI pipeline, to prevent the inclusion of vulnerable version of a library.</li>
+      <li>Nightly, to find new vulnerability on the current version.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="source-code-analyzer-eg-java-files">Source code analyzer (e.g. .java files)</h3>
+<ul>
+  <li>Start with the static analyzer (SAST) tools. It will help you find some obvious security bugs.</li>
+  <li>Open source static analyzers:
+    <ul>
+      <li><a href="https://find-sec-bugs.github.io/">OWASP Find Security Bugs</a></li>
+      <li><a href="https://rules.sonarsource.com/java/type/Security%20Hotspot">SonarQube security scan</a></li>
+    </ul>
+  </li>
+  <li>For advanced user, checkout <a href="https://github.com/github/codeql">CodeQL</a>. Watch <a href="https://www.youtube.com/watch?v=nvCd0Ee4FgE">this video</a> to get a head start.</li>
+  <li>Commercial tools are also available.</li>
+</ul>
+
+<h3 id="dynamic-analyzer-eg-classjarwarear-files">Dynamic analyzer (e.g. class/jar/war/ear files)</h3>
+<ul>
+  <li>Goes by IAST/DAST tools too.</li>
+  <li>Usually attach with the application OS process.
+    <ul>
+      <li>Using JavaAgent is one of most common practice.</li>
+    </ul>
+  </li>
+  <li>These type tools find anomalies in the program’s call stack.</li>
+  <li>I’ve only seen commercial tools.</li>
+</ul>
+
+<h3 id="manually-review-code-in-the-following-areas">Manually review code in the following areas:</h3>
+<ul>
+  <li>Authentication and Authorization configurations.
+    <ul>
+      <li>Don’t write your own Auth/AuthZ service, use framework/libraries.</li>
+    </ul>
+  </li>
+  <li>Web application CSRF configuration / CORS policy.</li>
+  <li>Web API request parameters / headers / cookies.
+    <ul>
+      <li>Don’t trust anything that come from client side. Validate every input, prefer whitelist instead of blacklist.</li>
+      <li>May leads to SQL injection, command injection, path traversal, XSS, etc.</li>
+    </ul>
+  </li>
+  <li>Cookies without the HttpOnly/secure flag.
+    <ul>
+      <li>Successful XSS could steal user session.</li>
+    </ul>
+  </li>
+  <li>Logging, be aware what you log.
+    <ul>
+      <li>May leads to log <a href="https://owasp.org/www-community/attacks/Log_Injection">injection</a>, sensitive data leak, etc.</li>
+    </ul>
+  </li>
+  <li>Reading/writing files from/to the disk.
+    <ul>
+      <li>Whenever you are reading/writing a file from/to a disk, make sure path is not user-provided.</li>
+      <li>May leads to path traversal.</li>
+    </ul>
+  </li>
+  <li>Dealing with Certificates?
+    <ul>
+      <li>Think of Man-in-the-middle attacks.</li>
+    </ul>
+  </li>
+  <li>Hash function, ciphers algorithm and TLS protocols.
+    <ul>
+      <li>Whenever you see a hash function or ciphers algorithm or a protocol, check if it’s still okay to use.</li>
+      <li>E.g. MD5 / 3DES / TLS 1.0 is not okay to use for many use-cases.</li>
+    </ul>
+  </li>
+  <li>SQL statement / Hibernate HQL / JPQL.
+    <ul>
+      <li>Think parameter binding and SQL injection.</li>
+    </ul>
+  </li>
+  <li>Neutralize Output.
+    <ul>
+      <li>Sanitize HTML Markup with a library designed for the job.</li>
+      <li>Think encoding/escaping and XSS attach. See <a href="https://cheatsheetseries.owasp.org/cheatsheets%0A/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP Cross Site Scripting Prevention Cheat Sheet</a>.</li>
+    </ul>
+  </li>
+  <li>Make sure you meet the <a href="https://github.com/OWASP/ASVS#latest-released-version">Application Security Verification Standard</a> (ASVS).
+    <ul>
+      <li>Latest version (4.0.1, dated 2 March 2019) is 68 pages. Trust me, once you read these 68 pages, you will be bit more wise.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="what-to-build-security-related-knowledge">What to build security related knowledge?</h3>
+<ul>
+  <li><a href="https://owasp.org/www-project-top-ten/">OWASP Top 10</a></li>
+  <li><a href="https://owasp.org/www-project-api-security/">OWASP API Security Top 10</a></li>
+  <li><a href="http://cwe.mitre.org/top25/archive/2019/2019_cwe_top25.html">MITRE Top 25</a></li>
+  <li><a href="https://www.sans.org/top25-software-errors">SANS TOP 25</a></li>
+  <li><a href="https://cheatsheetseries.owasp.org/">OWASP Cheat Sheet Series</a></li>
+  <li><a href="https://www.securityknowledgeframework.org/">OWASP Security Knowledge Framework</a></li>
+</ul>
+
+<p><br></p>
+
+<p>Live long and prosper! <img class="emoji" title=":vulcan_salute:" alt=":vulcan_salute:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f596.png" height="20" width="20"></p>
+
+<p><br>
+<br></p>
+
+<h3 id="related-posts">Related Posts</h3>
+<ul>
+  <li><a href="/tech/2020/06/25/typical-work-week-for-application-security-engineer.html">How a typical work week look like for an Application Security Engineer</a></li>
+  <li><a href="/tech/2019/12/25/application-security-homelab-setup-on-docker-compose.html">Application security homelab setup on docker-compose</a></li>
+  <li><a href="/tech/2020/02/27/attach-java-agent-in-java-apps-deployed-on-kubernates.html">Attach ContrastSecurity (DAST) tool JavaAgent in K8s</a></li>
+</ul>
+
+  </div>
+<a class="u-url" href="/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Unload Brain</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Mossaddeque Mahmood</li>
+</ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+<ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Uploading my brain dump.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
