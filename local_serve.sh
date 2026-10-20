@@ -6,7 +6,7 @@ case "${1:-}" in
   build)
     docker build -t "$image" .
     docker run --rm -v "$PWD/_site:/usr/src/app/_site" "$image" \
-      sh -c 'python3 scripts/build_site_data.py && quarto render'
+      quarto render
     ;;
   serve)
     docker build -t "$image" .

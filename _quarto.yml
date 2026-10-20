@@ -1,12 +1,12 @@
 project:
   type: website
   output-dir: _site
+  pre-render: python3 scripts/build_site_data.py
   render:
-    - "*.md"
     - "*.qmd"
-    - "!SECURITY.md"
-    - "tech/**/*.md"
-    - "life-happens/**/*.md"
+    - "!drafts/**"
+    - "tech/**/*.qmd"
+    - "life-happens/**/*.qmd"
     - "category/**/*.qmd"
     - "tag/**/*.qmd"
     - "20??/**/*.qmd"
@@ -28,13 +28,13 @@ website:
       - text: Home
         href: index.qmd
       - text: About me
-        href: about.md
+        href: about.qmd
       - text: Projects
-        href: projects.md
+        href: projects.qmd
       - text: Life-happens
-        href: life-happens.md
+        href: life-happens.qmd
       - text: Cheatsheet
-        href: my-cheatsheet.md
+        href: my-cheatsheet.qmd
     right:
       - icon: github
         href: https://github.com/mmahmoodictbd
@@ -48,7 +48,7 @@ website:
     left: "© Mossaddeque Mahmood · Uploading my brain dump."
     right:
       - text: Privacy
-        href: privacy.md
+        href: privacy.qmd
 
 author: Mossaddeque Mahmood
 format:
@@ -56,4 +56,3 @@ format:
     from: markdown+emoji
     theme: cosmo
     css: assets/css/quarto.css
-    include-after-body: _includes/buymeacoffee.html

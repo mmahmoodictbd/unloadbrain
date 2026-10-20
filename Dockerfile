@@ -11,4 +11,4 @@ ENV PATH="/opt/site-venv/bin:${PATH}"
 
 COPY . .
 EXPOSE 4000
-CMD ["sh", "-c", "python3 scripts/build_site_data.py && quarto preview --host 0.0.0.0 --port 4000 --no-browser"]
+CMD ["quarto", "preview", "--host", "0.0.0.0", "--port", "4000", "--no-browser"]

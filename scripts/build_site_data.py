@@ -27,6 +27,8 @@ def document(path):
 
 def write(path, content):
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.exists() and path.read_text(encoding="utf-8") == content:
+        return
     path.write_text(content, encoding="utf-8")
 
 
@@ -55,6 +57,7 @@ def post_card(post):
     meta = post["metadata"]
     title = escape(meta["title"])
     url = escape(post["url"])
+    excerpt = " ".join(meta.get("excerpt", "").split())
     date_label = date.fromisoformat(post["date"]).strftime("%b %d, %Y").replace(" 0", " ")
     tags = meta["tags"]
     if post["image"]:
@@ -70,14 +73,14 @@ def post_card(post):
             f'<span class="post-cover-topic">{escape(tags[0].replace("-", " "))}</span>'
             '</span>'
         )
-    search = escape(" ".join((meta["title"], meta.get("excerpt", ""), *tags)).lower())
+    search = escape(" ".join((meta["title"], excerpt, *tags)).lower())
     return "\n".join([
         f'<article class="post-card" data-search="{search}" data-year="{post["year"]}" data-tags="|{"|".join(tags)}|">',
         f'<a class="post-cover" href="{url}" aria-label="Read {title}">{cover}</a>',
         '<div class="post-card-body">',
         f'<time datetime="{post["date"]}">{date_label}</time>',
         f'<h3 class="no-anchor"><a href="{url}">{title}</a></h3>',
-        f'<p>{escape(meta.get("excerpt", "").strip())}</p>',
+        f'<p>{escape(excerpt)}</p>',
         '<div class="post-card-footer">',
         '<span>Mossaddeque Mahmood</span>',
         f'<span class="post-card-category">{escape(meta["categories"][0].replace("-", " "))}</span>',
@@ -98,8 +101,8 @@ def archive(title, posts):
 
 
 def build_posts():
-    posts = [post_info(path) for path in ROOT.glob("tech/**/*.md")]
-    posts += [post_info(path) for path in ROOT.glob("life-happens/**/*.md")]
+    posts = [post_info(path) for path in ROOT.glob("tech/**/*.qmd")]
+    posts += [post_info(path) for path in ROOT.glob("life-happens/**/*.qmd")]
     posts.sort(key=lambda post: (post["date"], post["url"]), reverse=True)
     if not posts:
         raise ValueError("No posts found")
@@ -114,13 +117,6 @@ def build_posts():
     topics = sorted({tag for post in visible_posts for tag in post["metadata"]["tags"]})
     years = sorted({post["year"] for post in visible_posts}, reverse=True)
     listing = [
-        "---", "title: Unload Brain", "---", "",
-        '<div class="blog-home">',
-        '<section class="blog-intro">',
-        '<p class="eyebrow">THE UNLOAD BRAIN JOURNAL</p>',
-        '<h1>Ideas worth <em>unloading.</em></h1>',
-        '<p>Notes on software, security, home automation, and the things happening in between.</p>',
-        '</section>',
         '<section class="blog-posts" aria-label="Browse posts">',
         '<div class="post-filters">',
         '<label class="search-field"><span class="visually-hidden">Search posts</span>',
@@ -168,9 +164,11 @@ def build_posts():
             titles[key] = f"Tag: {tag}"
     for directory in (ROOT / "category", ROOT / "tag"):
         for old in directory.glob("*/index.qmd"):
-            old.unlink()
+            if old.relative_to(ROOT).as_posix() not in groups:
+                old.unlink()
     for old in ROOT.glob("20??/index.qmd"):
-        old.unlink()
+        if old.relative_to(ROOT).as_posix() not in groups:
+            old.unlink()
     for relative, members in groups.items():
         write(ROOT / relative, archive(titles[relative], members))
 
@@ -193,11 +191,9 @@ def build_posts():
             for tag in sorted({tag for post in posts for tag in post["metadata"]["tags"]})
         ) + '</p>',
         '</section>',
-        '</div>',
-        '<script src="/assets/js/post-filter.js" defer></script>',
         "",
     ]
-    write(ROOT / "index.qmd", "\n".join(listing) + "\n")
+    write(ROOT / "_site_data/home.qmd", "\n".join(listing).rstrip() + "\n")
 
     atom = "http://www.w3.org/2005/Atom"
     ET.register_namespace("", atom)
@@ -224,7 +220,7 @@ def build_posts():
 
 def build_poetry():
     collections = defaultdict(list)
-    for path in sorted((ROOT / "_datalake_kobita_app").rglob("*.md")):
+    for path in sorted((ROOT / "data/kobita_app").rglob("*.md")):
         metadata, body = document(path)
         kind = metadata["post_type"]
         item = {

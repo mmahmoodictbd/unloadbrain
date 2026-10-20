@@ -1,5 +1,4 @@
 ---
-layout: post
 title: সহজ ভাষায় Domain-driven design (DDD) কি?
 date: 2021-02-23 23:30:00 +0100
 excerpt: |
@@ -89,4 +88,3 @@ Live long and prosper! :vulcan_salute:
 
 <br/>
 <br/>
-

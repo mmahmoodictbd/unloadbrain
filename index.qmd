@@ -1,0 +1,15 @@
+---
+title: Unload Brain
+---
+
+<div class="blog-home">
+<section class="blog-intro">
+<p class="eyebrow">THE UNLOAD BRAIN JOURNAL</p>
+<h1>Ideas worth <em>unloading.</em></h1>
+<p>Notes on software, security, home automation, and the things happening in between.</p>
+</section>
+
+{{< include _site_data/home.qmd >}}
+
+</div>
+<script src="/assets/js/post-filter.js" defer></script>

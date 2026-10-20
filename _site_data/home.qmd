@@ -1,0 +1,211 @@
+<section class="blog-posts" aria-label="Browse posts">
+<div class="post-filters">
+<label class="search-field"><span class="visually-hidden">Search posts</span>
+<input id="post-search" type="search" placeholder="Search the journal..." autocomplete="off"></label>
+<label class="visually-hidden" for="topic-filter">Filter by topic</label>
+<select id="topic-filter"><option value="">All topics</option>
+<option value="application-security">Application Security</option>
+<option value="appsec">Appsec</option>
+<option value="architecture">Architecture</option>
+<option value="contrast-security">Contrast Security</option>
+<option value="data-pipeline">Data Pipeline</option>
+<option value="deconz">Deconz</option>
+<option value="docker">Docker</option>
+<option value="event-driven">Event Driven</option>
+<option value="home-assistant">Home Assistant</option>
+<option value="home-automation">Home Automation</option>
+<option value="homelab">Homelab</option>
+<option value="iot">Iot</option>
+<option value="java">Java</option>
+<option value="java-agent">Java Agent</option>
+<option value="kubernetes">Kubernetes</option>
+<option value="lets-encrypt">Lets Encrypt</option>
+<option value="power-consumption-optimize">Power Consumption Optimize</option>
+<option value="proxmox">Proxmox</option>
+<option value="security">Security</option>
+<option value="security-code-review">Security Code Review</option>
+<option value="shopping-list">Shopping List</option>
+<option value="software-engineer-life">Software Engineer Life</option>
+<option value="tech-hire">Tech Hire</option>
+<option value="traefik2">Traefik2</option>
+<option value="zigbee-gateway">Zigbee Gateway</option>
+</select>
+<label class="visually-hidden" for="year-filter">Filter by year</label>
+<select id="year-filter"><option value="">All years</option>
+<option value="2024">2024</option>
+<option value="2023">2023</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+</select></div>
+<p class="post-count" id="post-count" role="status" aria-live="polite">Showing 14 posts</p>
+<div class="post-grid" id="post-grid">
+<article class="post-card" data-search="proxmox mirror raid1 i&#x27;ve 2 16tb hdds and i want to use them in proxmox. i will create a mirror raid1 zpool and create datasets for vms, isos, photos, videos, and shared files. proxmox power-consumption-optimize" data-year="2024" data-tags="|proxmox|power-consumption-optimize|">
+<a class="post-cover" href="/tech/2024/01/14/proxmox-mirror-raid1.html" aria-label="Read Proxmox Mirror RAID1"><img src="/assets/images/2023-10/proxmox-cluster.png" alt="" loading="lazy"></a>
+<div class="post-card-body">
+<time datetime="2024-01-14">Jan 14, 2024</time>
+<h3 class="no-anchor"><a href="/tech/2024/01/14/proxmox-mirror-raid1.html">Proxmox Mirror RAID1</a></h3>
+<p>I&#x27;ve 2 16TB HDDs and I want to use them in Proxmox. I will create a mirror RAID1 zpool and create datasets for VMs, ISOs, photos, videos, and shared files.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="power consumption optimize proxmox electricity costs a lot, reduce proxmox power consumption proxmox power-consumption-optimize" data-year="2023" data-tags="|proxmox|power-consumption-optimize|">
+<a class="post-cover" href="/tech/2023/10/09/power-consumption-optimize-proxmox.html" aria-label="Read Power consumption optimize Proxmox"><span class="post-cover-art post-cover-default" aria-hidden="true"><span class="post-cover-label">UNLOAD / BRAIN</span><span class="post-cover-shape"></span><span class="post-cover-topic">proxmox</span></span></a>
+<div class="post-card-body">
+<time datetime="2023-10-09">Oct 9, 2023</time>
+<h3 class="no-anchor"><a href="/tech/2023/10/09/power-consumption-optimize-proxmox.html">Power consumption optimize Proxmox</a></h3>
+<p>Electricity costs a lot, reduce Proxmox power consumption</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="home assistant control the ring volume of your partner&#x27;s phone wife / husband / partner not picking up phone? here is the ha way to control ring volume. home-assistant home-automation" data-year="2022" data-tags="|home-assistant|home-automation|">
+<a class="post-cover" href="/tech/2022/04/24/home-assistant-control-ring-volume-partner-phone.html" aria-label="Read Home Assistant control the ring volume of your partner&#x27;s phone"><img src="/assets/images/2022-04/HA-ring-volume-control-24042022.png" alt="" loading="lazy"></a>
+<div class="post-card-body">
+<time datetime="2022-04-24">Apr 24, 2022</time>
+<h3 class="no-anchor"><a href="/tech/2022/04/24/home-assistant-control-ring-volume-partner-phone.html">Home Assistant control the ring volume of your partner&#x27;s phone</a></h3>
+<p>Wife / husband / partner not picking up phone? Here is the HA way to control ring volume.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="home assistant alarm/command to make an android phone ring door/window sensors triggers night alarm / home away alarm on my google home device. i wanted to do something that make my android phone ring. home-assistant home-automation" data-year="2021" data-tags="|home-assistant|home-automation|">
+<a class="post-cover" href="/tech/2021/05/28/home-assistant-alarm-command-make-an-Android-phone-ring.html" aria-label="Read Home Assistant alarm/command to make an Android phone ring"><img src="/assets/images/2021-05/My-HA-random-snapshot-2805.png" alt="" loading="lazy"></a>
+<div class="post-card-body">
+<time datetime="2021-05-28">May 28, 2021</time>
+<h3 class="no-anchor"><a href="/tech/2021/05/28/home-assistant-alarm-command-make-an-Android-phone-ring.html">Home Assistant alarm/command to make an Android phone ring</a></h3>
+<p>Door/window sensors triggers night alarm / home away alarm on my Google Home device. I wanted to do something that make my Android phone ring.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="how to manage grocery list in home assistant we all know ha has a shopping list integration, but it&#x27;s a simple todo list, not well suited for managing groceries. some people might suggest grocy, but i didn&#x27;t need that many functionalities. home-assistant shopping-list home-automation" data-year="2021" data-tags="|home-assistant|shopping-list|home-automation|">
+<a class="post-cover" href="/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html" aria-label="Read How to manage grocery list in Home Assistant"><img src="/assets/images/2021-03/ha-shopping-list.png" alt="" loading="lazy"></a>
+<div class="post-card-body">
+<time datetime="2021-03-07">Mar 7, 2021</time>
+<h3 class="no-anchor"><a href="/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html">How to manage grocery list in Home Assistant</a></h3>
+<p>We all know HA has a shopping list integration, but it&#x27;s a simple todo list, not well suited for managing groceries. Some people might suggest Grocy, but I didn&#x27;t need that many functionalities.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="home assistant in docker hosts mode with traefik 2 and let&#x27;s encrypt i can access my ha from internet over https home-assistant docker traefik2 lets-encrypt home-automation" data-year="2020" data-tags="|home-assistant|docker|traefik2|lets-encrypt|home-automation|">
+<a class="post-cover" href="/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html" aria-label="Read Home Assistant in Docker hosts mode with Traefik 2 and Let&#x27;s Encrypt"><img src="/assets/images/2020-12/traefik-dashboard.png" alt="" loading="lazy"></a>
+<div class="post-card-body">
+<time datetime="2020-12-08">Dec 8, 2020</time>
+<h3 class="no-anchor"><a href="/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html">Home Assistant in Docker hosts mode with Traefik 2 and Let&#x27;s Encrypt</a></h3>
+<p>I can access my HA from internet over HTTPS</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="how to find security vulnerabilities in source code as a software developer, we write code on a daily basis. here are some tips how to find security vulnerabilities in source code. appsec application-security security-code-review" data-year="2020" data-tags="|appsec|application-security|security-code-review|">
+<a class="post-cover" href="/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html" aria-label="Read How to find security vulnerabilities in source code"><span class="post-cover-art post-cover-security" aria-hidden="true"><span class="post-cover-label">UNLOAD / BRAIN</span><span class="post-cover-shape"></span><span class="post-cover-topic">appsec</span></span></a>
+<div class="post-card-body">
+<time datetime="2020-08-19">Aug 19, 2020</time>
+<h3 class="no-anchor"><a href="/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html">How to find security vulnerabilities in source code</a></h3>
+<p>As a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="design of an iot data pipeline recently i worked on an assignment project where i tried to design an iot data pipeline. checkout the design and code. java iot data-pipeline" data-year="2020" data-tags="|java|iot|data-pipeline|">
+<a class="post-cover" href="/tech/2020/07/15/design-iot-data-pipeline.html" aria-label="Read Design of an IoT data pipeline"><img src="/assets/images/2020-07/dont-tell-me-what-to-do.gif" alt="" loading="lazy"></a>
+<div class="post-card-body">
+<time datetime="2020-07-15">Jul 15, 2020</time>
+<h3 class="no-anchor"><a href="/tech/2020/07/15/design-iot-data-pipeline.html">Design of an IoT data pipeline</a></h3>
+<p>Recently I worked on an assignment project where I tried to design an IoT data pipeline. Checkout the design and code.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="pragmatic approach to onboard new hire what works and what doesn&#x27;t when onboarding developers. software-engineer-life tech-hire" data-year="2020" data-tags="|software-engineer-life|tech-hire|">
+<a class="post-cover" href="/tech/2020/07/02/pragmatic-approach-to-onboarding-new-hire-software-engineer.html" aria-label="Read Pragmatic approach to onboard new hire"><img src="/assets/images/2020-07/live-long-and-prosper.jpg" alt="" loading="lazy"></a>
+<div class="post-card-body">
+<time datetime="2020-07-02">Jul 2, 2020</time>
+<h3 class="no-anchor"><a href="/tech/2020/07/02/pragmatic-approach-to-onboarding-new-hire-software-engineer.html">Pragmatic approach to onboard new hire</a></h3>
+<p>What works and what doesn&#x27;t when onboarding developers.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="how a typical work week look like for an application security engineer working as an application security engineer can be very exciting and ridiculously boring at the same time. if your are to be an application security engineer, hope you get some ideas. application-security" data-year="2020" data-tags="|application-security|">
+<a class="post-cover" href="/tech/2020/06/25/typical-work-week-for-application-security-engineer.html" aria-label="Read How a typical work week look like for an Application Security Engineer"><span class="post-cover-art post-cover-default" aria-hidden="true"><span class="post-cover-label">UNLOAD / BRAIN</span><span class="post-cover-shape"></span><span class="post-cover-topic">application security</span></span></a>
+<div class="post-card-body">
+<time datetime="2020-06-25">Jun 25, 2020</time>
+<h3 class="no-anchor"><a href="/tech/2020/06/25/typical-work-week-for-application-security-engineer.html">How a typical work week look like for an Application Security Engineer</a></h3>
+<p>Working as an application security engineer can be very exciting and ridiculously boring at the same time. If your are to be an application security engineer, hope you get some ideas.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="attach java agent in java apps deployed in kubernetes i needed to attach java agent to my java process to find security vulnerabilities. app is running in k8s and this is how i did it. java java-agent kubernetes contrast-security" data-year="2020" data-tags="|java|java-agent|kubernetes|contrast-security|">
+<a class="post-cover" href="/tech/2020/02/27/attach-java-agent-in-java-apps-deployed-on-kubernates.html" aria-label="Read Attach Java agent in Java apps deployed in Kubernetes"><span class="post-cover-art post-cover-default" aria-hidden="true"><span class="post-cover-label">UNLOAD / BRAIN</span><span class="post-cover-shape"></span><span class="post-cover-topic">java</span></span></a>
+<div class="post-card-body">
+<time datetime="2020-02-27">Feb 27, 2020</time>
+<h3 class="no-anchor"><a href="/tech/2020/02/27/attach-java-agent-in-java-apps-deployed-on-kubernates.html">Attach Java agent in Java apps deployed in Kubernetes</a></h3>
+<p>I needed to attach Java agent to my Java process to find security vulnerabilities. App is running in k8s and this is how I did it.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="run deconz on kubernetes running deconz application for conbee ii gateway on can be a challenge. check out how i did it. iot deconz zigbee-gateway kubernetes home-automation" data-year="2020" data-tags="|iot|deconz|zigbee-gateway|kubernetes|home-automation|">
+<a class="post-cover" href="/tech/2020/01/29/run-deconz-on-kubernates.html" aria-label="Read Run deCONZ on Kubernetes"><span class="post-cover-art post-cover-default" aria-hidden="true"><span class="post-cover-label">UNLOAD / BRAIN</span><span class="post-cover-shape"></span><span class="post-cover-topic">iot</span></span></a>
+<div class="post-card-body">
+<time datetime="2020-01-29">Jan 29, 2020</time>
+<h3 class="no-anchor"><a href="/tech/2020/01/29/run-deconz-on-kubernates.html">Run deCONZ on Kubernetes</a></h3>
+<p>Running deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="example project with event driven architecture recently i worked on an assignment project where i tried to implement an event driven architecture. checkout the code. event-driven architecture" data-year="2020" data-tags="|event-driven|architecture|">
+<a class="post-cover" href="/tech/2020/01/14/example-project-with-event-driven-architecture.html" aria-label="Read Example project with Event Driven Architecture"><img src="/assets/images/2020-01/event-driven-architecture-component-diagram.png" alt="" loading="lazy"></a>
+<div class="post-card-body">
+<time datetime="2020-01-14">Jan 14, 2020</time>
+<h3 class="no-anchor"><a href="/tech/2020/01/14/example-project-with-event-driven-architecture.html">Example project with Event Driven Architecture</a></h3>
+<p>Recently I worked on an assignment project where I tried to implement an Event Driven Architecture. Checkout the code.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+<article class="post-card" data-search="application security homelab setup on docker-compose how i setup my homelab to learn security concepts. appsec security homelab docker" data-year="2019" data-tags="|appsec|security|homelab|docker|">
+<a class="post-cover" href="/tech/2019/12/25/application-security-homelab-setup-on-docker-compose.html" aria-label="Read Application security homelab setup on docker-compose"><span class="post-cover-art post-cover-security" aria-hidden="true"><span class="post-cover-label">UNLOAD / BRAIN</span><span class="post-cover-shape"></span><span class="post-cover-topic">appsec</span></span></a>
+<div class="post-card-body">
+<time datetime="2019-12-25">Dec 25, 2019</time>
+<h3 class="no-anchor"><a href="/tech/2019/12/25/application-security-homelab-setup-on-docker-compose.html">Application security homelab setup on docker-compose</a></h3>
+<p>How I setup my homelab to learn security concepts.</p>
+<div class="post-card-footer">
+<span>Mossaddeque Mahmood</span>
+<span class="post-card-category">tech</span>
+</div></div></article>
+
+</div>
+<p id="post-empty" hidden>No posts match your search. Try another topic or year.</p>
+</section>
+
+<section class="blog-archives">
+<p class="eyebrow">KEEP EXPLORING</p>
+<h2>Browse the archive</h2>
+
+<p>Categories: <a href="/category/life-happens/">life-happens</a>, <a href="/category/tech/">tech</a></p>
+
+<p>Years: <a href="/2024/">2024</a>, <a href="/2023/">2023</a>, <a href="/2022/">2022</a>, <a href="/2021/">2021</a>, <a href="/2020/">2020</a>, <a href="/2019/">2019</a></p>
+
+<p>Tags: <a href="/tag/application-security/">application-security</a>, <a href="/tag/appsec/">appsec</a>, <a href="/tag/architecture/">architecture</a>, <a href="/tag/contrast-security/">contrast-security</a>, <a href="/tag/data-pipeline/">data-pipeline</a>, <a href="/tag/deconz/">deconz</a>, <a href="/tag/docker/">docker</a>, <a href="/tag/event-driven/">event-driven</a>, <a href="/tag/home-assistant/">home-assistant</a>, <a href="/tag/home-automation/">home-automation</a>, <a href="/tag/homelab/">homelab</a>, <a href="/tag/iot/">iot</a>, <a href="/tag/java/">java</a>, <a href="/tag/java-agent/">java-agent</a>, <a href="/tag/kubernetes/">kubernetes</a>, <a href="/tag/lets-encrypt/">lets-encrypt</a>, <a href="/tag/moving/">moving</a>, <a href="/tag/netherlands/">netherlands</a>, <a href="/tag/power-consumption-optimize/">power-consumption-optimize</a>, <a href="/tag/proxmox/">proxmox</a>, <a href="/tag/security/">security</a>, <a href="/tag/security-code-review/">security-code-review</a>, <a href="/tag/shopping-list/">shopping-list</a>, <a href="/tag/software-engineer-life/">software-engineer-life</a>, <a href="/tag/tech-hire/">tech-hire</a>, <a href="/tag/traefik2/">traefik2</a>, <a href="/tag/zigbee-gateway/">zigbee-gateway</a></p>
+</section>
