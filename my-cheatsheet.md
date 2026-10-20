@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Cheatsheet
-permalink: /my-cheatsheet
 exclude: true
 ---
 

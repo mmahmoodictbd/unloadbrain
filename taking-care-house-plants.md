@@ -1,12 +1,10 @@
 ---
-layout: page
 title: Taking care of House Plants
-permalink: /taking-care-house-plants
 ---
 
 ### Sedum Angelina (Stonecrop)
 
-![image](/assets/images/2021-08/Sedum-Angelina.jpeg){: width="250" }
+![image](/assets/images/2021-08/Sedum-Angelina.jpeg){width=250}
 
 - Plant Type: Cactus - Succulents, Perennials (a plant that lives more than two years)
 - Plant Family: Sedum - Stonecrops
@@ -25,7 +23,7 @@ permalink: /taking-care-house-plants
 
 ### SunSparkler Firecracker Sedum
 
-![image](/assets/images/2021-08/SunSparkler-Firecracker-Sedum.jpeg){: width="250" }
+![image](/assets/images/2021-08/SunSparkler-Firecracker-Sedum.jpeg){width=250}
 
 - Plant Type: Cactus - Succulents, Perennials
 - Plant Family: Sedum - Stonecrops
@@ -39,7 +37,7 @@ permalink: /taking-care-house-plants
 
 ### Kalanchoe thyrsiflora - Paddle Plant
 
-![image](/assets/images/2021-08/Kalanchoe-thyrsiflora.jpeg){: width="250" }
+![image](/assets/images/2021-08/Kalanchoe-thyrsiflora.jpeg){width=250}
 
 - Plant Type: Succulents, Perennials
 - Plant Family: Kalanchoe
@@ -54,7 +52,7 @@ permalink: /taking-care-house-plants
 
 ### Jade Plant - Crassula ovata
 
-![image](/assets/images/2021-08/Jade-Plant-Crassula-ovata.jpeg){: width="250" }
+![image](/assets/images/2021-08/Jade-Plant-Crassula-ovata.jpeg){width=250}
 
 - Plant Type: Succulents
 - Plant Family: Stonecrops
@@ -69,7 +67,7 @@ permalink: /taking-care-house-plants
 
 ### Moon Cactus (Gymnocalycium mihanovichii)
 
-![image](/assets/images/2021-08/Moon_cactus.jpg){: width="250" }
+![image](/assets/images/2021-08/Moon_cactus.jpg){width=250}
 
 - Plant Type: Herbaceous perennial
 - Plant Family: Cactus
@@ -84,7 +82,7 @@ permalink: /taking-care-house-plants
 
 ### Cape jasmine / Gardenia jasminoides
 
-![image](/assets/images/2021-08/Cape-jasmine.jpeg){: width="250" }
+![image](/assets/images/2021-08/Cape-jasmine.jpeg){width=250}
 
 - Plant Type: Shrubs
 - Plant Family: Gardenia
@@ -103,7 +101,7 @@ permalink: /taking-care-house-plants
 
 ### Skimmia japonica 'Temptation'
 
-![image](/assets/images/2021-08/Skimmia-japonica-Temptation.jpeg){: width="250" }
+![image](/assets/images/2021-08/Skimmia-japonica-Temptation.jpeg){width=250}
 
 - Plant Type: Shrubs
 - Plant Family: Rutaceae (Rue family)
@@ -120,7 +118,7 @@ permalink: /taking-care-house-plants
 
 ### Pachyphytum Oviferum, Moonstones
 
-![image](/assets/images/2022-03/Moonstones.png){: width="250" }
+![image](/assets/images/2022-03/Moonstones.png){width=250}
 
 - Plant Type: Succulents
 - Plant Family: Crassulaceae

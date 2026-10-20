@@ -1,0 +1,10 @@
+---
+title: Page not found
+format:
+  html:
+    output-file: 404.html
+---
+
+# 404
+
+The requested page could not be found. [Return to the homepage](/).

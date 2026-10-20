@@ -1,0 +1,59 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.md"
+    - "*.qmd"
+    - "!SECURITY.md"
+    - "tech/**/*.md"
+    - "life-happens/**/*.md"
+    - "category/**/*.qmd"
+    - "tag/**/*.qmd"
+    - "20??/**/*.qmd"
+  resources:
+    - CNAME
+    - favicon.ico
+    - robots.txt
+    - feed.xml
+    - assets/**
+
+website:
+  title: "Unload Brain"
+  description: "Uploading my brain dump."
+  site-url: https://unloadbrain.com
+  favicon: favicon.ico
+  search: true
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: About me
+        href: about.md
+      - text: Projects
+        href: projects.md
+      - text: Life-happens
+        href: life-happens.md
+      - text: Cheatsheet
+        href: my-cheatsheet.md
+    right:
+      - icon: github
+        href: https://github.com/mmahmoodictbd
+      - icon: twitter
+        href: https://twitter.com/mmahmood_ict_bd
+      - icon: linkedin
+        href: https://www.linkedin.com/in/mmahmoodictbd
+      - icon: rss
+        href: /feed.xml
+  page-footer:
+    left: "© Mossaddeque Mahmood · Uploading my brain dump."
+    right:
+      - text: Privacy
+        href: privacy.md
+
+author: Mossaddeque Mahmood
+format:
+  html:
+    from: markdown+emoji
+    theme: cosmo
+    css: assets/css/quarto.css
+    include-after-body: _includes/buymeacoffee.html

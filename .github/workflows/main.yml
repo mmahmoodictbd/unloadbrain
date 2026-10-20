@@ -1,4 +1,4 @@
-name: Build and Deploy to Github Pages
+name: Build and Deploy Quarto to GitHub Pages
 
 on:
   push:
@@ -8,24 +8,22 @@ on:
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-
-      # Use GitHub Actions' cache to cache dependencies on servers
-      - uses: actions/cache@v4
+      - uses: actions/setup-python@v5
         with:
-          path: |
-            .asdf/**
-            vendor/bundle
-          key: ${{ runner.os }}-cache-${{ hashFiles('**/cache.key') }}
-          restore-keys: |
-            ${{ runner.os }}-cache-
-
-      # Use GitHub Deploy Action to build and deploy to Github
-      - uses: jeffreytse/jekyll-deploy-action@v0.6.0
+          python-version: "3.12"
+          cache: pip
+      - uses: quarto-dev/quarto-actions/setup@v2
         with:
-          provider: 'github'
-          token: ${{ secrets.GH_TOKEN }}
-          branch: 'gh-pages'
-          cname: 'unloadbrain.com'
-
+          version: 1.10.19
+      - run: pip install -r requirements.txt
+      - run: python scripts/build_site_data.py
+      - run: quarto render
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages

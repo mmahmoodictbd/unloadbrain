@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Life-happens
-permalink: /life-happens
 ---
 
 - [Taking care of House Plants](/taking-care-house-plants.html)

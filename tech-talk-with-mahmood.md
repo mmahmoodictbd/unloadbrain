@@ -1,7 +1,5 @@
 ---
-layout: page
 title: Tech talk with Mahmood ভিডিও TODO লিস্ট
-permalink: /tech-talk-with-mahmood
 exclude: true
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: page
 title: About me
-permalink: /about
 ---
 
 Hi! I’m Mossaddeque, a software engineer, originally from Bangladesh :bangladesh:, living in Netherlands :netherlands: with my wife. I love working with
@@ -9,7 +7,7 @@ Hi! I’m Mossaddeque, a software engineer, originally from Bangladesh :banglade
 
 #### How I spend my spare time?
 - [Read books](https://goodreads.com/mmahmood). :point_right: Fund :moneybag: me [to buy more books](https://www.goodreads.com/review/list/43411853-mossaddeque-mahmood?shelf=books-to-buy).
-- I write code. Because I can or I've no life. :octocat: [mmahmoodictbd](https://github.com/mmahmoodictbd)
+- I write code. Because I can or I've no life. :octopus: [mmahmoodictbd](https://github.com/mmahmoodictbd)
 - Upload brain dump to the internet.
 
 

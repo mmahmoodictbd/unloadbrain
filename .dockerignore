@@ -1,0 +1,14 @@
+.git
+.github
+.idea
+.jekyll-cache
+.quarto
+_site
+_drafts
+apps
+generated
+tag
+category
+20??
+index.qmd
+feed.xml
