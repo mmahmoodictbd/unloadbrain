@@ -1,0 +1,361 @@
+:root {
+  --ink: #27333a;
+  --muted: #607079;
+  --line: #e2e8eb;
+  --blue: #4d7390;
+  --soft-blue: #f4f8fa;
+}
+
+body {
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: var(--blue);
+}
+
+nav.navbar {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  padding-block: 0.85rem;
+}
+
+nav.navbar .navbar-container {
+  max-width: 1220px;
+  margin-inline: auto;
+}
+
+nav.navbar .navbar-brand,
+nav.navbar .nav-link,
+nav.navbar .navbar-brand:hover,
+nav.navbar .nav-link:hover {
+  color: var(--ink);
+}
+
+nav.navbar .navbar-brand {
+  font-size: 1.35rem;
+  font-weight: 750;
+  letter-spacing: -0.055em;
+}
+
+nav.navbar .nav-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+body:has(.post-grid) #quarto-content {
+  display: block;
+}
+
+body:has(.post-grid) main.content,
+body:has(.post-grid) #title-block-header {
+  width: min(100% - 3rem, 1160px);
+  max-width: 1160px;
+  margin-inline: auto;
+}
+
+body:has(.blog-home) #title-block-header {
+  display: none;
+}
+
+body:has(.blog-home) main.content {
+  padding-top: 0;
+}
+
+.blog-intro {
+  background: var(--soft-blue);
+  border: 1px solid #dce5e9;
+  border-radius: 12px;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  margin: 3.5rem 0 3.25rem;
+}
+
+.eyebrow {
+  color: var(--blue);
+  font-size: 0.76rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+}
+
+.blog-intro h1 {
+  color: var(--ink);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 720;
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+  margin: 1rem 0 1.25rem;
+}
+
+.blog-intro h1 em {
+  color: var(--blue);
+  font-style: normal;
+}
+
+.blog-intro > p:last-child {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  line-height: 1.7;
+  max-width: 44rem;
+  margin: 0;
+}
+
+.post-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 200px 150px;
+  gap: 0.85rem;
+}
+
+.post-filters .search-field {
+  margin: 0;
+  position: relative;
+}
+
+.post-filters .search-field::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 16px;
+  left: 18px;
+  border: 1.8px solid var(--muted);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.post-filters .search-field::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 1.8px;
+  top: 30px;
+  left: 30px;
+  background: var(--muted);
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.post-filters input,
+.post-filters select {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #b8c4c9;
+  border-radius: 7px;
+  background-color: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.94rem;
+  padding: 0.7rem 1rem;
+}
+
+.post-filters input {
+  padding-left: 3rem;
+}
+
+.post-filters :is(input, select):focus-visible,
+.post-cover:focus-visible,
+.post-card h3 a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.post-count {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 1.65rem 0 1.25rem;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3rem 1.6rem;
+  margin-block: 1.5rem 4rem;
+}
+
+.post-card[hidden],
+#post-empty[hidden] {
+  display: none;
+}
+
+.post-card {
+  min-width: 0;
+}
+
+.post-cover {
+  display: block;
+  aspect-ratio: 1.9;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #e8eef0;
+}
+
+.post-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 250ms ease;
+}
+
+.post-cover:hover img {
+  transform: scale(1.04);
+}
+
+.post-cover-art {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  color: #fff;
+  background: linear-gradient(135deg, #7195aa, #365d79);
+  position: relative;
+  overflow: hidden;
+}
+
+.post-cover-security {
+  background: linear-gradient(135deg, #677f89, #344d62);
+}
+
+.post-cover-home {
+  background: linear-gradient(135deg, #7ba3a0, #396f7a);
+}
+
+.post-cover-label,
+.post-cover-topic {
+  position: relative;
+  z-index: 1;
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.post-cover-topic {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  letter-spacing: -0.02em;
+  text-transform: none;
+}
+
+.post-cover-shape {
+  position: absolute;
+  width: 56%;
+  aspect-ratio: 1;
+  right: -4%;
+  top: -38%;
+  border: 2.5rem solid #ffffff20;
+  border-radius: 50%;
+}
+
+.post-card-body {
+  padding: 1rem 0 0.3rem;
+}
+
+.post-card time {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.post-card h3 {
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 670;
+  line-height: 1.4;
+  margin: 0.5rem 0 0.45rem;
+}
+
+.post-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-card h3 a:hover {
+  color: var(--blue);
+}
+
+.post-card h3 .anchorjs-link {
+  display: none;
+}
+
+.post-card-body > p {
+  color: #48555c;
+  font-size: 0.91rem;
+  line-height: 1.55;
+  margin: 0 0 1rem;
+}
+
+.post-card-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.post-card-category {
+  border-left: 1px solid var(--line);
+  padding-left: 0.5rem;
+  text-transform: capitalize;
+}
+
+#post-empty {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.blog-archives {
+  border-top: 1px solid var(--line);
+  padding: 3rem 0 4rem;
+}
+
+.blog-archives h2 {
+  font-size: 2rem;
+  letter-spacing: -0.04em;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.blog-archives > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+body:has(.post-grid):not(:has(.blog-home)) #title-block-header {
+  padding-top: 2rem;
+}
+
+@media (max-width: 850px) {
+  .post-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .post-filters {
+    grid-template-columns: minmax(0, 1fr) 1fr;
+  }
+
+  .post-filters .search-field {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 580px) {
+  body:has(.post-grid) main.content,
+  body:has(.post-grid) #title-block-header {
+    width: min(100% - 2rem, 1160px);
+  }
+
+  .blog-intro {
+    margin: 1.5rem 0 2rem;
+  }
+
+  .post-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

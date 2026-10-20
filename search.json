@@ -1,0 +1,415 @@
+[
+  {
+    "objectID": "tag/zigbee-gateway/index.html",
+    "href": "tag/zigbee-gateway/index.html",
+    "title": "Tag: zigbee-gateway",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINiot\n\nJan 29, 2020\n\nRun deCONZ on Kubernetes\n\n\nRunning deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/tech-hire/index.html",
+    "href": "tag/tech-hire/index.html",
+    "title": "Tag: tech-hire",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nJul 2, 2020\n\nPragmatic approach to onboard new hire\n\n\nWhat works and what doesn't when onboarding developers.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/shopping-list/index.html",
+    "href": "tag/shopping-list/index.html",
+    "title": "Tag: shopping-list",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nMar 7, 2021\n\nHow to manage grocery list in Home Assistant\n\n\nWe all know HA has a shopping list integration, but it's a simple todo list, not well suited for managing groceries. Some people might suggest Grocy, but I didn't need that many functionalities.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/security-code-review/index.html",
+    "href": "tag/security-code-review/index.html",
+    "title": "Tag: security-code-review",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINappsec\n\nAug 19, 2020\n\nHow to find security vulnerabilities in source code\n\n\nAs a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/power-consumption-optimize/index.html",
+    "href": "tag/power-consumption-optimize/index.html",
+    "title": "Tag: power-consumption-optimize",
+    "section": "",
+    "text": "2 posts in this archive.\n\n\n\n\nJan 14, 2024\n\nProxmox Mirror RAID1\n\n\nI've 2 16TB HDDs and I want to use them in Proxmox. I will create a mirror RAID1 zpool and create datasets for VMs, ISOs, photos, videos, and shared files.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINproxmox\n\nOct 9, 2023\n\nPower consumption optimize Proxmox\n\n\nElectricity costs a lot, reduce Proxmox power consumption\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/moving/index.html",
+    "href": "tag/moving/index.html",
+    "title": "Tag: moving",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINmoving\n\nJun 8, 2020\n\nChecklist when moving to a new house/apartment\n\n\nMoving places can be stressful. If you are a newcomer like me, maybe God help you!\n\n\nMossaddeque Mahmood life happens"
+  },
+  {
+    "objectID": "tag/kubernetes/index.html",
+    "href": "tag/kubernetes/index.html",
+    "title": "Tag: kubernetes",
+    "section": "",
+    "text": "2 posts in this archive.\n\n\nUNLOAD / BRAINjava\n\nFeb 27, 2020\n\nAttach Java agent in Java apps deployed in Kubernetes\n\n\nI needed to attach Java agent to my Java process to find security vulnerabilities. App is running in k8s and this is how I did it.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINiot\n\nJan 29, 2020\n\nRun deCONZ on Kubernetes\n\n\nRunning deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/java-agent/index.html",
+    "href": "tag/java-agent/index.html",
+    "title": "Tag: java-agent",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINjava\n\nFeb 27, 2020\n\nAttach Java agent in Java apps deployed in Kubernetes\n\n\nI needed to attach Java agent to my Java process to find security vulnerabilities. App is running in k8s and this is how I did it.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/homelab/index.html",
+    "href": "tag/homelab/index.html",
+    "title": "Tag: homelab",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINappsec\n\nDec 25, 2019\n\nApplication security homelab setup on docker-compose\n\n\nHow I setup my homelab to learn security concepts.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/home-assistant/index.html",
+    "href": "tag/home-assistant/index.html",
+    "title": "Tag: home-assistant",
+    "section": "",
+    "text": "4 posts in this archive.\n\n\n\n\nApr 24, 2022\n\nHome Assistant control the ring volume of your partner's phone\n\n\nWife / husband / partner not picking up phone? Here is the HA way to control ring volume.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nMay 28, 2021\n\nHome Assistant alarm/command to make an Android phone ring\n\n\nDoor/window sensors triggers night alarm / home away alarm on my Google Home device. I wanted to do something that make my Android phone ring.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nMar 7, 2021\n\nHow to manage grocery list in Home Assistant\n\n\nWe all know HA has a shopping list integration, but it's a simple todo list, not well suited for managing groceries. Some people might suggest Grocy, but I didn't need that many functionalities.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nDec 8, 2020\n\nHome Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt\n\n\nI can access my HA from internet over HTTPS\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/docker/index.html",
+    "href": "tag/docker/index.html",
+    "title": "Tag: docker",
+    "section": "",
+    "text": "2 posts in this archive.\n\n\n\n\nDec 8, 2020\n\nHome Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt\n\n\nI can access my HA from internet over HTTPS\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINappsec\n\nDec 25, 2019\n\nApplication security homelab setup on docker-compose\n\n\nHow I setup my homelab to learn security concepts.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/data-pipeline/index.html",
+    "href": "tag/data-pipeline/index.html",
+    "title": "Tag: data-pipeline",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nJul 15, 2020\n\nDesign of an IoT data pipeline\n\n\nRecently I worked on an assignment project where I tried to design an IoT data pipeline. Checkout the design and code.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/architecture/index.html",
+    "href": "tag/architecture/index.html",
+    "title": "Tag: architecture",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nJan 14, 2020\n\nExample project with Event Driven Architecture\n\n\nRecently I worked on an assignment project where I tried to implement an Event Driven Architecture. Checkout the code.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/application-security/index.html",
+    "href": "tag/application-security/index.html",
+    "title": "Tag: application-security",
+    "section": "",
+    "text": "2 posts in this archive.\n\n\nUNLOAD / BRAINappsec\n\nAug 19, 2020\n\nHow to find security vulnerabilities in source code\n\n\nAs a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINapplication security\n\nJun 25, 2020\n\nHow a typical work week look like for an Application Security Engineer\n\n\nWorking as an application security engineer can be very exciting and ridiculously boring at the same time. If your are to be an application security engineer, hope you get some ideas.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "category/tech/index.html",
+    "href": "category/tech/index.html",
+    "title": "Category: tech",
+    "section": "",
+    "text": "14 posts in this archive.\n\n\n\n\nJan 14, 2024\n\nProxmox Mirror RAID1\n\n\nI've 2 16TB HDDs and I want to use them in Proxmox. I will create a mirror RAID1 zpool and create datasets for VMs, ISOs, photos, videos, and shared files.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINproxmox\n\nOct 9, 2023\n\nPower consumption optimize Proxmox\n\n\nElectricity costs a lot, reduce Proxmox power consumption\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nApr 24, 2022\n\nHome Assistant control the ring volume of your partner's phone\n\n\nWife / husband / partner not picking up phone? Here is the HA way to control ring volume.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nMay 28, 2021\n\nHome Assistant alarm/command to make an Android phone ring\n\n\nDoor/window sensors triggers night alarm / home away alarm on my Google Home device. I wanted to do something that make my Android phone ring.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nMar 7, 2021\n\nHow to manage grocery list in Home Assistant\n\n\nWe all know HA has a shopping list integration, but it's a simple todo list, not well suited for managing groceries. Some people might suggest Grocy, but I didn't need that many functionalities.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nDec 8, 2020\n\nHome Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt\n\n\nI can access my HA from internet over HTTPS\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINappsec\n\nAug 19, 2020\n\nHow to find security vulnerabilities in source code\n\n\nAs a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nJul 15, 2020\n\nDesign of an IoT data pipeline\n\n\nRecently I worked on an assignment project where I tried to design an IoT data pipeline. Checkout the design and code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nJul 2, 2020\n\nPragmatic approach to onboard new hire\n\n\nWhat works and what doesn't when onboarding developers.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINapplication security\n\nJun 25, 2020\n\nHow a typical work week look like for an Application Security Engineer\n\n\nWorking as an application security engineer can be very exciting and ridiculously boring at the same time. If your are to be an application security engineer, hope you get some ideas.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINjava\n\nFeb 27, 2020\n\nAttach Java agent in Java apps deployed in Kubernetes\n\n\nI needed to attach Java agent to my Java process to find security vulnerabilities. App is running in k8s and this is how I did it.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINiot\n\nJan 29, 2020\n\nRun deCONZ on Kubernetes\n\n\nRunning deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nJan 14, 2020\n\nExample project with Event Driven Architecture\n\n\nRecently I worked on an assignment project where I tried to implement an Event Driven Architecture. Checkout the code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINappsec\n\nDec 25, 2019\n\nApplication security homelab setup on docker-compose\n\n\nHow I setup my homelab to learn security concepts.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "2023/index.html",
+    "href": "2023/index.html",
+    "title": "Year: 2023",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINproxmox\n\nOct 9, 2023\n\nPower consumption optimize Proxmox\n\n\nElectricity costs a lot, reduce Proxmox power consumption\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "2021/index.html",
+    "href": "2021/index.html",
+    "title": "Year: 2021",
+    "section": "",
+    "text": "2 posts in this archive.\n\n\n\n\nMay 28, 2021\n\nHome Assistant alarm/command to make an Android phone ring\n\n\nDoor/window sensors triggers night alarm / home away alarm on my Google Home device. I wanted to do something that make my Android phone ring.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nMar 7, 2021\n\nHow to manage grocery list in Home Assistant\n\n\nWe all know HA has a shopping list integration, but it's a simple todo list, not well suited for managing groceries. Some people might suggest Grocy, but I didn't need that many functionalities.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "2019/index.html",
+    "href": "2019/index.html",
+    "title": "Year: 2019",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINappsec\n\nDec 25, 2019\n\nApplication security homelab setup on docker-compose\n\n\nHow I setup my homelab to learn security concepts.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tech/2023/10/09/power-consumption-optimize-proxmox.html",
+    "href": "tech/2023/10/09/power-consumption-optimize-proxmox.html",
+    "title": "Power consumption optimize Proxmox",
+    "section": "",
+    "text": "I am new to Proxmox, even new to running servers. I am documenting this for my own, use it in your own risk.\n\nMy Proxmox Cluster\n\n\n\nimage\n\n\n\n\nTurn on/off machine\nIf machine is not in use, it’s better to turn it off. Machine can be turned on using Wake-on-LAN\ncrontab -e\n@reboot /usr/sbin/ethtool -s enp2s0 wol g\n\n\nTune using powertop\ncrontab -e\n@reboot /usr/sbin/powertop --auto-tune\n\n\nCPU frequency scaling\nCheck if CPU frequency scaling is available\ncat /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors\nIf it does, add a cron entry\ncrontab -e\n@reboot echo \"powersave\" | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor &gt;/dev/null 2&gt;&1\n\nLive long and prosper! 🖖\n \n\n\nRelated Posts\n\nHow to manage grocery list in Home Assistant\nHome Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt\nRun deCONZ on Kubernetes"
+  },
+  {
+    "objectID": "tech/2021/05/28/home-assistant-alarm-command-make-an-Android-phone-ring.html",
+    "href": "tech/2021/05/28/home-assistant-alarm-command-make-an-Android-phone-ring.html",
+    "title": "Home Assistant alarm/command to make an Android phone ring",
+    "section": "",
+    "text": "Just adding some image to look beautiful\n\n\n\nimage\n\n\n\n\nWhat I wanted to do\n\nI’ve door/window sensors triggers night alarm / home away alarm on my Google Home device.\nI wanted to do something that make my Android phone ring.\n\nI don’t have any smart device in my bedroom other than my phone. Don’t want spend money on a smart speaker.\nWhen I am away from home, I need to hear the sound if someone breaks in.\nI do get notifications, but notifications are easy to ignore due to outside noises.\nI saw people use repeat notification to make audible sound using HA scripts.\n\n\n\n\nMy Solution\n\nI use HA Companion App.\nHA Companion App does not have such a feature to ring the phone.\nI used command_volume_level message (to set the volume to MAX) from notify service.\nI used command_activity message (to set Timer to 1 second), after 1 second timer is up and phone start making sound at MAX volume.\nCheck my HA automations below.\n\n\n\nHA automation to turn on boolean when I’m away from home and door/window opens\n- alias: Door Window Opened Alarm\n  description: Door Window Opened Alarm\n  trigger:\n    - type: opened\n      platform: device\n      device_id: ea25b0acfdbf11ea84d325a74f7ddefa\n      entity_id: binary_sensor.main_door_sensor\n      domain: binary_sensor\n    - type: opened\n      platform: device\n      device_id: ea261d67fdbf11ea8e8fcb87b433b84d\n      entity_id: binary_sensor.back_door_sensor\n      domain: binary_sensor\n  condition:\n    condition: state\n    entity_id: input_boolean.home_away\n    state: 'on'\n  action:\n    - service: input_boolean.turn_on\n      target:\n        entity_id: input_boolean.play_alarm\n  mode: single\n\n\nHA automation to set volume to MAX and Timer set to 1 second, timer makes lots of sound\n- alias: Turn On Alarm\n  description: Turn On Alarm\n  trigger:\n    - platform: state\n      entity_id: input_boolean.play_alarm\n      from: 'off'\n      to: 'on'\n  action:\n    - service: notify.mobile_app_moto_g_5s_plus\n      data:\n        message: \"command_volume_level\"\n        title: 20\n        data:\n          channel: \"alarm_stream\"\n    - service: notify.mobile_app_moto_g_5s_plus\n      data:\n        message: command_activity\n        data:\n          channel: \"com.google.android.deskclock\"\n          tag: \"android.intent.action.SET_TIMER\"\n          group: \"android.intent.extra.alarm.SKIP_UI:true,android.intent.extra.alarm.LENGTH:1\"\n  mode: single\n\nLive long and prosper! 🖖\n \n\n\nRelated Posts\n\nHow to manage grocery list in Home Assistant\nHome Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt\nRun deCONZ on Kubernetes"
+  },
+  {
+    "objectID": "tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html",
+    "href": "tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html",
+    "title": "Home Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt",
+    "section": "",
+    "text": "Just adding some image to look beautiful\n\n\n\nimage\n\n\n\n\nMy setup\n\nHouse type: Three story building\nGateway: ConBee II (Zigbee)\nSensors:\n\nAqara door sensors, motion sensors and magic cubes\nIkea plugs and a Zigbee repeater\n\nServer: Raspberry Pi 4 (Conbee II plugged in USB port)\n\nLocation: Ground floor electrical closet\n\nSoftware Stack Config\n\nRuntime: Everything on a docker compose file\nDuckDNS: Running in Docker, gave me myusername.duckdns.org\nOwn subdomain: On Namecheap I created CNAME record for ha.mydomain.com pointing myusername.duckdns.org.\nRouter Settings:\n\nNAT Port Forwarding to my RPi4 (see the image)\n\nTraefik Config:\n\nRunning in Docker, port 80 and 443\nProxying the traffic to Home Assistant instance\nCheckout config in docker compose for both traefik and home-assistant\nFor Let’s Encrypt, I didn’t do anything, used tlschallenge\nNow I can access https://ha.mydomain.com\n\n\n\n\n\n\nimage\n\n\nversion: '3.3'\n\nservices:\n\n  traefik:\n    container_name: traefik\n    image: traefik:latest\n    command:\n      - \"--log.level=DEBUG\"\n      - \"--api.insecure=true\"\n      - \"--providers.docker=true\"\n      - \"--providers.docker.exposedbydefault=false\"\n      - \"--entrypoints.web.address=:80\"\n      - \"--entrypoints.websecure.address=:443\"\n      - \"--certificatesresolvers.le.acme.tlschallenge=true\"\n    ports:\n      - 80:80\n      - 8080:8080\n      - 443:443\n    volumes:\n      - /var/run/docker.sock:/var/run/docker.sock:ro\n    network_mode: \"host\"\n    restart: unless-stopped\n\n  # To save sdcard:\n  #   sudo nano /etc/fstab and add\n  #      tmpfs  /tmp tmpfs  defaults,noatime 0  0\n  #      tmpfs  /var/log tmpfs  defaults,noatime,nosuid,mode=0755,size=100m  0  0\n  home-assistant:\n    container_name: \"home-assistant\"\n    image: homeassistant/home-assistant:latest\n    devices:\n      - /dev/ttyAMA0 \n    healthcheck:\n      test: [\"CMD\", \"curl\", \"-f\", \"http://192.168.1.244:8123\"] # 192.168.1.244 is my HA ip\n      interval: 30s\n      timeout: 10s\n      retries: 6\n    environment:\n      - TZ=Europe/Amsterdam\n    ports:\n      - 8123:8123\n    privileged: true\n    volumes:\n      - ./ha:/config\n    cap_add:\n      - NET_ADMIN\n      - NET_BIND_SERVICE\n      - SYS_ADMIN\n    network_mode: \"host\"\n    labels:\n      - \"traefik.enable=true\"\n      - \"traefik.http.services.home-assistant.loadbalancer.server.port=8123\"\n      - \"traefik.http.routers.home-assistant.rule=Host(`ha.mydomain.com`)\"\n      - \"traefik.http.routers.home-assistant.entrypoints=websecure\"\n      - \"traefik.http.routers.home-assistant.tls=true\"\n      - \"traefik.http.routers.home-assistant.tls.certresolver=le\"\n    restart: unless-stopped\n\nLive long and prosper! 🖖\n \n\n\nRelated Posts\n\nRun deCONZ on Kubernetes"
+  },
+  {
+    "objectID": "tech/2020/07/15/design-iot-data-pipeline.html",
+    "href": "tech/2020/07/15/design-iot-data-pipeline.html",
+    "title": "Design of an IoT data pipeline",
+    "section": "",
+    "text": "Don’t tell me what to do 😠\n\n\n\nimage\n\n\n\n\n\nThe requirements\n\nSmall low-powered IoT devices going to send measurement data.\nScalable data flow and processing, something that handles backpressure.\n\n\n\nDesign Decisions\n\nAccepting MQTT message from the IoT devices because making HTTP request would lead to higher power consumption for a low-powered IoT device.\nI could’ve picked OPC UA or some other protocol. However, the idea is to fire events from Message Broker (mosquitto) to Kafka.\nKafka is the perfect choice because of high throughput, scaling, availability, storage, buffering and reprocessing of events.\nPicked InfluxDB because it’s time series database. Could’ve used Prometheus.\n\n\n\nData Flow\n\n\n\nimage\n\n\n\n\nHow to display data\n\nAPIs can be built to fetch data from InfluxDB.\nGrafana dashboard can be built on top of InfluxDB data.\n\n\n\n\nimage\n\n\n\n\nStop talking and show me the code\n🐙 Checkout the code on Github.\n\nLive long and prosper! 🖖"
+  },
+  {
+    "objectID": "tech/2020/06/25/typical-work-week-for-application-security-engineer.html",
+    "href": "tech/2020/06/25/typical-work-week-for-application-security-engineer.html",
+    "title": "How a typical work week look like for an Application Security Engineer",
+    "section": "",
+    "text": "Working as an application security engineer can be very exciting and ridiculously boring at the same time. Here are the list of things we did on daily basis . If your are to be an application security engineer, hope you get some ideas.\n\nTool Integration\nIntegrating different security tooling in CI/CD pipelines is one of the major task. We used -\n\nVeracode:\n\nIt’s source code vulnerability finder.\nUploaded jar/wars/js to Vercode server.\nFetched reports using APIs and feed it to internal reporting tool.\n\n\n\nBlackduck:\n\nIt find vulnerable opensource components (aka jar).\nAttach with CI and CD pipelines.\nSuccessful build triggered Blackduck scan.\nBlackduck got two types of scans\n\nSignature scan (useful when you have forked code or copied code from opensource software)\nDependency scan (aka pom.xml)\n\nFetched reports using APIs and feed it to internal reporting tool.\n\n\n\nGithub Code Search:\n\nHome grown tool to find exposed code on Github.\nFetched reports and feed it to internal reporting tool.\n\n\n\nDocker Image Vulnerability:\n\nTrivy with Harbor registry.\nFetched reports using APIs and feed it to internal reporting tool.\n\n\n\n\nCode Review\nReviewing all vulnerability finding reports, see if it’s false positive or not. If it’s not a false positive, define the impact of the issue, suggest and guide team to fix it.\n\n\nThreat Modeling\nDefine threats in the application design phase and help development teams to add address those threats. Sounds like a nice idea if you are building the application from scratch, but tricky if the application is already built. Worst part is - tools around threat modeling is ridiculously boring.\n\n\nEducate Developers\nTalks around different ASVS (Web, Mobile, Cloud, Container) and explaining security concepts.\n\n\nPentesting\nLearn how to use different tools(Kali toolset, trending tools on Github) and exploit application security.\n\n\nSecurity Presentation\nUnderstanding the security in application platform and present/answer to clients.\n\n\nLearn Security\nApart from above, you gotta keep upto date yourself. Reading write-ups and prepare for certification are also part of daily activity.\nWorking in security could be handful, but it’s exciting. We had around 80 Java microservices, frontend built on Angular, cloud native apps with Docker and Kubernetes, mobile SDKs for both Android and iOS. Keeping your head above the water is a challenge!\nCheers!\n \n\n\nRelated Posts\n\nHow to find security vulnerabilities in source code\nApplication security homelab setup on docker-compose"
+  },
+  {
+    "objectID": "tech/2020/01/29/run-deconz-on-kubernates.html",
+    "href": "tech/2020/01/29/run-deconz-on-kubernates.html",
+    "title": "Run deCONZ on Kubernetes",
+    "section": "",
+    "text": "The deCONZ application is a tool to configure, control and monitor Zigbee networks with the ConBee II. I have couple of Zigbee sensors that uses ConBee II as their gateway and I like kubernetes to manage my apps.\nHere is the all-in-one.yaml for deCONZ. I have single node kubernetes cluster that runs on an old laptop, usage local storage of the node in /data/deconz directory.\napiVersion: v1\nkind: Service\nmetadata:\n  name: deconz-service\n  labels:\n    appName: deconz\nspec:\n  type: ClusterIP\n  selector:\n    app: deconz\n  ports:\n    - port: 8124\n      targetPort: 8124\n\n---\n\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: deconz-deployment\n  labels:\n    appName: deconz\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      app: deconz\n  template:\n    metadata:\n      labels:\n        app: deconz\n    spec:\n      containers:\n        - name: deconz\n          image: marthoc/deconz:latest\n          ports:\n            - containerPort: 8124\n          env:\n            - name: DECONZ_WEB_PORT\n              value: \"8124\"\n            - name: DECONZ_WS_PORT\n              value: \"4443\"\n            - name: DECONZ_VNC_PORT\n              value: \"5930\"\n            - name: DECONZ_VNC_PASSWORD\n              value: \"2P&Ns5hjdFiS\"\n            - name: DECONZ_VNC_MODE\n              value: \"1\"\n            - name: DECONZ_UPNP\n              value: \"0\"\n            - name: DECONZ_DEVICE\n              value: \"/dev/ttyACM0\"\n            - name: DEBUG_INFO\n              value: \"1\"\n            - name: DEBUG_APS\n              value: \"1\"\n            - name: DEBUG_ZCL\n              value: \"1\"\n            - name: DEBUG_ZDP\n              value: \"1\"\n            - name: DEBUG_OTAU\n              value: \"1\"\n            - name: TZ\n              value: \"Europe/Amsterdam\"\n          securityContext:\n            privileged: true\n          volumeMounts:\n            - name: deconz-vol\n              mountPath: /root/.local/share/dresden-elektronik/deCONZ\n            - name: ttyacm\n              mountPath: /dev/ttyACM0\n      volumes:\n        - name: deconz-vol\n          persistentVolumeClaim:\n            claimName: deconz-pvc\n        - name: ttyacm\n          hostPath:\n            path: /dev/ttyACM0\n---\n\napiVersion: v1\nkind: PersistentVolumeClaim\nmetadata:\n  name: deconz-pvc\n  labels:\n    appName: deconz\nspec:\n  storageClassName: deconz-storage\n  accessModes:\n    - ReadWriteOnce\n  resources:\n    requests:\n      storage: 10M\n\n---\n\napiVersion: v1\nkind: PersistentVolume\nmetadata:\n  name: deconz-pv\n  labels:\n    appName: deconz\nspec:\n  storageClassName: deconz-storage\n  capacity:\n    storage: 10M\n  accessModes:\n    - ReadWriteOnce\n  local:\n    path: /data/deconz\n  persistentVolumeReclaimPolicy: Retain\n  nodeAffinity:\n    required:\n      nodeSelectorTerms:\n        - matchExpressions:\n            - key: kubernetes.io/hostname\n              operator: In\n              values: # Put your node names here and delete mine.\n                - minikube\n                - vostro-ubuntu"
+  },
+  {
+    "objectID": "tech/2019/12/25/application-security-homelab-setup-on-docker-compose.html",
+    "href": "tech/2019/12/25/application-security-homelab-setup-on-docker-compose.html",
+    "title": "Application security homelab setup on docker-compose",
+    "section": "",
+    "text": "Recently I started working on application security. Worked as a backend software engineer for my years, had some basics, but now I get to learn how to hack a system.\nThese are the vulnerable apps that helped me a lot to learn new concepts: - citizenstig-nowasp - juiceshop - web-dvwa - webgoat\nCheckout the docker-compose files: dev-setup-security\nTo get my basics right, I used Security Knowledge Framework.\n \n\nRelated Posts\n\nHow to find security vulnerabilities in source code\nHow a typical work week look like for an Application Security Engineer"
+  },
+  {
+    "objectID": "taking-care-house-plants.html",
+    "href": "taking-care-house-plants.html",
+    "title": "Taking care of House Plants",
+    "section": "",
+    "text": "Sedum Angelina (Stonecrop)\n\n\n\nimage\n\n\n\nPlant Type: Cactus - Succulents, Perennials (a plant that lives more than two years)\nPlant Family: Sedum - Stonecrops\nSun Exposure: Full Sun or Partial Shade\nWatering need: Minimum demand\nBlooming Time: Early Summer / Mid Summer / Late Summer\nSoil Type: Normal or Sandy\nSoil pH: 6.0 to 7.0 (slightly acidic to neutral)\nSoil Moisture: Dry\nFertilizer: Compost instead of chemical fertilizer\nPropagation: Cuttings\nArticles:\n\nhttps://www.pokon.nl/plant/item/sedum/\n\n\n\n\n\nSunSparkler Firecracker Sedum\n\n\n\nimage\n\n\n\nPlant Type: Cactus - Succulents, Perennials\nPlant Family: Sedum - Stonecrops\nSun Exposure: Full Sun or Partial Shade\nWatering need: Minimum demand\nSoil Type: Normal or Sandy\nSoil Moisture: Dry\nPropagation: Cuttings\n\n\n\n\nKalanchoe thyrsiflora - Paddle Plant\n\n\n\nimage\n\n\n\nPlant Type: Succulents, Perennials\nPlant Family: Kalanchoe\nSun Exposure: Full Sun or Partial Shade\nWatering need: Minimum demand\nSoil Type: Potting soil mix for cacti\nSoil Moisture: Dry to medium moisture\nFertilizer: Compost instead of chemical fertilizer\nPropagation: Cuttings\n\n\n\n\nJade Plant - Crassula ovata\n\n\n\nimage\n\n\n\nPlant Type: Succulents\nPlant Family: Stonecrops\nSun Exposure: Full Sun\nWatering need: Average (never over watering)\nSoil Type: Normal or Sandy. Cactus or succulent mix.\nSoil Moisture: Dry\nPropagation: Stem/leaf Cuttings\n\n\n\n\nMoon Cactus (Gymnocalycium mihanovichii)\n\n\n\nimage\n\n\n\nPlant Type: Herbaceous perennial\nPlant Family: Cactus\nSun Exposure: Balance of light and shade (Not in Full Sun)\nWatering need: Minimum demand\nSoil Type: Potting soil mix for cacti\nSoil Moisture: Dry\nFertilizer: Feed cactus fertilizer once every month and stop fertilizing over the winter month\nPropagation: Grafting (grafting into rootstock)\n\n\n\n\nCape jasmine / Gardenia jasminoides\n\n\n\nimage\n\n\n\nPlant Type: Shrubs\nPlant Family: Gardenia\nSun Exposure: Full Sun or Partial Sun\nLocation: Light location but no direct sun\nWatering need: Average\nSoil Type: Clay, Loam, Sand\nSoil Moisture: Moist but well-drained\nCare:\n\nLow-limescale as possible. Too much lime can cause yellowing leaves.\nWithering flowers are removed to give the new flowers more space.\n\nArticles:\n\nhttps://www.pokon.nl/plant/item/gardenia/\n\n\n\n\n\nSkimmia japonica ‘Temptation’\n\n\n\nimage\n\n\n\nPlant Type: Shrubs\nPlant Family: Rutaceae (Rue family)\nSun Exposure: Full Sun or Partial Sun\nWatering need: Average\nSoil Type: Clay, Loam, Sand\nSoil Moisture: Moist but well-drained\nSoil pH: 6.0 to 7.0 (slightly acidic to neutral)\nCare:\n\nThe Skimmia is a slow grower and does not need pruning.\nTo produce red berries in the winter, you must have both a female and a male plant.\n\n\n\n\n\nPachyphytum Oviferum, Moonstones\n\n\n\nimage\n\n\n\nPlant Type: Succulents\nPlant Family: Crassulaceae\nSun Exposure: Full Sun or Partial Sun\nWatering need: Average\nSoil Type: Clay, Loam, Sand\nSoil Moisture: Moist but well-drained"
+  },
+  {
+    "objectID": "privacy.html",
+    "href": "privacy.html",
+    "title": "Privacy",
+    "section": "",
+    "text": "Privacy Policy\nWe are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your personal information when you use our mobile application.\n\nInformation We Do Not Collect: We do not collect or store any personal data, including but not limited to names, addresses, phone numbers, or email addresses.\nNo Data Sharing: We do not share any data with third parties, including advertisers or analytics providers. Your usage of our mobile application is private and not shared with external entities.\nDevice Permissions: Our mobile application may request certain permissions on your device, such as access to camera, microphone, or location. These permissions are solely used for the intended functionality of the app and are not collected or transmitted to us.\nAnonymous Analytics: We may collect anonymous usage data to improve the functionality and user experience of our mobile application. However, this data is aggregated and cannot be used to identify individual users.\nSecurity: We implement reasonable security measures to protect your information from unauthorized access or disclosure. However, please be aware that no method of transmission over the internet or electronic storage is 100% secure.\nChildren’s Privacy: Our mobile application is not intended for use by individuals under the age of 13. We do not knowingly collect personal information from children under 13 years of age.\nChanges to This Privacy Policy: We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.\nContact Us: If you have any questions or concerns about our Privacy Policy, please contact us.\n\nBy using our mobile application, you agree to the terms outlined in this Privacy Policy.\nThank you!"
+  },
+  {
+    "objectID": "life-happens/2020/06/08/checklist-when-moving-to-new-house-apartment.html",
+    "href": "life-happens/2020/06/08/checklist-when-moving-to-new-house-apartment.html",
+    "title": "Checklist when moving to a new house/apartment",
+    "section": "",
+    "text": "Recently I moved from my old place in Amsterdam to Almere. I listed down all the tasks I needed to finish.\nHere is my two cents:\n\nNotify the current owner (2 months ahead of the moving date)\n\nAsk when we can cancel rent.\nCancel house rent.\nAsk when we can get our deposit back.\n\nRepair the old place (a month ahead of the moving date)\n\nFill nail holes with wood filler and drywall filler.\nIf there is something you cannot fix, find a handyman with a friend’s recommendation.\nMy experience with handyman are not good. I picked MrFix from online, both handyman did terrible jobs.\n\nFind moving company (a month ahead of the moving date)\n\nThey charge hourly. I used BearStorm Moving Service, quite happy with the service.\nI did the packing myself.\n\nPacking (a month ahead of the moving date)\n\nShrink wrap (Krimpfolie in Dutch, can be found in Gamma or Karwei)\nBuy boxes and tapes from Action.\n\nCancel electricity, gas and water (a month ahead of the moving date)\n\nTake pictures of the meter reading before leaving the place.\n\nCancel internet (1 or 2 months ahead of the moving date)\n\nIf you are gonna use the same vendor, make all appointments to install new router/modem in your new place.\nOtherwise, choose a new vendor as soon as possible as make installation appointment.\n\nAppointment date can be the same date as moving date, maybe in the afternoon.\nAsk the previous tenant to keep the router/modem for you.\n\n\nLeave new house address or phone number in old house so that new tenant can forward mails.\nWhen you move in to a new place\n\nTake pictures of the meter reading for electricity, gas and water.\nTake pictures of any broken things.\n\n\n… and start making another todo list :-)"
+  },
+  {
+    "objectID": "artworks-I-love.html",
+    "href": "artworks-I-love.html",
+    "title": "Artworks I Love",
+    "section": "",
+    "text": "Fontainebleau Forest, 1865, Claude Monet\n\n\n\nimage\n\n\n\n\nWoman Bathing Her Feet in a Brook, 1895, Camille Pissarro (French, 1830–1903)\n\n\n\nimage\n\n\n\n\nWoman with a Parasol - Madame Monet and Her Son, 1875 Claude Monet (1840-1926)\n\n\n\nimage\n\n\n\n\nThe Japanese Footbridge and the Water Lily Pool, Giverny, 1899 Claude Monet (1840-1926)\n\n\n\nimage\n\n\n\n\nNighthawks, 1942, Edward Hopper (American, 1882–1967)\n\n\n\nimage\n\n\n\n\nThe Avenue (1878) by Claude Monet\n\n\n\nimage\n\n\n\n\nThe Bodmer Oak, Fontainebleau, 1865, Claude Monet\n\n\n\nimage\n\n\n\n\nWater Lily Pond, 1900, Claude Monet\n\n\n\nimage\n\n\n\n\nOlive Tree Wood in the Moreno Garden, Claude Monet\n\n\n\nimage\n\n\n\n\nPink peach trees (‘Souvenir de Mauve’), 1888, Vincent van Gogh\n\n\n\nimage"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
+    "section": "",
+    "text": "Hi! I’m Mossaddeque, a software engineer, originally from Bangladesh 🇧🇩, living in Netherlands 🇳🇱 with my wife. I love working with anything that has something to do with code.\n\nHow I spend my spare time?\n\nRead books. 👉 Fund 💰 me to buy more books.\nI write code. Because I can or I’ve no life. 🐙 mmahmoodictbd\nUpload brain dump to the internet.\n\n\n\nContact\nFollowing public key belongs to mmahmood.ict.bd[at]gmail.com e-mail address. GPG/PGP public key is stored in txt file public-key.txt.\ncurl http://unloadbrain.com/assets/files/public-key.txt | gpg --import\nYou can lookup on pgp.mit.edu with the fingerprint 4BF0 B5B9 CB0C 72F5 8D81 E6B7 F7B0 9C42 ACBE 9401.\n\n\nSocial Handles\n🐦 mmahmood_ict_bd"
+  },
+  {
+    "objectID": "life-happens.html",
+    "href": "life-happens.html",
+    "title": "Life-happens",
+    "section": "",
+    "text": "Taking care of House Plants\nChecklist when moving to new house/apartment in Netherlands\nArtworks I love"
+  },
+  {
+    "objectID": "my-cheatsheet.html",
+    "href": "my-cheatsheet.html",
+    "title": "Cheatsheet",
+    "section": "",
+    "text": "Install ncdu to see who eats up my space\nbrew install ncdu\n\n\nClear iMovie cache\nrm -fr /Users/mossaddeque/Movies/iMovie\\ Library.imovielibrary\n\n\nClean docker stuff\ndocker system prune -a\n\n\nSafe to delete directory\nrm -rf /private/var/log/*\nrm -rf ~/Libarary/Logs/*\nrm -rf /Library/Log/*\nrm -rf ~/\n\n\nBrew cleanup\nbrew update && brew upgrade && brew cleanup\n\n\nHow to check disk space usage on Mac\nClick the Apple icon in the menu bar\nSelect About this Mac\nSwitch to the Storage tab"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Workshops\n\ntechnical-workshop.\ndevops-for-developers-workshop, DevOps to make developer life easier.\n\n\n\nWorkshop Videos\n\nSession on Jenkins, Docker and Docker Compose basics.\nBuilding Microservices with Spring Cloud basics.\nSession on Java Web Application with Spring Boot basics.\nSession on Git, Java and Maven basics.\n\n\n\nProjects with Long-term support (LTS)\n\nProduction-Ready Microservices Starter, business-ready microservice.\nOpenBlog, Open Source Blogging Engine\nSingle database schema multi-tenancy solution for Spring Data JPA\n\n\n\nGood code example\n\niot-hub, IoT Hub APIs with Spring Boot + Kafka + Kafka-connect + Eclipse Mosquitto + InfluxDB.\ncharging-station-sessions, Design of analytics APIs.\niot-platform-api, IoT Platform APIs with Spring Boot + Kafka + InfluxDB.\nstock-api, APIs with Spring Boot + AKKA + Cassandra + Angular.\nrock-paper-scissors, Game engine.\nrestaurants-data-scraper, Event driven approach for scraper.\n\n\n\nMy Dev Setup\n\ndev-setup, Docker composes used in daily basis.\nbash-scripts, Frequently used Bash Scripts."
+  },
+  {
+    "objectID": "tech-talk-with-mahmood.html",
+    "href": "tech-talk-with-mahmood.html",
+    "title": "Tech talk with Mahmood ভিডিও TODO লিস্ট",
+    "section": "",
+    "text": "** যেগুলোতে লিঙ্ক নেই তা আমি ধীরে ধীরে বানাচ্ছি, চ্যানেলটি সাবস্ক্রাইব করে নোটিফিকেশন বেল আইকনে ক্লিক করলে জানতে পারবেন কখন নতুন ভিডিও আসছে **\n\nজব টিপস এন্ড ট্রিক্স সিরিজ ( Job Tips and Tricks Series)\n\nইন্টারভিউ কল পাই না, কিভাবে ভাল সিভি বানানো যায়? (ফ্রেশ গ্রাজুয়েটদের জন্য)\nআইটি ক্যারিয়ারের জন্য কোন ল্যাঙ্গুয়েজ শেখা ভাল? জাভা না ডট নেট? পাইথন বা পিএইচপি ই বা কেমন হয়?\nপ্রোগ্রামিং কন্টেস্ট করবো নাকি সফটওয়্যার ডেভেলপমেন্ট শিখবো? জব এর জন্য কোনটা লাগে?\nজব কোডিং অ্যাসাইনমেন্ট কিভাবে করা উচিত? + কোডিং টিপস!\nইউনিভার্সিটির কোন কোন কোর্সগুলো সফটওয়্যার ডেভেলপার হিসেবে বেশি কাজে লাগে?\nজাভা ডেভেলপার হতে হলে কি কি জানতে হয় / ডেভেলপার রোডম্যাপ?\nসব সফটওয়্যার ডেভেলপার এর দরকার একটি পোর্টফলিও\nওয়েব ডেভেলপার হতে হলে কি কি জানতে হয়? | ডেভেলপার রোডম্যাপ\n.NET ডেভেলপার হতে হলে কি কি জানতে হয়? | ডেভেলপার রোডম্যাপ\nPHP ডেভেলপার হতে হলে কি কি জানতে হয়? | ডেভেলপার রোডম্যাপ\nQA হতে হলে কি কি জানতে হয়? | ডেভেলপার রোডম্যাপ\nজাভাতে কোন ফ্রেমওয়ার্ক শিখলে ভাল? ২০২১ - ২০২২ এডিশন\nমোবাইল অ্যাপ ডেভেলপার হতে হলে কি কি জানতে হয়? | ডেভেলপার রোডম্যাপ\nডাটা সাইন্স ইঞ্জিনিয়ার হতে হলে কি কি জানতে হয়?\nCSE / IT কি পড়ানো হয়? কেনই বা CSE / IT তে পড়বো?\nCSE / IT পড়ে কি ধরনের জব পাওয়া যায়?\nকিভাবে প্রোগ্রামিং কন্টেস্টে ভাল করবো?\nপ্রোগ্রামিং স্কিল বাড়ানো যায় কিভাবে?\nData Structure ও Algorithms শেখা কতটা জরুরী?\nসফটওয়্যার ডেভেলপার হিসেবে কাজ করতে চাইলে Data Structure ও Algorithms জানা কতটা জরুরী?\n৪র্থ বর্ষে কোনটা করা ভাল? Research Thesis নাকি Software Project?\nকোড করতে গেলে ভাল পারি না, ডিপ্রেসড লাগে, কি করা উচিত?\nকিভাবে আমি সফটওয়্যার ডেভেলপার হওয়ার প্রস্তুতি নিতে পারি?\nছাত্র অবস্থায় কোন ফ্রেমওয়ার্ক শেখা জরুরী?\nসফটওয়্যার ডেভেলপার ও ওয়েব ডেভেলপার এর মধ্যে পার্থক্য কি?\nপ্রোগ্রামিং ভাল লাগে না, আমার কি ডেভেলপার হওয়া উচিত? IT তে আর কি জব আছে?\nপ্রোগ্রামিং কন্টেস্টে ভাল না, কিন্তু ল্যাংগুয়েজ / ফ্রেমওয়ার্ক জানি, জব কি পাওয়া সম্ভব?\nআমি ঢাকায় থাকি না, কিভাবে জব পাবো?\nসিভিতে প্রজেক্ট থাকা কি জরুরী? না থাকলে কি করবো?\nসিভিতে কি ধরনের প্রজেক্ট থাকলে ভাল?\nফ্রেসার হিসাবে সফটওয়্যার ডেভেলপারদের স্যালারি এখন কেমন? সালঃ ২০২১ এডিশন\nইন্টার্নশিপ পাওয়ার উপায় কি?\nদেশের বাইরে কি ইন্টার্নশিপ পাওয়া যায়?\nসফটওয়্যার ডেভেলপার ফ্রেসার হিসাবে জব পাওয়ার জন্য সার্টিফিকেশন (জাভা, নেটওয়ার্কিং) কতটা জরুরী?\nইন্টারভিউতে ভাল করার উপায় কি?\nসফটওয়্যার ডেভেলপার হিসাবে দেশের বাইরে জব পেতে কিভাবে প্রস্তুতি নেবো?\nসফটওয়্যার ডেভেলপার হিসাবে দেশের বাইরে কিভাবে জব খুঁজে পাবো? সিভি ফরমেট কেমন হবে?\nডেভেলপার হিসাবে ভাল করার বুদ্ধি কি?\nপ্রতিদিন নতুন নতুন ল্যাংগুয়েজ / ফ্রেমওয়ার্ক আসছে, কিভাবে তাল মিলিয়ে চলবো?\n\n\n\nইন্টারভিউ কোশ্চেন অ্যানসার সিরিজ ( Interview Question Answer Series )\n\nজাভাতে ম্যাথড প্যারামিটার কি “pass-by-reference” নাকি “pass-by-value”?\nমিউটেবল / ইমিউটেবল অবজেক্ট কি? ( Mutable vs Immutable Object )\nImmutable অবজেক্ট কেন ব্যাবহার করা হয়?\nImmutable অবজেক্ট কিভাবে তৈরি করতে হয়?\nজাভাতে String কেন Immutable?\nজাভাতে HashMap কিভাবে কাজ করে? | HashMap internals explained\nজাভাতে equals() ওভাররাইড করলে কেন hashCode() মেথডও ওভাররাইড করতে হয়?\nজাভাতে কখন ArrayList ব্যাবহার না করে LinkedList ব্যাবহার করা উচিত?\nজাভাতে কিভাবে মেমোরি লিক তৈরি করা যায়? | Create memory leak in Java\nজাভা এপ্লিকেশনে মেমোরি লিক কিভাবে শনাক্ত করবেন?\nHTTP রিকোয়েস্ট এর ক্ষেত্রে Idempotent Operation কি?\n\n\n\nসফটওয়্যার ইঞ্জিনিয়ারিং সিরিজ ( Software Engineering Series )\n\nক্লিন কোড কি? উদাহারনসহ ভাল কোড vs মন্দ কোড\nSOLID প্রিন্সিপল কি? | SOLID Principle\nসিঙ্গেল রেস্পন্সিবিলিটি প্রিন্সিপল | কোডিং উদাহারনসহ | Single Responsibility Principle - SOLID Principle\nওপেন ক্লোজড প্রিন্সিপল | কোডিং উদাহারনসহ | Open-Closed Principle - SOLID Principle\nলিসকভ সাবস্টিটুউশন প্রিন্সিপল | কোডিং উদাহারনসহ | Liskov Substitution Principle - SOLID Principle\nইন্টারফেস সেগ্রিগেশন প্রিন্সিপল | কোডিং উদাহারনসহ | Interface Segregation Principle - SOLID Principle\nডিপেন্ডেন্সি ইনভার্শন প্রিন্সিপল | কোডিং উদাহারনসহ | Dependency Inversion Principle - SOLID Principle\nডিজাইন প্যাটার্ন কি? | Design Pattern basics\nডিপেন্ডেন্সি ইঞ্জেকশন কি? | Dependency Injection explained\n\n\n\nমাইক্রোসার্ভিস সিরিজ ( Microservice Series )\n\nমাইক্রোসার্ভিস কি? | Microservice Basics\nREST API কি? কিভাবে REST API ডিজাইন করা হয়?\nজাভাতে কিভাবে মাইক্রোসার্ভিস বানায়? | Java + Spring Boot + Spring Cloud + MySQL\n\n\n\nডেভেলপার বেসিক সিরিজ ( Developer Basic Series )\n\nGit, Github ও GitBash কি?\nJenkins কি?\nMaven কি? জাভা বিল্ড আটোমেশন ও ডিপেন্ডেন্সি ম্যানেজমেন্ট\nHTTP প্রোটোকল কি?\n\n\n\nলিনাক্স ফর ডেভেলপার সিরিজ ( Linux for Developer Series )\n\nসফটওয়্যার ডেভেলপার হিসেবে যে লিনাক্স জানা কেন জরুরী?\nকিভাবে রিমোট সার্ভার থেকে ফাইল আনা ও পাঠানো যায়? | ssh / scp লিনাক্স কমান্ডের ব্যবহার\nকিভাবে রানিং প্রসেস দেখা ও কিল করা যায়? | ps / top / lsof / kill লিনাক্স কমান্ডের ব্যবহার\nকিভাবে ডিস্ক / ফাইল সিস্টেম দেখার যায়? | df / du লিনাক্স কমান্ডের ব্যবহার\nকিভাবে কম্প্রেশন করা যায়? | zip / unzip / tar লিনাক্স কমান্ডের ব্যবহার\nকিভাবে ফাইলের কন্টেন্ট দেখা যায়? | less / cat / head / tail লিনাক্স কমান্ডের ব্যবহার\nকিভাবে ফাইল সার্চ ও ফাইলে টেক্সট সার্চ দেয়া যায়? | find / grep লিনাক্স কমান্ডের ব্যবহার\nকিভাবে নেটওয়্যার্ক ইনফো দেখা যায়? | ifconfig / netstat লিনাক্স কমান্ডের ব্যবহার\nকিভাবে ফাইল পারমিশন ও owner পরিবর্তন করা যায়? | chmod / chown লিনাক্স কমান্ডের ব্যবহার\nকিভাবে লিনাক্সে environment variable দেখা ও সেট করা যায়? | env কমান্ডের ব্যবহার\nকিভাবে লিনাক্সে সফটওয়্যার ইন্সটল করা যায়? apt-get / yum কমান্ডের ব্যবহার\nকিভাবে লিনাক্সে ফাইলের কন্টেন্ট এডিট করা যায়? | সহজ nano এডিটর\nকিভাবে রিমোট সার্ভারে জাভা ওয়েব আপ্লিকেশন চালানো যায়? | nohup কমান্ডের ব্যবহার\n\n\n\nআপ্লিকেশন সিকিউরিটি সিরিজ ( Application Security Series)\n\nকোডের সিকিউরিটি ভলনারেবলিটি কিভাবে বের করবেন? ( পার্ট ১ / ৩ )\nকোডের সিকিউরিটি ভলনারেবলিটি কিভাবে বের করবেন? ( পার্ট ২ / ৩ )\nকোডের সিকিউরিটি ভলনারেবলিটি কিভাবে বের করবেন? ( পার্ট ৩ / ৩ )\nOWASP API সিকিউরিটি টপ ১০ ভলনারেবলিটি কি?\nথানা পুলিশের ঝামেলা ছাড়া হ্যাকিং প্রাকটিস করবেন কিভাবে? Hack The Box Intro!\nAuthentication বনাম Authorization\nSQL Injection কি? + কোডিং উদাহারনসহ\nকিভাবে CSRF / XSRF অ্যাটাক করা যায়? | Cross-Site Request Forgery explained\nকিভাবে CSRF / XSRF অ্যাটাক থেকে নিজের আপ্লিকেশন বাঁচাবেন?\nকিভাবে XSS অ্যাটাক করা যায়? | Cross-Site Scripting explained\nকিভাবে XSS অ্যাটাক থেকে নিজের আপ্লিকেশন বাঁচাবেন?\n\n\n\nডেভঅপস সিরিজ ( DevOps Series )\n\nConfigure Apache/Nginx\nAnsible\nTerraform\nকিভাবে রিমোট সার্ভারে অ্যাপ্লিকেশন ডেপ্লয় করা যায়?\nDocker দিয়ে কি করে? কিভাবে Docker Compose ব্যাবহার করা যায়?\nজব জন্য Docker জানা কতটা গুরুত্বপুর্ন?\nকিভাবে আপনার জাভা অ্যাপ Dockerize করবেন?\nকুবারনেটিস কি?\nকিভাবে আপনার জাভা অ্যাপ কুবারনেটিস এ চালাবেন?\n\n\n\nসফটওয়্যার প্রজেক্ট সিরিজ ( Software Project Series )\n\n৪র্থ বর্ষের ছাত্রছাত্রীদের জন্য ২০টি সফটওয়্যার প্রজেন্ট আইডিয়া (২০২০-২১)"
+  },
+  {
+    "objectID": "tech/2020/01/14/example-project-with-event-driven-architecture.html",
+    "href": "tech/2020/01/14/example-project-with-event-driven-architecture.html",
+    "title": "Example project with Event Driven Architecture",
+    "section": "",
+    "text": "Recently I worked on an assignment project where I tried to implement an Event Driven Architecture.\n\n\n\nimage\n\n\nCheckout this Github repo.\nAlso did an presentation."
+  },
+  {
+    "objectID": "tech/2020/02/27/attach-java-agent-in-java-apps-deployed-on-kubernates.html",
+    "href": "tech/2020/02/27/attach-java-agent-in-java-apps-deployed-on-kubernates.html",
+    "title": "Attach Java agent in Java apps deployed in Kubernetes",
+    "section": "",
+    "text": "Contrast security provide Dynamic Application Security Testing (DAST) tooling to find security vulnerabilities. They provided a Java agent that needed to be attached with my Java application.\nMy Java application is running in kubernetes and this is how I did it. - Added Java agent in a docker image. - Copy the agent to persistent volume using initContainers. - My Java app has the same persistent volume. - Attach Java agent from that path.\nCheckout this Github repo.\nDockerfile-contrast-agent\nFROM alpine:latest\nRUN mkdir /usr/agent\nCOPY ./contrast-resource/contrast.jar /usr/agent\nApplication Dockerfile\nFROM adoptopenjdk/openjdk11-openj9:alpine-jre\nVOLUME /tmp\nARG JAR_FILE\nCOPY ${JAR_FILE} /app.jar\nCMD [\"java\", \"-jar\", \"/app.jar\"]\nk8s all-in-one yaml\napiVersion: v1\nkind: Service\nmetadata:\n  name: pocapp-service\n  labels:\n    appName: pocapp\nspec:\n  type: NodePort\n  selector:\n    app: pocapp\n  ports:\n    - nodePort: 30080\n      port: 8080\n      targetPort: 8080\n\n---\n\napiVersion: apps/v1\nkind: Deployment\nmetadata:\n  name: pocapp-deployment\n  labels:\n    appName: pocapp\nspec:\n  replicas: 1\n  selector:\n    matchLabels:\n      app: pocapp\n  template:\n    metadata:\n      labels:\n        app: pocapp\n    spec:\n      initContainers:\n        - name: contrast-java-agent\n          image: mmahmood/contrast-agent:latest\n          imagePullPolicy: Always\n          volumeMounts:\n          - mountPath: /contrast/agent\n            name: contrast-agent\n          command: ['cp', '-v', '/usr/agent/contrast.jar', '/contrast/agent']\n      containers:\n        - name: pocapp\n          image: mmahmood/contrast-security-poc:latest\n          imagePullPolicy: Always\n          ports:\n            - containerPort: 8080\n          env:\n          - name: JAVA_TOOL_OPTIONS\n            value: -javaagent:/contrast/agent/contrast.jar -Dcontrast.application.name=contrast-security-poc -Dcontrast.rootapp=contrast-security-poc\n          - name: contrast.standalone.appname\n            value: contrast-security-poc\n          volumeMounts:\n          - name: contrast-agent\n            mountPath: /contrast/agent\n          - name: contrast-security-yaml-file\n            mountPath: /etc/contrast/java\n      volumes:\n      - name: contrast-agent\n        emptyDir: {}\n      - name: contrast-security-yaml-file\n        configMap:\n          name: contrast-security-yaml-configmap\n---\n\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: contrast-security-yaml-configmap\ndata:\n  contrast_security.yaml: |\n    api:\n      url: https://ce.contrastsecurity.com/Contrast\n      api_key: 4EYA78sPefB9jETL1fUVeyhUMYEipUq9\n      service_key: KYLLK4J9EFGE6T31\n      user_name: agent_af2a5b84-2e8d-4296-9638-9afd41ddf5b5@MossaddequesOrg\n    java:\n      standalone_app_name: contrast-security-poc\n      scan_all_classes: true\n    application:\n      name: contrast-security-poc\n      path: k8s\n    server:\n      name: k8s-env\n    agent:\n      logger:\n        level: ALL\nCheers!\n \n\nRelated Posts\n\nHow to find security vulnerabilities in source code\nHow a typical work week look like for an Application Security Engineer\nApplication security homelab setup on docker-compose"
+  },
+  {
+    "objectID": "tech/2020/07/02/pragmatic-approach-to-onboarding-new-hire-software-engineer.html",
+    "href": "tech/2020/07/02/pragmatic-approach-to-onboarding-new-hire-software-engineer.html",
+    "title": "Pragmatic approach to onboard new hire",
+    "section": "",
+    "text": "Imagine, you hired a new engineer to help with your software products, or you are an engineer who just got hired. What would be your expectation? Being productive, as soon as possible, right?\nI am an engineer, worked in different software company for last 10 years, conducted tons of interviews, helped company hire and onboard new-hires. Here are some notes on good and bad onboarding ideas.\n\nGood Ideas:\n\nBusiness Analyst / Product Owner talk about the products.\nArchitect / Developer talks about architecture, explain how different parts of the product are connected.\nSet a ‘buddy’ for the new-hire.\n\nA dedicated person to help the new-hire.\nThis will prevent bouncing from person-to-person to get simple things done.\nA ‘buddy’ is not a mentor.\n\nDuties of a ‘buddy’:\n\nAnswer/help with anything new-hire might need.\nHelp with getting access to Code Repository / Artifact Repository / Build System / AWS etc.\nSetup meetings with different people who can explain things to new-hire.\nShow the codebase.\nExplain how CI/CD process works in the company.\nHelp to run project on the local machine.\nHelp to pick up small ticket, help the new-hire as much possible. Merge the code and test! This might seems hand holding, but trust me it works.\n\nTips for the person who play to the ‘buddy’ role:\n\nTry to write down the overview of different talks. Send the overview as a chat message after the talk.\nList all links, e.g. codebase, Sonar, Jenkins, Artifactory.\n\n\n\n\nBad Ideas:\n\nWeek long boring training session.\n“Just read the code, you’ll figure it out. It’s just code.”\nAsk to Read the Fu**ing Manual (RTFM), aka Confluence / Wiki / readme pages.\n\n\n\n\nimage\n\n\nLive long and prosper!"
+  },
+  {
+    "objectID": "tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html",
+    "href": "tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html",
+    "title": "How to find security vulnerabilities in source code",
+    "section": "",
+    "text": "I have worked in application security, had to deal with big codebase, hence came up with some tips on how to review codebase for security vulnerability.\nTools mentioned in this article that are related with Java because most of my programming experience is with Java. However, you can find similar tools in all major programming language.\n\nHow to do it?\n\nSAST, DAST, IAST tools.\n\nTools are usually based on rules. They are not perfect, lots of false positives.\nThe idea behind using tools is to find the suspicious code and manually review it.\n\nManual review.\n\n\n\nDependency Management\n\nModern application composed of tons of Open Source libraries. In Java, different build tools like Maven manage dependencies with pom.xml.\nSince open source libraries is open for all to see the code, people find the vulnerabilities within days/months.\n\nExample of vulnerable Fasterxml Jackson-databind.\n\nThere are different open source and commercial tools available that going to help you find these vulnerable libraries.\n\nOWASP Dependency-Check. Dependency-check has a command line interface, a Maven plugin, an Ant task, and a Jenkins plugin.\nPaid services are also available, e.g. Blackduck, Checkmarx and lot others.\n\nOnce one of your library is marked as vulnerable, you should assess the impact on your application.\n\nIf impact is higher, and you don’t have any control (security controls are safeguards or countermeasures) in place, you should fix it immediately.\nYou could upgrade the library version if newer version does not have that vulnerability.\nIf version upgrade is too much to do, then find what other control you can put to remediate the risk.\n\nYou should scan as part of\n\nCI pipeline, to prevent the inclusion of vulnerable version of a library.\nNightly, to find new vulnerability on the current version.\n\n\n\n\nSource code analyzer (e.g. .java files)\n\nStart with the static analyzer (SAST) tools. It will help you find some obvious security bugs.\nOpen source static analyzers:\n\nOWASP Find Security Bugs\nSonarQube security scan\n\nFor advanced user, checkout CodeQL. Watch this video to get a head start.\nCommercial tools are also available.\n\n\n\nDynamic analyzer (e.g. class/jar/war/ear files)\n\nGoes by IAST/DAST tools too.\nUsually attach with the application OS process.\n\nUsing JavaAgent is one of most common practice.\n\nThese type tools find anomalies in the program’s call stack.\nI’ve only seen commercial tools.\n\n\n\nManually review code in the following areas:\n\nAuthentication and Authorization configurations.\n\nDon’t write your own Auth/AuthZ service, use framework/libraries.\n\nWeb application CSRF configuration / CORS policy.\nWeb API request parameters / headers / cookies.\n\nDon’t trust anything that come from client side. Validate every input, prefer whitelist instead of blacklist.\nMay leads to SQL injection, command injection, path traversal, XSS, etc.\n\nCookies without the HttpOnly/secure flag.\n\nSuccessful XSS could steal user session.\n\nLogging, be aware what you log.\n\nMay leads to log injection, sensitive data leak, etc.\n\nReading/writing files from/to the disk.\n\nWhenever you are reading/writing a file from/to a disk, make sure path is not user-provided.\nMay leads to path traversal.\n\nDealing with Certificates?\n\nThink of Man-in-the-middle attacks.\n\nHash function, ciphers algorithm and TLS protocols.\n\nWhenever you see a hash function or ciphers algorithm or a protocol, check if it’s still okay to use.\nE.g. MD5 / 3DES / TLS 1.0 is not okay to use for many use-cases.\n\nSQL statement / Hibernate HQL / JPQL.\n\nThink parameter binding and SQL injection.\n\nNeutralize Output.\n\nSanitize HTML Markup with a library designed for the job.\nThink encoding/escaping and XSS attach. See OWASP Cross Site Scripting Prevention Cheat Sheet.\n\nMake sure you meet the Application Security Verification Standard (ASVS).\n\nLatest version (4.0.1, dated 2 March 2019) is 68 pages. Trust me, once you read these 68 pages, you will be bit more wise.\n\n\n\n\nWhat to build security related knowledge?\n\nOWASP Top 10\nOWASP API Security Top 10\nMITRE Top 25\nSANS TOP 25\nOWASP Cheat Sheet Series\nOWASP Security Knowledge Framework\n\n\nLive long and prosper! 🖖\n \n\n\nRelated Posts\n\nHow a typical work week look like for an Application Security Engineer\nApplication security homelab setup on docker-compose\nAttach ContrastSecurity (DAST) tool JavaAgent in K8s"
+  },
+  {
+    "objectID": "tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html",
+    "href": "tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html",
+    "title": "How to manage grocery list in Home Assistant",
+    "section": "",
+    "text": "HA’s Shopping List?\n\nWe all know HA has a shopping list integration, but it’s a simple todo list.\nYou can add item and mark as checked. You can delete the checked items.\nIf you need to add the same item again, you need to type it. \n\n\n\nWhat I needed?\n\nMy grocery items are pretty much constant, i.e. milk, cooking oil, stuff like that.\nEvery week it’s same item over and over.\nI didn’t wanted to type to add same item to HA’s shopping list again and again. \n\n\n\nHow did I solve?\n\nI created a Lovelace dashboard on HA.\nAdded button cards that add the item to the HA’s shopping list on click. \n\n\n\nTechnical\nOn configurations.yaml, added the following to add a dashboard that shows on the sidebar.\nlovelace:\n  mode: storage\n  dashboards:\n    addtoshoppinglist-dashboard-lovelace-yaml:\n      mode: yaml\n      title: Add to ShoppingList Dashboard\n      show_in_sidebar: true\n      filename: dashboards/AddToShoppingListDashboard-lovelace.yaml\nContent of dashboards/AddToShoppingListDashboard-lovelace.yaml -\ntitle: Add to ShoppingList Dashboard\nviews:\n  - path: addtoshoppinglist_dashboard_view\n    title: Add to ShoppingList Dashboard\n    cards:\n      - type: vertical-stack\n        cards: !include ShoppingListVegetables.yaml\n      - type: vertical-stack\n        cards: !include ShoppingListSpices.yaml\n      - type: vertical-stack\n        cards: !include ShoppingListFruites.yaml\n      - type: vertical-stack\n        cards: !include ShoppingListOthers.yaml\n      - type: vertical-stack\n        cards: !include ShoppingListGrains.yaml\n      - type: vertical-stack\n        cards: !include ShoppingListWashroom.yaml\n      - type: vertical-stack\n        cards: !include ShoppingListSnacks.yaml\n      - type: vertical-stack\n        cards: !include ShoppingListBreakfast.yaml\n      - type: vertical-stack\n        cards: !include ShoppingListProtein.yaml\nContent of include ShoppingListBreakfast.yaml -\n- type: markdown\n  content: &gt;\n    ## Breakfast\n- type: horizontal-stack\n  cards:\n    - type: vertical-stack\n      cards:\n        - type: button\n          name: Half Milk\n          tap_action:\n            action: call-service\n            service: shopping_list.add_item\n            service_data:\n              name: Half Milk\n        - type: button\n          name: Oats/Cereal\n          tap_action:\n            action: call-service\n            service: shopping_list.add_item\n            service_data:\n              name: Oats/Cereal\n        - type: button\n          name: Bread\n          tap_action:\n            action: call-service\n            service: shopping_list.add_item\n            service_data:\n              name: Bread\n    - type: vertical-stack\n      cards:\n        - type: button\n          name: Egg\n          tap_action:\n            action: call-service\n            service: shopping_list.add_item\n            service_data:\n              name: Egg\nI added three items on the vertical-stack because on the mobile screen 3 button looks perfect. \nLive long and prosper! 🖖\n \n\n\nRelated Posts\n\nHome Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt\nRun deCONZ on Kubernetes"
+  },
+  {
+    "objectID": "tech/2022/04/24/home-assistant-control-ring-volume-partner-phone.html",
+    "href": "tech/2022/04/24/home-assistant-control-ring-volume-partner-phone.html",
+    "title": "Home Assistant control the ring volume of your partner’s phone",
+    "section": "",
+    "text": "HA dashboard buttons\n\n\n\nimage\n\n\n\n\nWhat I wanted to do\nWhen I go to the store to do the grocery, I need to ask something to my wife, and she is not pick up the phone because she is in the garden and ring sound is not reaching her. This is an example use case. Please understand the gravity of this feature and implement this feature with your partner’s consent and based on mutual agreement.\n\n\nExample usecase\n\nEmergency button.\nFind your phone feature.\nGeofencing + automatic silent off/on. Courtesy to bwyer from Reddit.\n\n\n\nMy Solution\n\nMy wife and I both use HA Companion App.\nCreate a button on the HA dashboard and call the script.\nOnce HA script set ring volume to 100%, make a normal call.\n\n\n\n\nimage\n\n\n\n\nHA dashboard button to call script\n- type: button\n  name: Nishi Phone volume to 100\n  show_state: false\n  icon: hass:volume-high\n  tap_action:\n    action: call-service\n    service: script.nishi_phone_volume_100\n\n\nHA script\nnishi_phone_volume_100:\n  alias: Set Nishi Phone volume to 100\n  sequence:\n  - service: notify.mobile_app_pixel_4_xl\n    data:\n      message: \"command_ringer_mode\"\n      title: \"normal\"\n  - service: notify.mobile_app_pixel_4_xl\n    data:\n      message: \"command_volume_level\"\n      title: 10\n      data:\n        channel: \"ring_stream\"\n\nLive long and prosper! 🖖\n \n\n\nRelated Posts\n\nHow to manage grocery list in Home Assistant\nHome Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt\nRun deCONZ on Kubernetes"
+  },
+  {
+    "objectID": "tech/2024/01/14/proxmox-mirror-raid1.html",
+    "href": "tech/2024/01/14/proxmox-mirror-raid1.html",
+    "title": "Proxmox Mirror RAID1",
+    "section": "",
+    "text": "I am new to Proxmox, even new to running servers. I am documenting this for my own, use it in your own risk.\n\nMy Proxmox Cluster\n\n\n\nimage\n\n\nls -la /dev/disk/by-id\nlrwxrwxrwx 1 root root   9 Jan 14 15:54 wwn-0x5000cca2e1c06dd1 -&gt; ../../sdb\nlrwxrwxrwx 1 root root   9 Jan 14 15:54 wwn-0x5000cca2a6ceb623 -&gt; ../../sdc\n\n\nCreate zpool:\nzpool create rpool mirror /dev/disk/by-id/wwn-0x5000cca2e1c06dd1 /dev/disk/by-id/wwn-0x5000cca2a6ceb623\nroot@pve:~# zfs list\nNAME    USED  AVAIL  REFER  MOUNTPOINT\nrpool   420K  14.4T    96K  /rpool\nroot@pve:~# zpool status -v\n  pool: rpool\n state: ONLINE\nconfig:\n\n    NAME                        STATE     READ WRITE CKSUM\n    rpool                       ONLINE       0     0     0\n      mirror-0                  ONLINE       0     0     0\n        wwn-0x5000cca2e1c06dd1  ONLINE       0     0     0\n        wwn-0x5000cca2a6ceb623  ONLINE       0     0     0\n\nerrors: No known data errors\n\n\nSet compression zpool:\nroot@pve:~# zfs get compression -r rpool\nNAME   PROPERTY     VALUE           SOURCE\nrpool  compression  on              default\nroot@pve:~# zfs set compression=lz4 rpool\nroot@pve:~# zfs get compression -r rpool\nNAME   PROPERTY     VALUE           SOURCE\nrpool  compression  lz4             local\n\n\nCreate datasets\nzfs create rpool/vm-disks\nzfs create rpool/iso-backup\nzfs create rpool/photos\nzfs create rpool/videos\nzfs create rpool/shared\npct set 100 -mp0 /rpool/shared,mp=/shared\n\nLive long and prosper! 🖖\n \n\n\nRelated Posts\n\nHow to manage grocery list in Home Assistant\nHome Assistant in Docker hosts mode with Traefik 2 and Let’s Encrypt\nRun deCONZ on Kubernetes"
+  },
+  {
+    "objectID": "2020/index.html",
+    "href": "2020/index.html",
+    "title": "Year: 2020",
+    "section": "",
+    "text": "9 posts in this archive.\n\n\n\n\nDec 8, 2020\n\nHome Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt\n\n\nI can access my HA from internet over HTTPS\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINappsec\n\nAug 19, 2020\n\nHow to find security vulnerabilities in source code\n\n\nAs a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nJul 15, 2020\n\nDesign of an IoT data pipeline\n\n\nRecently I worked on an assignment project where I tried to design an IoT data pipeline. Checkout the design and code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nJul 2, 2020\n\nPragmatic approach to onboard new hire\n\n\nWhat works and what doesn't when onboarding developers.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINapplication security\n\nJun 25, 2020\n\nHow a typical work week look like for an Application Security Engineer\n\n\nWorking as an application security engineer can be very exciting and ridiculously boring at the same time. If your are to be an application security engineer, hope you get some ideas.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINmoving\n\nJun 8, 2020\n\nChecklist when moving to a new house/apartment\n\n\nMoving places can be stressful. If you are a newcomer like me, maybe God help you!\n\n\nMossaddeque Mahmood life happens\n\n\n\n\nUNLOAD / BRAINjava\n\nFeb 27, 2020\n\nAttach Java agent in Java apps deployed in Kubernetes\n\n\nI needed to attach Java agent to my Java process to find security vulnerabilities. App is running in k8s and this is how I did it.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINiot\n\nJan 29, 2020\n\nRun deCONZ on Kubernetes\n\n\nRunning deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nJan 14, 2020\n\nExample project with Event Driven Architecture\n\n\nRecently I worked on an assignment project where I tried to implement an Event Driven Architecture. Checkout the code.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "2022/index.html",
+    "href": "2022/index.html",
+    "title": "Year: 2022",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nApr 24, 2022\n\nHome Assistant control the ring volume of your partner's phone\n\n\nWife / husband / partner not picking up phone? Here is the HA way to control ring volume.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "2024/index.html",
+    "href": "2024/index.html",
+    "title": "Year: 2024",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nJan 14, 2024\n\nProxmox Mirror RAID1\n\n\nI've 2 16TB HDDs and I want to use them in Proxmox. I will create a mirror RAID1 zpool and create datasets for VMs, ISOs, photos, videos, and shared files.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "category/life-happens/index.html",
+    "href": "category/life-happens/index.html",
+    "title": "Category: life-happens",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINmoving\n\nJun 8, 2020\n\nChecklist when moving to a new house/apartment\n\n\nMoving places can be stressful. If you are a newcomer like me, maybe God help you!\n\n\nMossaddeque Mahmood life happens"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Unload Brain",
+    "section": "",
+    "text": "THE UNLOAD BRAIN JOURNAL\n\n\nIdeas worth unloading.\n\n\nNotes on software, security, home automation, and the things happening in between.\n\n\n\n\nSearch posts  Filter by topic All topics Application Security Appsec Architecture Contrast Security Data Pipeline Deconz Docker Event Driven Home Assistant Home Automation Homelab Iot Java Java Agent Kubernetes Lets Encrypt Power Consumption Optimize Proxmox Security Security Code Review Shopping List Software Engineer Life Tech Hire Traefik2 Zigbee Gateway  Filter by year All years 2024 2023 2022 2021 2020 2019 \n\n\nShowing 14 posts\n\n\n\n\n\nJan 14, 2024\n\nProxmox Mirror RAID1\n\n\nI've 2 16TB HDDs and I want to use them in Proxmox. I will create a mirror RAID1 zpool and create datasets for VMs, ISOs, photos, videos, and shared files.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINproxmox\n\nOct 9, 2023\n\nPower consumption optimize Proxmox\n\n\nElectricity costs a lot, reduce Proxmox power consumption\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nApr 24, 2022\n\nHome Assistant control the ring volume of your partner's phone\n\n\nWife / husband / partner not picking up phone? Here is the HA way to control ring volume.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nMay 28, 2021\n\nHome Assistant alarm/command to make an Android phone ring\n\n\nDoor/window sensors triggers night alarm / home away alarm on my Google Home device. I wanted to do something that make my Android phone ring.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nMar 7, 2021\n\nHow to manage grocery list in Home Assistant\n\n\nWe all know HA has a shopping list integration, but it's a simple todo list, not well suited for managing groceries. Some people might suggest Grocy, but I didn't need that many functionalities.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nDec 8, 2020\n\nHome Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt\n\n\nI can access my HA from internet over HTTPS\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINappsec\n\nAug 19, 2020\n\nHow to find security vulnerabilities in source code\n\n\nAs a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nJul 15, 2020\n\nDesign of an IoT data pipeline\n\n\nRecently I worked on an assignment project where I tried to design an IoT data pipeline. Checkout the design and code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nJul 2, 2020\n\nPragmatic approach to onboard new hire\n\n\nWhat works and what doesn't when onboarding developers.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINapplication security\n\nJun 25, 2020\n\nHow a typical work week look like for an Application Security Engineer\n\n\nWorking as an application security engineer can be very exciting and ridiculously boring at the same time. If your are to be an application security engineer, hope you get some ideas.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINjava\n\nFeb 27, 2020\n\nAttach Java agent in Java apps deployed in Kubernetes\n\n\nI needed to attach Java agent to my Java process to find security vulnerabilities. App is running in k8s and this is how I did it.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINiot\n\nJan 29, 2020\n\nRun deCONZ on Kubernetes\n\n\nRunning deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nJan 14, 2020\n\nExample project with Event Driven Architecture\n\n\nRecently I worked on an assignment project where I tried to implement an Event Driven Architecture. Checkout the code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINappsec\n\nDec 25, 2019\n\nApplication security homelab setup on docker-compose\n\n\nHow I setup my homelab to learn security concepts.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\nNo posts match your search. Try another topic or year.\n\n\n\n\nKEEP EXPLORING\n\n\nBrowse the archive\n\n\nCategories: life-happens, tech\n\n\nYears: 2024, 2023, 2022, 2021, 2020, 2019\n\n\nTags: application-security, appsec, architecture, contrast-security, data-pipeline, deconz, docker, event-driven, home-assistant, home-automation, homelab, iot, java, java-agent, kubernetes, lets-encrypt, moving, netherlands, power-consumption-optimize, proxmox, security, security-code-review, shopping-list, software-engineer-life, tech-hire, traefik2, zigbee-gateway"
+  },
+  {
+    "objectID": "tag/appsec/index.html",
+    "href": "tag/appsec/index.html",
+    "title": "Tag: appsec",
+    "section": "",
+    "text": "2 posts in this archive.\n\n\nUNLOAD / BRAINappsec\n\nAug 19, 2020\n\nHow to find security vulnerabilities in source code\n\n\nAs a software developer, we write code on a daily basis. Here are some tips how to find security vulnerabilities in source code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINappsec\n\nDec 25, 2019\n\nApplication security homelab setup on docker-compose\n\n\nHow I setup my homelab to learn security concepts.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/contrast-security/index.html",
+    "href": "tag/contrast-security/index.html",
+    "title": "Tag: contrast-security",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINjava\n\nFeb 27, 2020\n\nAttach Java agent in Java apps deployed in Kubernetes\n\n\nI needed to attach Java agent to my Java process to find security vulnerabilities. App is running in k8s and this is how I did it.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/deconz/index.html",
+    "href": "tag/deconz/index.html",
+    "title": "Tag: deconz",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINiot\n\nJan 29, 2020\n\nRun deCONZ on Kubernetes\n\n\nRunning deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/event-driven/index.html",
+    "href": "tag/event-driven/index.html",
+    "title": "Tag: event-driven",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nJan 14, 2020\n\nExample project with Event Driven Architecture\n\n\nRecently I worked on an assignment project where I tried to implement an Event Driven Architecture. Checkout the code.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/home-automation/index.html",
+    "href": "tag/home-automation/index.html",
+    "title": "Tag: home-automation",
+    "section": "",
+    "text": "5 posts in this archive.\n\n\n\n\nApr 24, 2022\n\nHome Assistant control the ring volume of your partner's phone\n\n\nWife / husband / partner not picking up phone? Here is the HA way to control ring volume.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nMay 28, 2021\n\nHome Assistant alarm/command to make an Android phone ring\n\n\nDoor/window sensors triggers night alarm / home away alarm on my Google Home device. I wanted to do something that make my Android phone ring.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nMar 7, 2021\n\nHow to manage grocery list in Home Assistant\n\n\nWe all know HA has a shopping list integration, but it's a simple todo list, not well suited for managing groceries. Some people might suggest Grocy, but I didn't need that many functionalities.\n\n\nMossaddeque Mahmood tech\n\n\n\n\n\n\nDec 8, 2020\n\nHome Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt\n\n\nI can access my HA from internet over HTTPS\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINiot\n\nJan 29, 2020\n\nRun deCONZ on Kubernetes\n\n\nRunning deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/iot/index.html",
+    "href": "tag/iot/index.html",
+    "title": "Tag: iot",
+    "section": "",
+    "text": "2 posts in this archive.\n\n\n\n\nJul 15, 2020\n\nDesign of an IoT data pipeline\n\n\nRecently I worked on an assignment project where I tried to design an IoT data pipeline. Checkout the design and code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINiot\n\nJan 29, 2020\n\nRun deCONZ on Kubernetes\n\n\nRunning deCONZ application for ConBee II gateway on can be a challenge. Check out how I did it.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/java/index.html",
+    "href": "tag/java/index.html",
+    "title": "Tag: java",
+    "section": "",
+    "text": "2 posts in this archive.\n\n\n\n\nJul 15, 2020\n\nDesign of an IoT data pipeline\n\n\nRecently I worked on an assignment project where I tried to design an IoT data pipeline. Checkout the design and code.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINjava\n\nFeb 27, 2020\n\nAttach Java agent in Java apps deployed in Kubernetes\n\n\nI needed to attach Java agent to my Java process to find security vulnerabilities. App is running in k8s and this is how I did it.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/lets-encrypt/index.html",
+    "href": "tag/lets-encrypt/index.html",
+    "title": "Tag: lets-encrypt",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nDec 8, 2020\n\nHome Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt\n\n\nI can access my HA from internet over HTTPS\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/netherlands/index.html",
+    "href": "tag/netherlands/index.html",
+    "title": "Tag: netherlands",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINmoving\n\nJun 8, 2020\n\nChecklist when moving to a new house/apartment\n\n\nMoving places can be stressful. If you are a newcomer like me, maybe God help you!\n\n\nMossaddeque Mahmood life happens"
+  },
+  {
+    "objectID": "tag/proxmox/index.html",
+    "href": "tag/proxmox/index.html",
+    "title": "Tag: proxmox",
+    "section": "",
+    "text": "2 posts in this archive.\n\n\n\n\nJan 14, 2024\n\nProxmox Mirror RAID1\n\n\nI've 2 16TB HDDs and I want to use them in Proxmox. I will create a mirror RAID1 zpool and create datasets for VMs, ISOs, photos, videos, and shared files.\n\n\nMossaddeque Mahmood tech\n\n\n\n\nUNLOAD / BRAINproxmox\n\nOct 9, 2023\n\nPower consumption optimize Proxmox\n\n\nElectricity costs a lot, reduce Proxmox power consumption\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/security/index.html",
+    "href": "tag/security/index.html",
+    "title": "Tag: security",
+    "section": "",
+    "text": "1 post in this archive.\n\n\nUNLOAD / BRAINappsec\n\nDec 25, 2019\n\nApplication security homelab setup on docker-compose\n\n\nHow I setup my homelab to learn security concepts.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/software-engineer-life/index.html",
+    "href": "tag/software-engineer-life/index.html",
+    "title": "Tag: software-engineer-life",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nJul 2, 2020\n\nPragmatic approach to onboard new hire\n\n\nWhat works and what doesn't when onboarding developers.\n\n\nMossaddeque Mahmood tech"
+  },
+  {
+    "objectID": "tag/traefik2/index.html",
+    "href": "tag/traefik2/index.html",
+    "title": "Tag: traefik2",
+    "section": "",
+    "text": "1 post in this archive.\n\n\n\n\nDec 8, 2020\n\nHome Assistant in Docker hosts mode with Traefik 2 and Let's Encrypt\n\n\nI can access my HA from internet over HTTPS\n\n\nMossaddeque Mahmood tech"
+  }
+]

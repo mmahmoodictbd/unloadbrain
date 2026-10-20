@@ -1,6 +1,0 @@
-flutter_native_splash:
-  color: "#ffffff"
-  image: assets/history_app/images/historyAppLogo.png
-  ios: false
-  web: false
-  android_12:
