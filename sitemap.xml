@@ -2,238 +2,238 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://unloadbrain.com/tech/2024/01/14/proxmox-mirror-raid1.html</loc>
-    <lastmod>2026-10-20T15:13:17.066Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.908Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2022/04/24/home-assistant-control-ring-volume-partner-phone.html</loc>
-    <lastmod>2026-10-20T15:13:17.066Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.908Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2021/03/07/how-to-manage-grocery-list-in-home-assistant.html</loc>
-    <lastmod>2026-10-20T15:13:17.066Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2020/08/19/how-to-find-security-vulnerabilities-in-source-code.html</loc>
-    <lastmod>2026-10-20T15:13:17.066Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2020/07/02/pragmatic-approach-to-onboarding-new-hire-software-engineer.html</loc>
-    <lastmod>2026-10-20T15:13:17.065Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2020/02/27/attach-java-agent-in-java-apps-deployed-on-kubernates.html</loc>
-    <lastmod>2026-10-20T15:13:17.065Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2020/01/14/example-project-with-event-driven-architecture.html</loc>
-    <lastmod>2026-10-20T15:13:17.065Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech-talk-with-mahmood.html</loc>
-    <lastmod>2026-10-20T15:13:17.064Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.906Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/zigbee-gateway/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.669Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.572Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/tech-hire/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.668Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.571Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/shopping-list/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.666Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.569Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/security-code-review/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.667Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.570Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/power-consumption-optimize/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.665Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.568Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/moving/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.668Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.571Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/kubernetes/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.669Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.571Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/java-agent/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.669Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.571Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/homelab/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.670Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.573Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/home-assistant/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.666Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.568Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/docker/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.667Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.569Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/data-pipeline/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.668Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.570Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/architecture/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.670Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.572Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/application-security/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.667Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.570Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/privacy.html</loc>
-    <lastmod>2026-10-20T15:13:17.064Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.906Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/life-happens/2020/06/08/checklist-when-moving-to-new-house-apartment.html</loc>
-    <lastmod>2026-10-20T15:13:17.064Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.906Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/index.html</loc>
-    <lastmod>2026-10-20T15:13:17.064Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.906Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/category/life-happens/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.668Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.571Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/about.html</loc>
-    <lastmod>2026-10-20T15:13:16.952Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.800Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/2024/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.665Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.567Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/2022/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.666Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.568Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/2020/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.666Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.569Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/2019/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.670Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.572Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/2021/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.666Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.569Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/2023/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.665Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.568Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/artworks-I-love.html</loc>
-    <lastmod>2026-10-20T15:13:16.963Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.812Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/category/tech/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.665Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.568Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/life-happens.html</loc>
-    <lastmod>2026-10-20T15:13:17.064Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.906Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/my-cheatsheet.html</loc>
-    <lastmod>2026-10-20T15:13:17.064Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.906Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/projects.html</loc>
-    <lastmod>2026-10-20T15:13:17.064Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.906Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/appsec/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.667Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.570Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/contrast-security/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.669Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.572Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/deconz/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.669Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.572Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/event-driven/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.669Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.572Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/home-automation/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.666Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.569Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/iot/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.668Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.570Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/java/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.667Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.570Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/lets-encrypt/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.667Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.570Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/netherlands/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.668Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.571Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/proxmox/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.665Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.568Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/security/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.670Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.572Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/software-engineer-life/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.668Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.571Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tag/traefik2/index.html</loc>
-    <lastmod>2026-10-20T15:13:32.667Z</lastmod>
+    <lastmod>2026-10-20T17:49:41.569Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/taking-care-house-plants.html</loc>
-    <lastmod>2026-10-20T15:13:17.064Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.906Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2019/12/25/application-security-homelab-setup-on-docker-compose.html</loc>
-    <lastmod>2026-10-20T15:13:17.065Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2020/01/29/run-deconz-on-kubernates.html</loc>
-    <lastmod>2026-10-20T15:13:17.065Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2020/06/25/typical-work-week-for-application-security-engineer.html</loc>
-    <lastmod>2026-10-20T15:13:17.065Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2020/07/15/design-iot-data-pipeline.html</loc>
-    <lastmod>2026-10-20T15:13:17.065Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2020/12/08/home-assistant-in-docker-hosts-mode-with-traefik2-and-lets-encrypt-working-sample.html</loc>
-    <lastmod>2026-10-20T15:13:17.066Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.907Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2021/05/28/home-assistant-alarm-command-make-an-Android-phone-ring.html</loc>
-    <lastmod>2026-10-20T15:13:17.066Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.908Z</lastmod>
   </url>
   <url>
     <loc>https://unloadbrain.com/tech/2023/10/09/power-consumption-optimize-proxmox.html</loc>
-    <lastmod>2026-10-20T15:13:17.066Z</lastmod>
+    <lastmod>2026-10-20T17:49:20.908Z</lastmod>
   </url>
 </urlset>
