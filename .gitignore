@@ -7,5 +7,6 @@
 /tag/
 /feed.xml
 /assets/generated/
+/books/recipes-for-the-amature-husbends/_book/
 .idea
 **/*.quarto_ipynb

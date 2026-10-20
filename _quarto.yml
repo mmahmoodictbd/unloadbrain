@@ -5,6 +5,7 @@ project:
   render:
     - "*.qmd"
     - "!drafts/**"
+    - "!books/**"
     - "tech/**/*.qmd"
     - "life-happens/**/*.qmd"
     - "category/**/*.qmd"
@@ -35,6 +36,8 @@ website:
         href: life-happens.qmd
       - text: Cheatsheet
         href: my-cheatsheet.qmd
+      - text: Recipe book
+        href: /books/recipes-for-the-amature-husbends/
     right:
       - icon: github
         href: https://github.com/mmahmoodictbd

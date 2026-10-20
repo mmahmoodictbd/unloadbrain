@@ -1,0 +1,98 @@
+:root {
+  --book-accent: #496b62;
+  --book-ink: #25342f;
+  --book-paper: #fffdf8;
+  --book-soft: #f4f4e9;
+}
+
+@counter-style bangla-steps {
+  system: numeric;
+  symbols: "০" "১" "২" "৩" "৪" "৫" "৬" "৭" "৮" "৯";
+  suffix: ". ";
+}
+
+body {
+  font-family: "Noto Sans Bengali", "Hind Siliguri", system-ui, sans-serif;
+  line-height: 1.85;
+  color: var(--book-ink);
+  background-color: var(--book-paper);
+}
+
+a {
+  color: var(--book-accent);
+}
+
+.sidebar-title {
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+main.content {
+  max-width: 50rem;
+  padding-bottom: 4rem;
+}
+
+main.content h1 {
+  color: var(--book-accent);
+  line-height: 1.4;
+  border-bottom: 2px solid var(--book-accent);
+  padding-bottom: 0.5rem;
+}
+
+main.content h2 {
+  color: var(--book-accent);
+  margin-top: 2.25rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #cbd9d1;
+}
+
+main.content h3 {
+  color: var(--book-ink);
+  margin-top: 1.5rem;
+}
+
+main.content h2 + ul,
+main.content h3 + ul {
+  background: var(--book-soft);
+  border-left: 4px solid var(--book-accent);
+  border-radius: 0 0.65rem 0.65rem 0;
+  padding: 1.15rem 1.5rem 1.15rem 2.5rem;
+}
+
+main.content li {
+  padding: 0.2rem 0;
+}
+
+main.content ol {
+  list-style-type: bangla-steps;
+}
+
+main.content ol > li {
+  padding-left: 0.4rem;
+  margin-bottom: 0.9rem;
+}
+
+main.content ol > li::marker {
+  color: var(--book-accent);
+  font-weight: 700;
+}
+
+main.content blockquote {
+  background: var(--book-soft);
+  border-left: 4px solid var(--book-accent);
+  padding: 0.75rem 1.25rem;
+}
+
+@media (max-width: 600px) {
+  main.content h2 + ul,
+  main.content h3 + ul {
+    padding-left: 1.75rem;
+  }
+}
+
+@media print {
+  main.content h2 + ul,
+  main.content h3 + ul {
+    break-inside: avoid;
+  }
+}

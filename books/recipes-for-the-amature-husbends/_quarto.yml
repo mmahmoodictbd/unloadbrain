@@ -1,0 +1,50 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Recipes for the Amature Husbends"
+  output-file: Recipes-for-the-Amature-Husbends
+  subtitle: "রান্না না জানা স্বামীদের রেসিপি"
+  author: "মোসাদ্দেক মাহমুদ"
+  site-url: https://unloadbrain.com/books/recipes-for-the-amature-husbends/
+  repo-url: https://github.com/mmahmoodictbd/unloadbrain
+  search: true
+  chapters:
+    - index.qmd
+    - part: "সকালের নাশতা"
+      chapters:
+        - recipes/homemade-pancakes.qmd
+        - recipes/waffle.qmd
+    - part: "দুপুর / রাতের খাবার"
+      chapters:
+        - recipes/vegetarian-gravy.qmd
+        - recipes/aloo-begun-bori.qmd
+        - recipes/raw-banana-kebab-wrap.qmd
+        - recipes/garlic-tofu.qmd
+        - recipes/soya-chunks-satay.qmd
+        - recipes/voger-labra.qmd
+        - recipes/pan-fried-salmon.qmd
+    - part: "মিষ্টি ও নাশতা"
+      chapters:
+        - recipes/sagudana-pitha.qmd
+        - recipes/oven-biscuits.qmd
+        - recipes/coconut-naru.qmd
+
+
+number-sections: false
+
+format:
+  html:
+    theme: cosmo
+    css: book.css
+    toc: true
+    link-external-newwindow: true
+    lang: bn
+  epub:
+    toc: true
+    lang: bn
+  typst:
+    toc: true
+    lang: bn
+    include-before-body: pdf-numbering.typ

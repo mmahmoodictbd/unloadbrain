@@ -1,7 +1,9 @@
 # Unload Brain
 
 This website is built with [Quarto](https://quarto.org/) and published to
-https://unloadbrain.com. Post URLs retain the Jekyll-style
+https://unloadbrain.com. The recipe book lives at
+https://unloadbrain.com/books/recipes-for-the-amature-husbends/ as a separate
+Quarto book project. Blog post URLs retain the Jekyll-style
 `/<category>/<year>/<month>/<day>/<slug>.html` structure.
 
 ## Build locally
@@ -11,17 +13,22 @@ Install Quarto 1.10.19 and Python 3, then:
 ```sh
 python3 -m pip install -r requirements.txt
 quarto render
+quarto render books/recipes-for-the-amature-husbends
+mkdir -p _site/books/recipes-for-the-amature-husbends
+cp -R books/recipes-for-the-amature-husbends/_book/. _site/books/recipes-for-the-amature-husbends/
 ```
 
-The rendered website is in `_site/`. To preview at http://localhost:4000:
+The rendered website is in `_site/`. To preview locally, run:
 
 ```sh
-quarto preview --port 4000
+./serve_local.sh
 ```
 
-Alternatively, run `./local_serve.sh build` or `./local_serve.sh serve` with
-Docker. The GitHub Actions workflow builds the same site and publishes `_site/`
-to `gh-pages`. GitHub Pages must be configured to deploy from that branch.
+Choose the blog (http://localhost:4000) or the recipe book
+(http://localhost:4001) when prompted. This uses your local Quarto installation
+and does not require Docker. The GitHub Actions workflow renders the blog and
+book, copies the book output into `_site/books/`, then publishes `_site/` to `gh-pages`.
+GitHub Pages must be configured to deploy from that branch.
 
 ## Project layout
 
@@ -32,6 +39,7 @@ to `gh-pages`. GitHub Pages must be configured to deploy from that branch.
 | `tech/`, `life-happens/` | Post sources, arranged to retain public URLs |
 | `drafts/_metadata.yml` | Quarto `draft: true` setting for unpublished drafts |
 | `data/kobita_app/` | Poetry source data for the JSON endpoints |
+| `books/recipes-for-the-amature-husbends/` | Independent Quarto book project and recipe chapters |
 | `_site_data/home.qmd` | Generated homepage partial included by `index.qmd` |
 | `assets/`, `scripts/` | Static assets and site-data generator |
 | `_site/` | Ignored rendered output |
@@ -64,3 +72,19 @@ original styled cover when no distinct image is available.
 
 Pandoc emoji shortcodes (for example `:bangladesh:`) are enabled in the
 Quarto HTML format. Use a supported shortcode or a Unicode emoji for new content.
+
+## Recipe book
+
+The Bangla-language book, "অপটু স্বামীদের রান্নার খাতা", has 12 chapters
+transcribed from standalone notes in
+`~/Dropbox/Github/my-obsidian-notes/Recipes` and live in its `recipes/`
+directory. The six saved clippings from Veg Recipes of India are linked, with
+attribution, in `further-reading.qmd` rather than republished. The book renders
+as HTML, PDF, and EPUB; the HTML chapter navigation is independent of the blog.
+Edit recipe chapters here when publishing updates; the build does not require
+access to the private notes directory. Search for `যাচাই করুন` in the book's
+source files for editorial suggestions to check against the original notes;
+these comments do not appear as page text.
+The PDF uses `pdf-numbering.typ` to suppress Typst's chapter and section
+numbers and display numbered recipe steps with Bangla digits. The HTML
+edition uses a Bangla counter style in `book.css` for those steps.
